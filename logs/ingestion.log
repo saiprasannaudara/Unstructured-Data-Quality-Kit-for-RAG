@@ -1,0 +1,51 @@
+2025-10-06 13:58:01,475 - INFO - Starting batch processing from data\raw
+2025-10-06 13:58:01,477 - INFO - Found 0 files to process
+2025-10-06 13:58:01,478 - INFO - 
+============================================================
+2025-10-06 13:58:01,478 - INFO - PROCESSING SUMMARY
+2025-10-06 13:58:01,479 - INFO - ============================================================
+2025-10-06 13:58:01,481 - INFO - Total files: 0
+2025-10-06 13:58:01,482 - INFO - Successfully processed: 0
+2025-10-06 13:58:01,483 - INFO - Failed: 0
+2025-10-06 13:58:01,484 - INFO -   - Empty files: 0
+2025-10-06 13:58:01,485 - INFO -   - Corrupted: 0
+2025-10-06 13:58:01,487 - INFO -   - Unsupported format: 0
+2025-10-06 13:58:01,488 - INFO - ============================================================
+
+2025-10-06 14:14:21,595 - INFO - Starting batch processing from data\raw
+2025-10-06 14:14:21,605 - INFO - Found 22 files to process
+2025-10-06 14:14:21,606 - INFO - Processing file: 20240909_Hilton.pdf
+2025-10-06 14:14:22,166 - INFO - Processing file: allomoncoco_20240918_009.pdf
+2025-10-06 14:14:22,379 - INFO - Processing file: ben_20240918_008.pdf
+2025-10-06 14:14:22,546 - INFO - Processing file: cora_20240918_010.pdf
+2025-10-06 14:14:22,691 - INFO - Processing file: eggsmart_20240715_004.pdf
+2025-10-06 14:14:22,831 - INFO - Processing file: eggspectation_20240715_002.pdf
+2025-10-06 14:14:22,967 - INFO - Processing file: eggspectation_20240715_010.pdf
+2025-10-06 14:14:23,076 - INFO - Processing file: eggspectation_20240918_007.pdf
+2025-10-06 14:14:23,233 - INFO - Processing file: fiveguys_20240918_016.pdf
+2025-10-06 14:14:23,638 - INFO - Processing file: hoteltoronto_20240715_008.pdf
+2025-10-06 14:14:23,778 - INFO - Processing file: l3b_20240918_014.pdf
+2025-10-06 14:14:23,960 - INFO - Processing file: lacocina_20240528_001.pdf
+2025-10-06 14:14:24,182 - INFO - Processing file: oldnavy_20240918_012.pdf
+2025-10-06 14:14:24,426 - INFO - Processing file: oldnavy_20240918_013.pdf
+2025-10-06 14:14:24,671 - INFO - Processing file: patisserie_20240918_005.pdf
+2025-10-06 14:14:24,827 - INFO - Processing file: pizzeria_20240918_018.pdf
+2025-10-06 14:14:24,968 - INFO - Processing file: tablerock_20240715_009.pdf
+2025-10-06 14:14:25,117 - INFO - Processing file: thelodge_20240715_001.pdf
+2025-10-06 14:14:25,259 - INFO - Processing file: thelodge_20240715_006.pdf
+2025-10-06 14:14:25,371 - INFO - Processing file: timhorton_20240918_011.pdf
+2025-10-06 14:14:25,537 - INFO - Processing file: timhorton_20240918_015.pdf
+2025-10-06 14:14:25,705 - INFO - Processing file: uniqlo_20240715.pdf
+2025-10-06 14:14:26,167 - INFO - 
+============================================================
+2025-10-06 14:14:26,170 - INFO - PROCESSING SUMMARY
+2025-10-06 14:14:26,171 - INFO - ============================================================
+2025-10-06 14:14:26,173 - INFO - Total files: 22
+2025-10-06 14:14:26,179 - INFO - Successfully processed: 22
+2025-10-06 14:14:26,181 - INFO - Failed: 0
+2025-10-06 14:14:26,182 - INFO -   - Empty files: 0
+2025-10-06 14:14:26,184 - INFO -   - Corrupted: 0
+2025-10-06 14:14:26,187 - INFO -   - Unsupported format: 0
+2025-10-06 14:14:26,189 - INFO - Success rate: 100.0%
+2025-10-06 14:14:26,195 - INFO - ============================================================
+

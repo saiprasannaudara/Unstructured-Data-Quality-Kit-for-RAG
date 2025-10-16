@@ -1,0 +1,136 @@
+2025-10-07 23:47:57,543 - INFO - Using Recursive Character Splitter
+2025-10-07 23:47:57,544 - INFO - Starting document chunking from data\deduplicated
+2025-10-07 23:47:57,546 - INFO - Strategy: recursive | Chunk size: 512 tokens | Overlap: 50 tokens
+2025-10-07 23:47:57,548 - INFO - Found 22 files to process
+2025-10-07 23:47:57,562 - INFO - Processing file: 20240909_Hilton_deduplicated.txt
+2025-10-07 23:47:57,735 - INFO - [SUCCESS] Created 2 chunks from 20240909_Hilton_deduplicated.txt
+2025-10-07 23:47:57,742 - INFO - Processing file: allomoncoco_20240918_009_deduplicated.txt
+2025-10-07 23:47:57,755 - INFO - [SUCCESS] Created 1 chunks from allomoncoco_20240918_009_deduplicated.txt
+2025-10-07 23:47:57,759 - INFO - Processing file: ben_20240918_008_deduplicated.txt
+2025-10-07 23:47:57,770 - INFO - [SUCCESS] Created 1 chunks from ben_20240918_008_deduplicated.txt
+2025-10-07 23:47:57,774 - INFO - Processing file: cora_20240918_010_deduplicated.txt
+2025-10-07 23:47:57,783 - INFO - [SUCCESS] Created 1 chunks from cora_20240918_010_deduplicated.txt
+2025-10-07 23:47:57,786 - INFO - Processing file: eggsmart_20240715_004_deduplicated.txt
+2025-10-07 23:47:57,794 - INFO - [SUCCESS] Created 1 chunks from eggsmart_20240715_004_deduplicated.txt
+2025-10-07 23:47:57,797 - INFO - Processing file: eggspectation_20240715_002_deduplicated.txt
+2025-10-07 23:47:57,805 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_002_deduplicated.txt
+2025-10-07 23:47:57,811 - INFO - Processing file: eggspectation_20240715_010_deduplicated.txt
+2025-10-07 23:47:57,819 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_010_deduplicated.txt
+2025-10-07 23:47:57,823 - INFO - Processing file: eggspectation_20240918_007_deduplicated.txt
+2025-10-07 23:47:57,837 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240918_007_deduplicated.txt
+2025-10-07 23:47:57,843 - INFO - Processing file: fiveguys_20240918_016_deduplicated.txt
+2025-10-07 23:47:57,882 - INFO - [SUCCESS] Created 1 chunks from fiveguys_20240918_016_deduplicated.txt
+2025-10-07 23:47:57,887 - INFO - Processing file: hoteltoronto_20240715_008_deduplicated.txt
+2025-10-07 23:47:57,895 - INFO - [SUCCESS] Created 1 chunks from hoteltoronto_20240715_008_deduplicated.txt
+2025-10-07 23:47:57,901 - INFO - Processing file: l3b_20240918_014_deduplicated.txt
+2025-10-07 23:47:57,914 - INFO - [SUCCESS] Created 1 chunks from l3b_20240918_014_deduplicated.txt
+2025-10-07 23:47:57,919 - INFO - Processing file: lacocina_20240528_001_deduplicated.txt
+2025-10-07 23:47:57,934 - INFO - [SUCCESS] Created 1 chunks from lacocina_20240528_001_deduplicated.txt
+2025-10-07 23:47:57,938 - INFO - Processing file: oldnavy_20240918_012_deduplicated.txt
+2025-10-07 23:47:57,954 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_012_deduplicated.txt
+2025-10-07 23:47:57,960 - INFO - Processing file: oldnavy_20240918_013_deduplicated.txt
+2025-10-07 23:47:57,975 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_013_deduplicated.txt
+2025-10-07 23:47:57,979 - INFO - Processing file: patisserie_20240918_005_deduplicated.txt
+2025-10-07 23:47:58,024 - INFO - [SUCCESS] Created 1 chunks from patisserie_20240918_005_deduplicated.txt
+2025-10-07 23:47:58,029 - INFO - Processing file: pizzeria_20240918_018_deduplicated.txt
+2025-10-07 23:47:58,040 - INFO - [SUCCESS] Created 1 chunks from pizzeria_20240918_018_deduplicated.txt
+2025-10-07 23:47:58,046 - INFO - Processing file: tablerock_20240715_009_deduplicated.txt
+2025-10-07 23:47:58,056 - INFO - [SUCCESS] Created 1 chunks from tablerock_20240715_009_deduplicated.txt
+2025-10-07 23:47:58,060 - INFO - Processing file: thelodge_20240715_001_deduplicated.txt
+2025-10-07 23:47:58,073 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_001_deduplicated.txt
+2025-10-07 23:47:58,079 - INFO - Processing file: thelodge_20240715_006_deduplicated.txt
+2025-10-07 23:47:58,090 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_006_deduplicated.txt
+2025-10-07 23:47:58,095 - INFO - Processing file: timhorton_20240918_011_deduplicated.txt
+2025-10-07 23:47:58,106 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_011_deduplicated.txt
+2025-10-07 23:47:58,110 - INFO - Processing file: timhorton_20240918_015_deduplicated.txt
+2025-10-07 23:47:58,120 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_015_deduplicated.txt
+2025-10-07 23:47:58,125 - INFO - Processing file: uniqlo_20240715_deduplicated.txt
+2025-10-07 23:47:58,139 - INFO - [SUCCESS] Created 1 chunks from uniqlo_20240715_deduplicated.txt
+2025-10-07 23:48:03,321 - INFO - Chunking report saved to: logs/chunking_report.csv
+2025-10-07 23:48:03,324 - INFO - 
+============================================================
+2025-10-07 23:48:03,325 - INFO - CHUNKING SUMMARY
+2025-10-07 23:48:03,326 - INFO - ============================================================
+2025-10-07 23:48:03,327 - INFO - Strategy: recursive
+2025-10-07 23:48:03,328 - INFO - Total documents processed: 22
+2025-10-07 23:48:03,329 - INFO - Total chunks created: 23
+2025-10-07 23:48:03,330 - INFO - Average chunks per document: 1.0
+2025-10-07 23:48:03,331 - INFO - 
+Chunk Size Statistics:
+2025-10-07 23:48:03,332 - INFO -   Mean: 472 tokens
+2025-10-07 23:48:03,333 - INFO -   Median: 433 tokens
+2025-10-07 23:48:03,334 - INFO -   Std Dev: 294 tokens
+2025-10-07 23:48:03,335 - INFO - 
+Quality Issues:
+2025-10-07 23:48:03,336 - INFO -   Chunks too small (<100): 0
+2025-10-07 23:48:03,337 - INFO -   Chunks too large (>1000): 1
+2025-10-07 23:48:03,338 - INFO - ============================================================
+
+2025-10-11 18:17:10,488 - INFO - Using Recursive Character Splitter
+2025-10-11 18:17:10,492 - INFO - Starting document chunking from data\deduplicated
+2025-10-11 18:17:10,493 - INFO - Strategy: recursive | Chunk size: 512 tokens | Overlap: 50 tokens
+2025-10-11 18:17:10,495 - INFO - Found 22 files to process
+2025-10-11 18:17:10,513 - INFO - Processing file: 20240909_Hilton_deduplicated.txt
+2025-10-11 18:17:10,788 - INFO - [SUCCESS] Created 2 chunks from 20240909_Hilton_deduplicated.txt
+2025-10-11 18:17:10,794 - INFO - Processing file: allomoncoco_20240918_009_deduplicated.txt
+2025-10-11 18:17:10,858 - INFO - [SUCCESS] Created 1 chunks from allomoncoco_20240918_009_deduplicated.txt
+2025-10-11 18:17:10,862 - INFO - Processing file: ben_20240918_008_deduplicated.txt
+2025-10-11 18:17:10,901 - INFO - [SUCCESS] Created 1 chunks from ben_20240918_008_deduplicated.txt
+2025-10-11 18:17:10,906 - INFO - Processing file: cora_20240918_010_deduplicated.txt
+2025-10-11 18:17:10,940 - INFO - [SUCCESS] Created 1 chunks from cora_20240918_010_deduplicated.txt
+2025-10-11 18:17:10,943 - INFO - Processing file: eggsmart_20240715_004_deduplicated.txt
+2025-10-11 18:17:10,975 - INFO - [SUCCESS] Created 1 chunks from eggsmart_20240715_004_deduplicated.txt
+2025-10-11 18:17:10,980 - INFO - Processing file: eggspectation_20240715_002_deduplicated.txt
+2025-10-11 18:17:11,028 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_002_deduplicated.txt
+2025-10-11 18:17:11,036 - INFO - Processing file: eggspectation_20240715_010_deduplicated.txt
+2025-10-11 18:17:11,077 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_010_deduplicated.txt
+2025-10-11 18:17:11,082 - INFO - Processing file: eggspectation_20240918_007_deduplicated.txt
+2025-10-11 18:17:11,121 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240918_007_deduplicated.txt
+2025-10-11 18:17:11,125 - INFO - Processing file: fiveguys_20240918_016_deduplicated.txt
+2025-10-11 18:17:11,178 - INFO - [SUCCESS] Created 1 chunks from fiveguys_20240918_016_deduplicated.txt
+2025-10-11 18:17:11,186 - INFO - Processing file: hoteltoronto_20240715_008_deduplicated.txt
+2025-10-11 18:17:11,226 - INFO - [SUCCESS] Created 1 chunks from hoteltoronto_20240715_008_deduplicated.txt
+2025-10-11 18:17:11,232 - INFO - Processing file: l3b_20240918_014_deduplicated.txt
+2025-10-11 18:17:11,288 - INFO - [SUCCESS] Created 1 chunks from l3b_20240918_014_deduplicated.txt
+2025-10-11 18:17:11,293 - INFO - Processing file: lacocina_20240528_001_deduplicated.txt
+2025-10-11 18:17:11,341 - INFO - [SUCCESS] Created 1 chunks from lacocina_20240528_001_deduplicated.txt
+2025-10-11 18:17:11,344 - INFO - Processing file: oldnavy_20240918_012_deduplicated.txt
+2025-10-11 18:17:11,400 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_012_deduplicated.txt
+2025-10-11 18:17:11,407 - INFO - Processing file: oldnavy_20240918_013_deduplicated.txt
+2025-10-11 18:17:11,453 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_013_deduplicated.txt
+2025-10-11 18:17:11,460 - INFO - Processing file: patisserie_20240918_005_deduplicated.txt
+2025-10-11 18:17:11,512 - INFO - [SUCCESS] Created 1 chunks from patisserie_20240918_005_deduplicated.txt
+2025-10-11 18:17:11,521 - INFO - Processing file: pizzeria_20240918_018_deduplicated.txt
+2025-10-11 18:17:11,570 - INFO - [SUCCESS] Created 1 chunks from pizzeria_20240918_018_deduplicated.txt
+2025-10-11 18:17:11,574 - INFO - Processing file: tablerock_20240715_009_deduplicated.txt
+2025-10-11 18:17:11,617 - INFO - [SUCCESS] Created 1 chunks from tablerock_20240715_009_deduplicated.txt
+2025-10-11 18:17:11,623 - INFO - Processing file: thelodge_20240715_001_deduplicated.txt
+2025-10-11 18:17:11,670 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_001_deduplicated.txt
+2025-10-11 18:17:11,675 - INFO - Processing file: thelodge_20240715_006_deduplicated.txt
+2025-10-11 18:17:11,718 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_006_deduplicated.txt
+2025-10-11 18:17:11,726 - INFO - Processing file: timhorton_20240918_011_deduplicated.txt
+2025-10-11 18:17:11,776 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_011_deduplicated.txt
+2025-10-11 18:17:11,780 - INFO - Processing file: timhorton_20240918_015_deduplicated.txt
+2025-10-11 18:17:11,827 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_015_deduplicated.txt
+2025-10-11 18:17:11,834 - INFO - Processing file: uniqlo_20240715_deduplicated.txt
+2025-10-11 18:17:11,906 - INFO - [SUCCESS] Created 1 chunks from uniqlo_20240715_deduplicated.txt
+2025-10-11 18:17:18,068 - INFO - Chunking report saved to: logs/chunking_report.csv
+2025-10-11 18:17:18,073 - INFO - 
+============================================================
+2025-10-11 18:17:18,074 - INFO - CHUNKING SUMMARY
+2025-10-11 18:17:18,075 - INFO - ============================================================
+2025-10-11 18:17:18,076 - INFO - Strategy: recursive
+2025-10-11 18:17:18,077 - INFO - Total documents processed: 22
+2025-10-11 18:17:18,078 - INFO - Total chunks created: 23
+2025-10-11 18:17:18,079 - INFO - Average chunks per document: 1.0
+2025-10-11 18:17:18,080 - INFO - 
+Chunk Size Statistics:
+2025-10-11 18:17:18,081 - INFO -   Mean: 472 tokens
+2025-10-11 18:17:18,082 - INFO -   Median: 433 tokens
+2025-10-11 18:17:18,083 - INFO -   Std Dev: 294 tokens
+2025-10-11 18:17:18,084 - INFO - 
+Quality Issues:
+2025-10-11 18:17:18,086 - INFO -   Chunks too small (<100): 0
+2025-10-11 18:17:18,087 - INFO -   Chunks too large (>1000): 1
+2025-10-11 18:17:18,089 - INFO - ============================================================
+

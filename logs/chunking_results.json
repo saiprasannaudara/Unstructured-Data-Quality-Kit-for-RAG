@@ -1,0 +1,39 @@
+{
+  "status": "success",
+  "statistics": {
+    "total_documents": 22,
+    "total_chunks": 23,
+    "avg_chunks_per_doc": 1.0454545454545454,
+    "avg_chunk_size": [
+      866,
+      756,
+      710,
+      202,
+      244,
+      229,
+      189,
+      183,
+      536,
+      1366,
+      220,
+      515,
+      433,
+      723,
+      840,
+      375,
+      496,
+      137,
+      248,
+      172,
+      372,
+      457,
+      591
+    ],
+    "chunks_too_small": 0,
+    "chunks_too_large": 1,
+    "chunk_size_distribution": [],
+    "mean_chunk_size": 472,
+    "median_chunk_size": 433,
+    "std_chunk_size": 294
+  }
+}

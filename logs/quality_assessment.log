@@ -1,0 +1,560 @@
+2025-10-06 20:26:39,808 - INFO - Starting quality assessment from data\cleaned
+2025-10-06 20:26:39,812 - INFO - Found 22 files to assess
+2025-10-06 20:26:39,813 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-06 20:26:44,365 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-06 20:26:44,417 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-06 20:26:44,441 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-06 20:26:44,474 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-06 20:26:44,511 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-06 20:26:44,550 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-06 20:26:44,582 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-06 20:26:44,642 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-06 20:26:44,735 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-06 20:26:44,770 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-06 20:26:44,814 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-06 20:26:44,851 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-06 20:26:44,935 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-06 20:26:45,005 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-06 20:26:45,039 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-06 20:26:45,082 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-06 20:26:45,112 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-06 20:26:45,140 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-06 20:26:45,167 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-06 20:26:45,209 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-06 20:26:45,262 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-06 20:26:45,300 - INFO - 
+============================================================
+2025-10-06 20:26:45,302 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-06 20:26:45,303 - INFO - ============================================================
+2025-10-06 20:26:45,304 - INFO - Total files assessed: 22
+2025-10-06 20:26:45,317 - INFO - Low quality (<0.5): 0
+2025-10-06 20:26:45,318 - INFO - Average quality score: 0.654
+2025-10-06 20:26:45,319 - INFO - Score range: 0.518 - 0.730
+2025-10-06 20:26:45,321 - INFO - 
+Category Distribution:
+2025-10-06 20:26:45,322 - INFO -   good: 13
+2025-10-06 20:26:45,322 - INFO -   acceptable: 9
+2025-10-06 20:26:45,323 - INFO - ============================================================
+
+2025-10-06 20:26:45,386 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-06 20:30:40,215 - INFO - Starting quality assessment from data\cleaned
+2025-10-06 20:30:40,218 - INFO - Found 22 files to assess
+2025-10-06 20:30:40,219 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-06 20:30:44,812 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-06 20:30:44,864 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-06 20:30:44,888 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-06 20:30:44,922 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-06 20:30:44,961 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-06 20:30:44,994 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-06 20:30:45,024 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-06 20:30:45,079 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-06 20:30:45,169 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-06 20:30:45,207 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-06 20:30:45,253 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-06 20:30:45,289 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-06 20:30:45,366 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-06 20:30:45,436 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-06 20:30:45,466 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-06 20:30:45,509 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-06 20:30:45,536 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-06 20:30:45,563 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-06 20:30:45,587 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-06 20:30:45,629 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-06 20:30:45,682 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-06 20:30:45,715 - INFO - 
+============================================================
+2025-10-06 20:30:45,717 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-06 20:30:45,718 - INFO - ============================================================
+2025-10-06 20:30:45,719 - INFO - Total files assessed: 22
+2025-10-06 20:30:45,733 - INFO - Low quality (<0.5): 0
+2025-10-06 20:30:45,735 - INFO - Average quality score: 0.654
+2025-10-06 20:30:45,735 - INFO - Score range: 0.518 - 0.730
+2025-10-06 20:30:45,737 - INFO - 
+Category Distribution:
+2025-10-06 20:30:45,738 - INFO -   good: 13
+2025-10-06 20:30:45,739 - INFO -   acceptable: 9
+2025-10-06 20:30:45,740 - INFO - ============================================================
+
+2025-10-06 20:30:45,835 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-06 20:35:00,128 - INFO - Starting quality assessment from data\cleaned
+2025-10-06 20:35:00,131 - INFO - Found 22 files to assess
+2025-10-06 20:35:00,131 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-06 20:35:04,485 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-06 20:35:04,532 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-06 20:35:04,556 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-06 20:35:04,590 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-06 20:35:04,625 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-06 20:35:04,657 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-06 20:35:04,687 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-06 20:35:04,746 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-06 20:35:04,835 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-06 20:35:04,870 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-06 20:35:04,915 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-06 20:35:04,952 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-06 20:35:05,027 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-06 20:35:05,098 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-06 20:35:05,132 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-06 20:35:05,177 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-06 20:35:05,206 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-06 20:35:05,234 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-06 20:35:05,259 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-06 20:35:05,299 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-06 20:35:05,346 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-06 20:35:05,384 - INFO - 
+============================================================
+2025-10-06 20:35:05,385 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-06 20:35:05,386 - INFO - ============================================================
+2025-10-06 20:35:05,387 - INFO - Total files assessed: 22
+2025-10-06 20:35:05,401 - INFO - Low quality (<0.5): 0
+2025-10-06 20:35:05,402 - INFO - Average quality score: 0.654
+2025-10-06 20:35:05,403 - INFO - Score range: 0.518 - 0.730
+2025-10-06 20:35:05,405 - INFO - 
+Category Distribution:
+2025-10-06 20:35:05,406 - INFO -   good: 13
+2025-10-06 20:35:05,408 - INFO -   acceptable: 9
+2025-10-06 20:35:05,409 - INFO - ============================================================
+
+2025-10-06 20:35:05,428 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-06 20:37:14,529 - INFO - Starting quality assessment from data\cleaned
+2025-10-06 20:37:14,532 - INFO - Found 22 files to assess
+2025-10-06 20:37:14,533 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-06 20:37:18,941 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-06 20:37:18,992 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-06 20:37:19,015 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-06 20:37:19,048 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-06 20:37:19,082 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-06 20:37:19,115 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-06 20:37:19,147 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-06 20:37:19,211 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-06 20:37:19,307 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-06 20:37:19,345 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-06 20:37:19,403 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-06 20:37:19,452 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-06 20:37:19,553 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-06 20:37:19,659 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-06 20:37:19,707 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-06 20:37:19,754 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-06 20:37:19,785 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-06 20:37:19,812 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-06 20:37:19,846 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-06 20:37:19,900 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-06 20:37:19,960 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-06 20:37:20,020 - INFO - 
+============================================================
+2025-10-06 20:37:20,022 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-06 20:37:20,025 - INFO - ============================================================
+2025-10-06 20:37:20,027 - INFO - Total files assessed: 22
+2025-10-06 20:37:20,046 - INFO - Low quality (<0.5): 0
+2025-10-06 20:37:20,049 - INFO - Average quality score: 0.654
+2025-10-06 20:37:20,051 - INFO - Score range: 0.518 - 0.730
+2025-10-06 20:37:20,053 - INFO - 
+Category Distribution:
+2025-10-06 20:37:20,055 - INFO -   good: 13
+2025-10-06 20:37:20,056 - INFO -   acceptable: 9
+2025-10-06 20:37:20,057 - INFO - ============================================================
+
+2025-10-06 20:37:20,084 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 13:56:46,783 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 13:56:46,788 - INFO - Found 22 files to assess
+2025-10-07 13:56:46,789 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 13:56:52,528 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 13:56:52,686 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 13:56:52,983 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 13:56:53,102 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 13:56:53,225 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 13:56:53,348 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 13:56:53,496 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 13:56:53,637 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 13:56:53,825 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 13:56:53,937 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 13:56:54,184 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 13:56:54,287 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 13:56:54,466 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 13:56:54,623 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 13:56:54,735 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 13:56:54,858 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 13:56:54,938 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 13:56:55,018 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 13:56:55,109 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 13:56:55,220 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 13:56:55,334 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 13:56:55,427 - INFO - 
+============================================================
+2025-10-07 13:56:55,428 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 13:56:55,429 - INFO - ============================================================
+2025-10-07 13:56:55,431 - INFO - Total files assessed: 22
+2025-10-07 13:56:55,467 - INFO - Low quality (<0.5): 0
+2025-10-07 13:56:55,477 - INFO - Average quality score: 0.654
+2025-10-07 13:56:55,478 - INFO - Score range: 0.518 - 0.730
+2025-10-07 13:56:55,480 - INFO - 
+Category Distribution:
+2025-10-07 13:56:55,491 - INFO -   good: 13
+2025-10-07 13:56:55,493 - INFO -   acceptable: 9
+2025-10-07 13:56:55,495 - INFO - ============================================================
+
+2025-10-07 13:56:55,544 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 14:05:11,648 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 14:05:11,650 - INFO - Found 22 files to assess
+2025-10-07 14:05:11,651 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 14:05:17,099 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 14:05:17,171 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 14:05:17,207 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 14:05:17,255 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 14:05:17,334 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 14:05:17,397 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 14:05:17,457 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 14:05:17,556 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 14:05:17,691 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 14:05:17,753 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 14:05:17,820 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 14:05:17,868 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 14:05:17,975 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 14:05:18,079 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 14:05:18,130 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 14:05:18,194 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 14:05:18,239 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 14:05:18,474 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 14:05:18,543 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 14:05:18,610 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 14:05:18,699 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 14:05:18,742 - INFO - 
+============================================================
+2025-10-07 14:05:18,743 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 14:05:18,744 - INFO - ============================================================
+2025-10-07 14:05:18,746 - INFO - Total files assessed: 22
+2025-10-07 14:05:18,772 - INFO - Low quality (<0.5): 0
+2025-10-07 14:05:18,774 - INFO - Average quality score: 0.654
+2025-10-07 14:05:18,776 - INFO - Score range: 0.518 - 0.730
+2025-10-07 14:05:18,779 - INFO - 
+Category Distribution:
+2025-10-07 14:05:18,786 - INFO -   good: 13
+2025-10-07 14:05:18,790 - INFO -   acceptable: 9
+2025-10-07 14:05:18,792 - INFO - ============================================================
+
+2025-10-07 14:05:18,823 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 19:20:15,179 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 19:20:15,184 - INFO - Found 22 files to assess
+2025-10-07 19:20:15,185 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 19:20:19,517 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 19:20:19,574 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 19:20:19,599 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 19:20:19,637 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 19:20:19,675 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 19:20:19,710 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 19:20:19,743 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 19:20:19,802 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 19:20:19,897 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 19:20:19,934 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 19:20:19,980 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 19:20:20,020 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 19:20:20,092 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 19:20:20,160 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 19:20:20,193 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 19:20:20,242 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 19:20:20,273 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 19:20:20,302 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 19:20:20,329 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 19:20:20,516 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 19:20:20,576 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 19:20:20,609 - INFO - 
+============================================================
+2025-10-07 19:20:20,610 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 19:20:20,611 - INFO - ============================================================
+2025-10-07 19:20:20,612 - INFO - Total files assessed: 22
+2025-10-07 19:20:20,625 - INFO - Low quality (<0.5): 0
+2025-10-07 19:20:20,626 - INFO - Average quality score: 0.654
+2025-10-07 19:20:20,627 - INFO - Score range: 0.518 - 0.730
+2025-10-07 19:20:20,629 - INFO - 
+Category Distribution:
+2025-10-07 19:20:20,630 - INFO -   good: 13
+2025-10-07 19:20:20,631 - INFO -   acceptable: 9
+2025-10-07 19:20:20,632 - INFO - ============================================================
+
+2025-10-07 19:20:20,693 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 19:32:38,830 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 19:32:38,832 - INFO - Found 22 files to assess
+2025-10-07 19:32:38,833 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 19:32:43,133 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 19:32:43,187 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 19:32:43,212 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 19:32:43,247 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 19:32:43,283 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 19:32:43,320 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 19:32:43,357 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 19:32:43,414 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 19:32:43,503 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 19:32:43,537 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 19:32:43,578 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 19:32:43,614 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 19:32:43,692 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 19:32:43,761 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 19:32:43,800 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 19:32:43,844 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 19:32:43,874 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 19:32:43,901 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 19:32:43,926 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 19:32:43,970 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 19:32:44,019 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 19:32:44,054 - INFO - 
+============================================================
+2025-10-07 19:32:44,056 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 19:32:44,057 - INFO - ============================================================
+2025-10-07 19:32:44,058 - INFO - Total files assessed: 22
+2025-10-07 19:32:44,073 - INFO - Low quality (<0.5): 0
+2025-10-07 19:32:44,074 - INFO - Average quality score: 0.654
+2025-10-07 19:32:44,075 - INFO - Score range: 0.518 - 0.730
+2025-10-07 19:32:44,076 - INFO - 
+Category Distribution:
+2025-10-07 19:32:44,077 - INFO -   good: 13
+2025-10-07 19:32:44,078 - INFO -   acceptable: 9
+2025-10-07 19:32:44,079 - INFO - ============================================================
+
+2025-10-07 19:32:44,097 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 19:52:37,823 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 19:52:37,825 - INFO - Found 22 files to assess
+2025-10-07 19:52:37,826 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 19:52:42,056 - INFO - ✓ Quality Score: 0.654 (good) - 20240909_Hilton_cleaned.txt
+2025-10-07 19:52:42,057 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 19:52:42,093 - INFO - ✓ Quality Score: 0.671 (good) - allomoncoco_20240918_009_cleaned.txt
+2025-10-07 19:52:42,095 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 19:52:42,106 - INFO - ✓ Quality Score: 0.677 (good) - ben_20240918_008_cleaned.txt
+2025-10-07 19:52:42,107 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 19:52:42,130 - INFO - ✓ Quality Score: 0.687 (good) - cora_20240918_010_cleaned.txt
+2025-10-07 19:52:42,131 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 19:52:42,158 - INFO - ✓ Quality Score: 0.662 (good) - eggsmart_20240715_004_cleaned.txt
+2025-10-07 19:52:42,159 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 19:52:42,182 - INFO - ✓ Quality Score: 0.631 (acceptable) - eggspectation_20240715_002_cleaned.txt
+2025-10-07 19:52:42,185 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 19:52:42,206 - INFO - ✓ Quality Score: 0.677 (good) - eggspectation_20240715_010_cleaned.txt
+2025-10-07 19:52:42,207 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 19:52:42,253 - INFO - ✓ Quality Score: 0.590 (acceptable) - eggspectation_20240918_007_cleaned.txt
+2025-10-07 19:52:42,254 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 19:52:42,337 - INFO - ✓ Quality Score: 0.638 (acceptable) - fiveguys_20240918_016_cleaned.txt
+2025-10-07 19:52:42,338 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 19:52:42,355 - INFO - ✓ Quality Score: 0.626 (acceptable) - hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 19:52:42,357 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 19:52:42,390 - INFO - ✓ Quality Score: 0.683 (good) - l3b_20240918_014_cleaned.txt
+2025-10-07 19:52:42,391 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 19:52:42,413 - INFO - ✓ Quality Score: 0.518 (acceptable) - lacocina_20240528_001_cleaned.txt
+2025-10-07 19:52:42,414 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 19:52:42,475 - INFO - ✓ Quality Score: 0.730 (good) - oldnavy_20240918_012_cleaned.txt
+2025-10-07 19:52:42,476 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 19:52:42,534 - INFO - ✓ Quality Score: 0.676 (good) - oldnavy_20240918_013_cleaned.txt
+2025-10-07 19:52:42,536 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 19:52:42,552 - INFO - ✓ Quality Score: 0.725 (good) - patisserie_20240918_005_cleaned.txt
+2025-10-07 19:52:42,553 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 19:52:42,587 - INFO - ✓ Quality Score: 0.628 (acceptable) - pizzeria_20240918_018_cleaned.txt
+2025-10-07 19:52:42,588 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 19:52:42,605 - INFO - ✓ Quality Score: 0.598 (acceptable) - tablerock_20240715_009_cleaned.txt
+2025-10-07 19:52:42,606 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 19:52:42,621 - INFO - ✓ Quality Score: 0.694 (good) - thelodge_20240715_001_cleaned.txt
+2025-10-07 19:52:42,622 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 19:52:42,634 - INFO - ✓ Quality Score: 0.702 (good) - thelodge_20240715_006_cleaned.txt
+2025-10-07 19:52:42,635 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 19:52:42,665 - INFO - ✓ Quality Score: 0.639 (acceptable) - timhorton_20240918_011_cleaned.txt
+2025-10-07 19:52:42,666 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 19:52:42,702 - INFO - ✓ Quality Score: 0.656 (good) - timhorton_20240918_015_cleaned.txt
+2025-10-07 19:52:42,704 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 19:52:42,725 - INFO - ✓ Quality Score: 0.627 (acceptable) - uniqlo_20240715_cleaned.txt
+2025-10-07 19:52:42,726 - INFO - 
+============================================================
+2025-10-07 19:52:42,727 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 19:52:42,728 - INFO - ============================================================
+2025-10-07 19:52:42,729 - INFO - Total files assessed: 22
+2025-10-07 19:52:42,730 - INFO - High quality (≥0.5): 22
+2025-10-07 19:52:42,731 - INFO - Low quality (<0.5): 0
+2025-10-07 19:52:42,733 - INFO - Average quality score: 0.654
+2025-10-07 19:52:42,735 - INFO - Score range: 0.518 - 0.730
+2025-10-07 19:52:42,737 - INFO - 
+Category Distribution:
+2025-10-07 19:52:42,738 - INFO -   good: 13
+2025-10-07 19:52:42,739 - INFO -   acceptable: 9
+2025-10-07 19:52:42,740 - INFO - ============================================================
+
+2025-10-07 19:52:42,759 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 20:27:02,924 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 20:27:02,926 - INFO - Found 22 files to assess
+2025-10-07 20:27:02,927 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 20:27:07,269 - INFO - ✓ Quality Score: 0.654 (good) - 20240909_Hilton_cleaned.txt
+2025-10-07 20:27:07,270 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 20:27:07,309 - INFO - ✓ Quality Score: 0.671 (good) - allomoncoco_20240918_009_cleaned.txt
+2025-10-07 20:27:07,310 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 20:27:07,322 - INFO - ✓ Quality Score: 0.677 (good) - ben_20240918_008_cleaned.txt
+2025-10-07 20:27:07,323 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 20:27:07,344 - INFO - ✓ Quality Score: 0.687 (good) - cora_20240918_010_cleaned.txt
+2025-10-07 20:27:07,346 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 20:27:07,379 - INFO - ✓ Quality Score: 0.662 (good) - eggsmart_20240715_004_cleaned.txt
+2025-10-07 20:27:07,381 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 20:27:07,403 - INFO - ✓ Quality Score: 0.631 (acceptable) - eggspectation_20240715_002_cleaned.txt
+2025-10-07 20:27:07,405 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 20:27:07,428 - INFO - ✓ Quality Score: 0.677 (good) - eggspectation_20240715_010_cleaned.txt
+2025-10-07 20:27:07,429 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 20:27:07,478 - INFO - ✓ Quality Score: 0.590 (acceptable) - eggspectation_20240918_007_cleaned.txt
+2025-10-07 20:27:07,480 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 20:27:07,558 - INFO - ✓ Quality Score: 0.638 (acceptable) - fiveguys_20240918_016_cleaned.txt
+2025-10-07 20:27:07,560 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 20:27:07,579 - INFO - ✓ Quality Score: 0.626 (acceptable) - hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 20:27:07,580 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 20:27:07,609 - INFO - ✓ Quality Score: 0.683 (good) - l3b_20240918_014_cleaned.txt
+2025-10-07 20:27:07,610 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 20:27:07,635 - INFO - ✓ Quality Score: 0.518 (acceptable) - lacocina_20240528_001_cleaned.txt
+2025-10-07 20:27:07,636 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 20:27:07,694 - INFO - ✓ Quality Score: 0.730 (good) - oldnavy_20240918_012_cleaned.txt
+2025-10-07 20:27:07,695 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 20:27:07,750 - INFO - ✓ Quality Score: 0.676 (good) - oldnavy_20240918_013_cleaned.txt
+2025-10-07 20:27:07,751 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 20:27:07,769 - INFO - ✓ Quality Score: 0.725 (good) - patisserie_20240918_005_cleaned.txt
+2025-10-07 20:27:07,770 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 20:27:07,802 - INFO - ✓ Quality Score: 0.628 (acceptable) - pizzeria_20240918_018_cleaned.txt
+2025-10-07 20:27:07,803 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 20:27:07,820 - INFO - ✓ Quality Score: 0.598 (acceptable) - tablerock_20240715_009_cleaned.txt
+2025-10-07 20:27:07,821 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 20:27:07,835 - INFO - ✓ Quality Score: 0.694 (good) - thelodge_20240715_001_cleaned.txt
+2025-10-07 20:27:07,836 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 20:27:07,849 - INFO - ✓ Quality Score: 0.702 (good) - thelodge_20240715_006_cleaned.txt
+2025-10-07 20:27:07,850 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 20:27:07,879 - INFO - ✓ Quality Score: 0.639 (acceptable) - timhorton_20240918_011_cleaned.txt
+2025-10-07 20:27:07,881 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 20:27:07,917 - INFO - ✓ Quality Score: 0.656 (good) - timhorton_20240918_015_cleaned.txt
+2025-10-07 20:27:07,918 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 20:27:07,938 - INFO - ✓ Quality Score: 0.627 (acceptable) - uniqlo_20240715_cleaned.txt
+2025-10-07 20:27:07,939 - INFO - 
+============================================================
+2025-10-07 20:27:07,941 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 20:27:07,942 - INFO - ============================================================
+2025-10-07 20:27:07,943 - INFO - Total files assessed: 22
+2025-10-07 20:27:07,944 - INFO - High quality (≥0.5): 22
+2025-10-07 20:27:07,946 - INFO - Low quality (<0.5): 0
+2025-10-07 20:27:07,947 - INFO - Average quality score: 0.654
+2025-10-07 20:27:07,948 - INFO - Score range: 0.518 - 0.730
+2025-10-07 20:27:07,950 - INFO - 
+Category Distribution:
+2025-10-07 20:27:07,951 - INFO -   good: 13
+2025-10-07 20:27:07,952 - INFO -   acceptable: 9
+2025-10-07 20:27:07,953 - INFO - ============================================================
+
+2025-10-07 20:27:07,973 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 20:39:09,870 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 20:39:09,873 - INFO - Found 22 files to assess
+2025-10-07 20:39:09,874 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 20:39:14,364 - INFO - ✓ Quality Score: 0.654 (good) - 20240909_Hilton_cleaned.txt
+2025-10-07 20:39:14,365 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 20:39:14,401 - INFO - ✓ Quality Score: 0.671 (good) - allomoncoco_20240918_009_cleaned.txt
+2025-10-07 20:39:14,402 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 20:39:14,414 - INFO - ✓ Quality Score: 0.677 (good) - ben_20240918_008_cleaned.txt
+2025-10-07 20:39:14,415 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 20:39:14,436 - INFO - ✓ Quality Score: 0.687 (good) - cora_20240918_010_cleaned.txt
+2025-10-07 20:39:14,437 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 20:39:14,463 - INFO - ✓ Quality Score: 0.662 (good) - eggsmart_20240715_004_cleaned.txt
+2025-10-07 20:39:14,464 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 20:39:14,489 - INFO - ✓ Quality Score: 0.631 (acceptable) - eggspectation_20240715_002_cleaned.txt
+2025-10-07 20:39:14,491 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 20:39:14,512 - INFO - ✓ Quality Score: 0.677 (good) - eggspectation_20240715_010_cleaned.txt
+2025-10-07 20:39:14,514 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 20:39:14,559 - INFO - ✓ Quality Score: 0.590 (acceptable) - eggspectation_20240918_007_cleaned.txt
+2025-10-07 20:39:14,560 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 20:39:14,638 - INFO - ✓ Quality Score: 0.638 (acceptable) - fiveguys_20240918_016_cleaned.txt
+2025-10-07 20:39:14,639 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 20:39:14,658 - INFO - ✓ Quality Score: 0.626 (acceptable) - hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 20:39:14,659 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 20:39:14,694 - INFO - ✓ Quality Score: 0.683 (good) - l3b_20240918_014_cleaned.txt
+2025-10-07 20:39:14,695 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 20:39:14,721 - INFO - ✓ Quality Score: 0.518 (acceptable) - lacocina_20240528_001_cleaned.txt
+2025-10-07 20:39:14,722 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 20:39:14,784 - INFO - ✓ Quality Score: 0.730 (good) - oldnavy_20240918_012_cleaned.txt
+2025-10-07 20:39:14,785 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 20:39:14,843 - INFO - ✓ Quality Score: 0.676 (good) - oldnavy_20240918_013_cleaned.txt
+2025-10-07 20:39:14,845 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 20:39:14,861 - INFO - ✓ Quality Score: 0.725 (good) - patisserie_20240918_005_cleaned.txt
+2025-10-07 20:39:14,862 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 20:39:14,892 - INFO - ✓ Quality Score: 0.628 (acceptable) - pizzeria_20240918_018_cleaned.txt
+2025-10-07 20:39:14,894 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 20:39:14,913 - INFO - ✓ Quality Score: 0.598 (acceptable) - tablerock_20240715_009_cleaned.txt
+2025-10-07 20:39:14,915 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 20:39:14,931 - INFO - ✓ Quality Score: 0.694 (good) - thelodge_20240715_001_cleaned.txt
+2025-10-07 20:39:14,932 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 20:39:14,944 - INFO - ✓ Quality Score: 0.702 (good) - thelodge_20240715_006_cleaned.txt
+2025-10-07 20:39:14,947 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 20:39:14,977 - INFO - ✓ Quality Score: 0.639 (acceptable) - timhorton_20240918_011_cleaned.txt
+2025-10-07 20:39:14,980 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 20:39:15,017 - INFO - ✓ Quality Score: 0.656 (good) - timhorton_20240918_015_cleaned.txt
+2025-10-07 20:39:15,019 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 20:39:15,037 - INFO - ✓ Quality Score: 0.627 (acceptable) - uniqlo_20240715_cleaned.txt
+2025-10-07 20:39:15,039 - INFO - 
+============================================================
+2025-10-07 20:39:15,040 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 20:39:15,041 - INFO - ============================================================
+2025-10-07 20:39:15,041 - INFO - Total files assessed: 22
+2025-10-07 20:39:15,042 - INFO - High quality (≥0.5): 22
+2025-10-07 20:39:15,043 - INFO - Low quality (<0.5): 0
+2025-10-07 20:39:15,045 - INFO - Average quality score: 0.654
+2025-10-07 20:39:15,046 - INFO - Score range: 0.518 - 0.730
+2025-10-07 20:39:15,048 - INFO - 
+Category Distribution:
+2025-10-07 20:39:15,049 - INFO -   good: 13
+2025-10-07 20:39:15,051 - INFO -   acceptable: 9
+2025-10-07 20:39:15,052 - INFO - ============================================================
+
+2025-10-07 20:39:15,073 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-10-07 20:47:28,987 - INFO - Starting quality assessment from data\cleaned
+2025-10-07 20:47:28,989 - INFO - Found 22 files to assess
+2025-10-07 20:47:28,990 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-10-07 20:47:33,172 - INFO - ✓ Quality Score: 0.654 (good) - 20240909_Hilton_cleaned.txt
+2025-10-07 20:47:33,174 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-10-07 20:47:33,212 - INFO - ✓ Quality Score: 0.671 (good) - allomoncoco_20240918_009_cleaned.txt
+2025-10-07 20:47:33,213 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-10-07 20:47:33,225 - INFO - ✓ Quality Score: 0.677 (good) - ben_20240918_008_cleaned.txt
+2025-10-07 20:47:33,226 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-10-07 20:47:33,248 - INFO - ✓ Quality Score: 0.687 (good) - cora_20240918_010_cleaned.txt
+2025-10-07 20:47:33,249 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-10-07 20:47:33,276 - INFO - ✓ Quality Score: 0.662 (good) - eggsmart_20240715_004_cleaned.txt
+2025-10-07 20:47:33,277 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-10-07 20:47:33,300 - INFO - ✓ Quality Score: 0.631 (acceptable) - eggspectation_20240715_002_cleaned.txt
+2025-10-07 20:47:33,302 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-10-07 20:47:33,324 - INFO - ✓ Quality Score: 0.677 (good) - eggspectation_20240715_010_cleaned.txt
+2025-10-07 20:47:33,325 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-10-07 20:47:33,369 - INFO - ✓ Quality Score: 0.590 (acceptable) - eggspectation_20240918_007_cleaned.txt
+2025-10-07 20:47:33,371 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-10-07 20:47:33,443 - INFO - ✓ Quality Score: 0.638 (acceptable) - fiveguys_20240918_016_cleaned.txt
+2025-10-07 20:47:33,444 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 20:47:33,463 - INFO - ✓ Quality Score: 0.626 (acceptable) - hoteltoronto_20240715_008_cleaned.txt
+2025-10-07 20:47:33,464 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-10-07 20:47:33,495 - INFO - ✓ Quality Score: 0.683 (good) - l3b_20240918_014_cleaned.txt
+2025-10-07 20:47:33,496 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-10-07 20:47:33,523 - INFO - ✓ Quality Score: 0.518 (acceptable) - lacocina_20240528_001_cleaned.txt
+2025-10-07 20:47:33,525 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-10-07 20:47:33,584 - INFO - ✓ Quality Score: 0.730 (good) - oldnavy_20240918_012_cleaned.txt
+2025-10-07 20:47:33,585 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-10-07 20:47:33,644 - INFO - ✓ Quality Score: 0.676 (good) - oldnavy_20240918_013_cleaned.txt
+2025-10-07 20:47:33,645 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-10-07 20:47:33,664 - INFO - ✓ Quality Score: 0.725 (good) - patisserie_20240918_005_cleaned.txt
+2025-10-07 20:47:33,665 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-10-07 20:47:33,697 - INFO - ✓ Quality Score: 0.628 (acceptable) - pizzeria_20240918_018_cleaned.txt
+2025-10-07 20:47:33,699 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-10-07 20:47:33,717 - INFO - ✓ Quality Score: 0.598 (acceptable) - tablerock_20240715_009_cleaned.txt
+2025-10-07 20:47:33,718 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-10-07 20:47:33,733 - INFO - ✓ Quality Score: 0.694 (good) - thelodge_20240715_001_cleaned.txt
+2025-10-07 20:47:33,735 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-10-07 20:47:33,750 - INFO - ✓ Quality Score: 0.702 (good) - thelodge_20240715_006_cleaned.txt
+2025-10-07 20:47:33,751 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-10-07 20:47:33,781 - INFO - ✓ Quality Score: 0.639 (acceptable) - timhorton_20240918_011_cleaned.txt
+2025-10-07 20:47:33,782 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-10-07 20:47:33,816 - INFO - ✓ Quality Score: 0.656 (good) - timhorton_20240918_015_cleaned.txt
+2025-10-07 20:47:33,817 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-10-07 20:47:33,837 - INFO - ✓ Quality Score: 0.627 (acceptable) - uniqlo_20240715_cleaned.txt
+2025-10-07 20:47:33,838 - INFO - 
+============================================================
+2025-10-07 20:47:33,840 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-10-07 20:47:33,841 - INFO - ============================================================
+2025-10-07 20:47:33,842 - INFO - Total files assessed: 22
+2025-10-07 20:47:33,843 - INFO - High quality (≥0.5): 22
+2025-10-07 20:47:33,844 - INFO - Low quality (<0.5): 0
+2025-10-07 20:47:33,845 - INFO - Average quality score: 0.654
+2025-10-07 20:47:33,846 - INFO - Score range: 0.518 - 0.730
+2025-10-07 20:47:33,847 - INFO - 
+Category Distribution:
+2025-10-07 20:47:33,849 - INFO -   good: 13
+2025-10-07 20:47:33,850 - INFO -   acceptable: 9
+2025-10-07 20:47:33,851 - INFO - ============================================================
+
+2025-10-07 20:47:33,878 - INFO - Quality report saved to: logs/quality_assessment_report.csv

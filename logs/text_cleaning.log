@@ -1,0 +1,80 @@
+2025-10-06 14:27:37,326 - INFO - Starting batch cleaning from data\processed
+2025-10-06 14:27:37,329 - INFO - Found 22 files to clean
+2025-10-06 14:27:37,330 - INFO - Processing file: 20240909_Hilton_processed.txt
+2025-10-06 14:27:37,369 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:40,755 - INFO - Cleaning complete. Removed 290 characters (7.17%)
+2025-10-06 14:27:40,782 - INFO - Processing file: allomoncoco_20240918_009_processed.txt
+2025-10-06 14:27:40,844 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:41,110 - INFO - Cleaning complete. Removed -2 characters (-0.18%)
+2025-10-06 14:27:41,132 - INFO - Processing file: ben_20240918_008_processed.txt
+2025-10-06 14:27:41,203 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:41,461 - INFO - Cleaning complete. Removed 360 characters (56.69%)
+2025-10-06 14:27:41,482 - INFO - Processing file: cora_20240918_010_processed.txt
+2025-10-06 14:27:41,527 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:41,654 - INFO - Cleaning complete. Removed -4 characters (-0.84%)
+2025-10-06 14:27:41,684 - INFO - Processing file: eggsmart_20240715_004_processed.txt
+2025-10-06 14:27:41,735 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:41,804 - INFO - Cleaning complete. Removed -7 characters (-1.65%)
+2025-10-06 14:27:41,825 - INFO - Processing file: eggspectation_20240715_002_processed.txt
+2025-10-06 14:27:41,894 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:41,953 - INFO - Cleaning complete. Removed -4 characters (-0.95%)
+2025-10-06 14:27:41,985 - INFO - Processing file: eggspectation_20240715_010_processed.txt
+2025-10-06 14:27:42,048 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:42,085 - INFO - Cleaning complete. Removed 5 characters (1.19%)
+2025-10-06 14:27:42,303 - INFO - Processing file: eggspectation_20240918_007_processed.txt
+2025-10-06 14:27:42,371 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:42,483 - INFO - Cleaning complete. Removed -20 characters (-2.5%)
+2025-10-06 14:27:42,533 - INFO - Processing file: fiveguys_20240918_016_processed.txt
+2025-10-06 14:27:42,578 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:42,872 - INFO - Cleaning complete. Removed 3 characters (0.15%)
+2025-10-06 14:27:42,915 - INFO - Processing file: hoteltoronto_20240715_008_processed.txt
+2025-10-06 14:27:42,965 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:43,010 - INFO - Cleaning complete. Removed -7 characters (-1.59%)
+2025-10-06 14:27:43,048 - INFO - Processing file: l3b_20240918_014_processed.txt
+2025-10-06 14:27:43,124 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:43,252 - INFO - Cleaning complete. Removed -27 characters (-3.41%)
+2025-10-06 14:27:43,278 - INFO - Processing file: lacocina_20240528_001_processed.txt
+2025-10-06 14:27:43,496 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:43,647 - INFO - Cleaning complete. Removed 36 characters (6.04%)
+2025-10-06 14:27:43,680 - INFO - Processing file: oldnavy_20240918_012_processed.txt
+2025-10-06 14:27:43,735 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:43,840 - INFO - Cleaning complete. Removed -5 characters (-0.34%)
+2025-10-06 14:27:43,861 - INFO - Processing file: oldnavy_20240918_013_processed.txt
+2025-10-06 14:27:43,915 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:44,012 - INFO - Cleaning complete. Removed 0 characters (0.0%)
+2025-10-06 14:27:44,040 - INFO - Processing file: patisserie_20240918_005_processed.txt
+2025-10-06 14:27:44,090 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:44,265 - INFO - Cleaning complete. Removed -1 characters (-0.13%)
+2025-10-06 14:27:44,303 - INFO - Processing file: pizzeria_20240918_018_processed.txt
+2025-10-06 14:27:44,361 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:44,478 - INFO - Cleaning complete. Removed -19 characters (-2.67%)
+2025-10-06 14:27:44,517 - INFO - Processing file: tablerock_20240715_009_processed.txt
+2025-10-06 14:27:44,567 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:44,724 - INFO - Cleaning complete. Removed 7 characters (2.41%)
+2025-10-06 14:27:44,756 - INFO - Processing file: thelodge_20240715_001_processed.txt
+2025-10-06 14:27:44,818 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:44,850 - INFO - Cleaning complete. Removed 1 characters (0.19%)
+2025-10-06 14:27:44,878 - INFO - Processing file: thelodge_20240715_006_processed.txt
+2025-10-06 14:27:44,917 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:44,983 - INFO - Cleaning complete. Removed -4 characters (-1.02%)
+2025-10-06 14:27:45,012 - INFO - Processing file: timhorton_20240918_011_processed.txt
+2025-10-06 14:27:45,046 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:45,131 - INFO - Cleaning complete. Removed -5 characters (-0.76%)
+2025-10-06 14:27:45,159 - INFO - Processing file: timhorton_20240918_015_processed.txt
+2025-10-06 14:27:45,201 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:45,326 - INFO - Cleaning complete. Removed 17 characters (1.9%)
+2025-10-06 14:27:45,352 - INFO - Processing file: uniqlo_20240715_processed.txt
+2025-10-06 14:27:45,396 - INFO - Starting text cleaning pipeline...
+2025-10-06 14:27:45,529 - INFO - Cleaning complete. Removed 1541 characters (67.83%)
+2025-10-06 14:27:45,557 - INFO - 
+============================================================
+2025-10-06 14:27:45,558 - INFO - CLEANING SUMMARY
+2025-10-06 14:27:45,559 - INFO - ============================================================
+2025-10-06 14:27:45,560 - INFO - Total files: 22
+2025-10-06 14:27:45,561 - INFO - Successfully cleaned: 22
+2025-10-06 14:27:45,562 - INFO - Failed: 0
+2025-10-06 14:27:45,564 - INFO - Total characters removed: 2,155
+2025-10-06 14:27:45,565 - INFO - Average cleanup ratio: 5.80%
+2025-10-06 14:27:45,566 - INFO - Success rate: 100.0%
+2025-10-06 14:27:45,567 - INFO - ============================================================
+

@@ -1,0 +1,95 @@
+2025-10-07 20:59:44,562 - INFO - 
+============================================================
+2025-10-07 20:59:44,565 - INFO - STARTING DEDUPLICATION PIPELINE
+2025-10-07 20:59:44,566 - INFO - ============================================================
+2025-10-07 20:59:44,567 - INFO - Loading files from data\quality_assessed\high_quality
+2025-10-07 20:59:44,837 - INFO - Finding exact duplicates...
+2025-10-07 20:59:44,872 - INFO - Finding fuzzy duplicates with MinHash LSH...
+2025-10-07 20:59:45,966 - INFO - Finding semantic duplicates with embeddings...
+2025-10-07 20:59:45,968 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-10-07 20:59:45,980 - INFO - Use pytorch device_name: cpu
+2025-10-07 20:59:45,981 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-07 20:59:49,743 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-10-07 21:00:03,769 - INFO - Generating embeddings for 22 documents...
+2025-10-07 21:00:06,769 - INFO - Calculating pairwise similarities...
+2025-10-07 21:00:06,793 - INFO - Merging duplicate groups and selecting best versions...
+2025-10-07 21:00:06,852 - INFO - Saving deduplicated files...
+2025-10-07 21:00:06,930 - INFO - Generating deduplication report...
+2025-10-07 21:00:06,935 - INFO - 
+============================================================
+2025-10-07 21:00:06,937 - INFO - DEDUPLICATION SUMMARY
+2025-10-07 21:00:06,938 - INFO - ============================================================
+2025-10-07 21:00:06,938 - INFO - Total files processed: 22
+2025-10-07 21:00:06,940 - INFO - Unique files kept: 22
+2025-10-07 21:00:06,941 - INFO - Total duplicates removed: 0
+2025-10-07 21:00:06,942 - INFO -   - Exact duplicates: 0
+2025-10-07 21:00:06,943 - INFO -   - Fuzzy duplicates: 0
+2025-10-07 21:00:06,944 - INFO -   - Semantic duplicates: 0
+2025-10-07 21:00:06,944 - INFO - Deduplication rate: 0.0%
+2025-10-07 21:00:06,945 - INFO - ============================================================
+
+2025-10-07 21:04:55,753 - INFO - 
+============================================================
+2025-10-07 21:04:55,754 - INFO - STARTING DEDUPLICATION PIPELINE
+2025-10-07 21:04:55,755 - INFO - ============================================================
+2025-10-07 21:04:55,755 - INFO - Loading files from data\quality_assessed\high_quality
+2025-10-07 21:04:55,800 - INFO - Finding exact duplicates...
+2025-10-07 21:04:55,831 - INFO - Finding fuzzy duplicates with MinHash LSH...
+2025-10-07 21:04:57,012 - INFO - Finding semantic duplicates with embeddings...
+2025-10-07 21:04:57,013 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-10-07 21:04:57,023 - INFO - Use pytorch device_name: cpu
+2025-10-07 21:04:57,025 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-07 21:05:00,919 - INFO - Generating embeddings for 22 documents...
+2025-10-07 21:05:03,782 - INFO - Calculating pairwise similarities...
+2025-10-07 21:05:03,801 - INFO - Merging duplicate groups and selecting best versions...
+2025-10-07 21:05:03,819 - INFO - Saving deduplicated files...
+2025-10-07 21:05:03,886 - INFO - Generating deduplication report...
+2025-10-07 21:05:03,889 - INFO - 
+============================================================
+2025-10-07 21:05:03,891 - INFO - DEDUPLICATION SUMMARY
+2025-10-07 21:05:03,892 - INFO - ============================================================
+2025-10-07 21:05:03,893 - INFO - Total files processed: 22
+2025-10-07 21:05:03,895 - INFO - Unique files kept: 22
+2025-10-07 21:05:03,896 - INFO - Total duplicates removed: 0
+2025-10-07 21:05:03,897 - INFO -   - Exact duplicates: 0
+2025-10-07 21:05:03,898 - INFO -   - Fuzzy duplicates: 0
+2025-10-07 21:05:03,899 - INFO -   - Semantic duplicates: 0
+2025-10-07 21:05:03,900 - INFO - Deduplication rate: 0.0%
+2025-10-07 21:05:03,902 - INFO - ============================================================
+
+2025-10-07 21:12:19,863 - INFO - 
+============================================================
+2025-10-07 21:12:19,864 - INFO - STARTING DEDUPLICATION PIPELINE
+2025-10-07 21:12:19,865 - INFO - ============================================================
+2025-10-07 21:12:19,866 - INFO - Loading files from data\quality_assessed\high_quality
+2025-10-07 21:12:19,887 - INFO - ✓ Loaded 22 files
+2025-10-07 21:12:19,888 - INFO - Finding exact duplicates...
+2025-10-07 21:12:19,903 - INFO - ✓ Found 0 exact duplicate groups (0 duplicate files)
+2025-10-07 21:12:19,904 - INFO - Finding fuzzy duplicates with MinHash LSH...
+2025-10-07 21:12:20,894 - INFO - ✓ Found 0 fuzzy duplicate groups (0 duplicate files)
+2025-10-07 21:12:20,895 - INFO - Finding semantic duplicates with embeddings...
+2025-10-07 21:12:20,896 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-10-07 21:12:20,904 - INFO - Use pytorch device_name: cpu
+2025-10-07 21:12:20,905 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-07 21:12:24,822 - INFO - ✓ Model loaded successfully
+2025-10-07 21:12:24,823 - INFO - Generating embeddings for 22 documents...
+2025-10-07 21:12:27,726 - INFO - Calculating pairwise similarities...
+2025-10-07 21:12:27,731 - INFO - ✓ Found 0 semantic duplicate groups (0 duplicate files)
+2025-10-07 21:12:27,732 - INFO - Merging duplicate groups and selecting best versions...
+2025-10-07 21:12:27,738 - INFO - ✓ Resolved 0 duplicate groups
+2025-10-07 21:12:27,739 - INFO - Saving deduplicated files...
+2025-10-07 21:12:27,791 - INFO - ✓ Saved 22 unique files to data\deduplicated
+2025-10-07 21:12:27,793 - INFO - Generating deduplication report...
+2025-10-07 21:12:27,796 - INFO - 
+============================================================
+2025-10-07 21:12:27,798 - INFO - DEDUPLICATION SUMMARY
+2025-10-07 21:12:27,800 - INFO - ============================================================
+2025-10-07 21:12:27,801 - INFO - Total files processed: 22
+2025-10-07 21:12:27,802 - INFO - Unique files kept: 22
+2025-10-07 21:12:27,803 - INFO - Total duplicates removed: 0
+2025-10-07 21:12:27,804 - INFO -   - Exact duplicates: 0
+2025-10-07 21:12:27,805 - INFO -   - Fuzzy duplicates: 0
+2025-10-07 21:12:27,806 - INFO -   - Semantic duplicates: 0
+2025-10-07 21:12:27,807 - INFO - Deduplication rate: 0.0%
+2025-10-07 21:12:27,809 - INFO - ============================================================
+

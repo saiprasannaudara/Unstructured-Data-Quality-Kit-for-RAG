@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "statistics": {
+    "total_files": 22,
+    "unique_files": 22,
+    "exact_duplicates": 0,
+    "fuzzy_duplicates": 0,
+    "semantic_duplicates": 0,
+    "total_duplicates_removed": 0
+  },
+  "duplicate_groups": 0
+}

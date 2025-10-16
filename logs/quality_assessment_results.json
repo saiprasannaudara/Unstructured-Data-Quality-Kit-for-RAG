@@ -1,0 +1,1346 @@
+[
+  {
+    "source_file": "20240909_Hilton_cleaned.txt",
+    "output_file": "20240909_Hilton_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\20240909_Hilton_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.172720",
+    "composite_score": {
+      "composite_quality_score": 0.654,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.141,
+      "score_breakdown": {
+        "readability": 0.867,
+        "coherence": 0.141,
+        "information_density": 0.817,
+        "completeness": 0.73,
+        "linguistic_quality": 0.876
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.867,
+        "flesch_reading_ease": 46.76,
+        "flesch_kincaid_grade": 10.85,
+        "avg_sentence_length": 16.56,
+        "flesch_normalized": 0.668,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.141,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.032,
+        "length_variance": 1.394,
+        "transition_score": 0.0,
+        "cohesion_score": 0.162
+      },
+      "information_density": {
+        "information_density": 0.817,
+        "lexical_diversity": 0.565,
+        "content_word_ratio": 0.469,
+        "avg_word_length": 6.16,
+        "number_ratio": 0.281,
+        "ttr_score": 0.941
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 533,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.876,
+        "capitalization_ratio": 0.667,
+        "words_per_sentence": 17.4,
+        "alpha_ratio": 0.643,
+        "capitalization_score": 0.667
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "allomoncoco_20240918_009_cleaned.txt",
+    "output_file": "allomoncoco_20240918_009_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\allomoncoco_20240918_009_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.212636",
+    "composite_score": {
+      "composite_quality_score": 0.671,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.417,
+      "score_breakdown": {
+        "readability": 0.977,
+        "coherence": 0.417,
+        "information_density": 0.706,
+        "completeness": 0.73,
+        "linguistic_quality": 0.566
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.977,
+        "flesch_reading_ease": 74.32,
+        "flesch_kincaid_grade": 9.05,
+        "avg_sentence_length": 24.78,
+        "flesch_normalized": 0.943,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.417,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.088,
+        "length_variance": 0.033,
+        "transition_score": 0.0,
+        "cohesion_score": 0.44
+      },
+      "information_density": {
+        "information_density": 0.706,
+        "lexical_diversity": 0.627,
+        "content_word_ratio": 0.399,
+        "avg_word_length": 2.13,
+        "number_ratio": 0.229,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 271,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.566,
+        "capitalization_ratio": 0.5,
+        "words_per_sentence": 69.0,
+        "alpha_ratio": 0.505,
+        "capitalization_score": 0.5
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "ben_20240918_008_cleaned.txt",
+    "output_file": "ben_20240918_008_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\ben_20240918_008_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.225014",
+    "composite_score": {
+      "composite_quality_score": 0.677,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.5,
+      "score_breakdown": {
+        "readability": 0.982,
+        "coherence": 0.5,
+        "information_density": 0.663,
+        "completeness": 0.67,
+        "linguistic_quality": 0.595
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.982,
+        "flesch_reading_ease": 85.76,
+        "flesch_kincaid_grade": 7.88,
+        "avg_sentence_length": 26.5,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.5,
+        "reason": "too_few_sentences"
+      },
+      "information_density": {
+        "information_density": 0.663,
+        "lexical_diversity": 0.87,
+        "content_word_ratio": 0.232,
+        "avg_word_length": 2.94,
+        "number_ratio": 0.435,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.67,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 69,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.595,
+        "capitalization_ratio": 0.0,
+        "words_per_sentence": 17.0,
+        "alpha_ratio": 0.455,
+        "capitalization_score": 0.0
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "cora_20240918_010_cleaned.txt",
+    "output_file": "cora_20240918_010_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\cora_20240918_010_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.248274",
+    "composite_score": {
+      "composite_quality_score": 0.687,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.205,
+      "score_breakdown": {
+        "readability": 0.853,
+        "coherence": 0.205,
+        "information_density": 0.779,
+        "completeness": 0.88,
+        "linguistic_quality": 0.923
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.853,
+        "flesch_reading_ease": 63.82,
+        "flesch_kincaid_grade": 6.16,
+        "avg_sentence_length": 7.25,
+        "flesch_normalized": 0.838,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.205,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.034,
+        "length_variance": 0.8,
+        "transition_score": 0.0,
+        "cohesion_score": 0.169
+      },
+      "information_density": {
+        "information_density": 0.779,
+        "lexical_diversity": 0.769,
+        "content_word_ratio": 0.359,
+        "avg_word_length": 5.21,
+        "number_ratio": 0.359,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.88,
+        "ends_properly": true,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 78,
+        "ending_score": 1.0
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.923,
+        "capitalization_ratio": 1.0,
+        "words_per_sentence": 14.5,
+        "alpha_ratio": 0.52,
+        "capitalization_score": 1.0
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "eggsmart_20240715_004_cleaned.txt",
+    "output_file": "eggsmart_20240715_004_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\eggsmart_20240715_004_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.276224",
+    "composite_score": {
+      "composite_quality_score": 0.662,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.227,
+      "score_breakdown": {
+        "readability": 0.82,
+        "coherence": 0.227,
+        "information_density": 0.785,
+        "completeness": 0.88,
+        "linguistic_quality": 0.755
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.82,
+        "flesch_reading_ease": 86.24,
+        "flesch_kincaid_grade": 3.47,
+        "avg_sentence_length": 9.0,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.227,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.066,
+        "length_variance": 1.372,
+        "transition_score": 0.0,
+        "cohesion_score": 0.329
+      },
+      "information_density": {
+        "information_density": 0.785,
+        "lexical_diversity": 0.804,
+        "content_word_ratio": 0.37,
+        "avg_word_length": 5.38,
+        "number_ratio": 0.315,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.88,
+        "ends_properly": true,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 92,
+        "ending_score": 1.0
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.755,
+        "capitalization_ratio": 0.5,
+        "words_per_sentence": 9.25,
+        "alpha_ratio": 0.548,
+        "capitalization_score": 0.5
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "eggspectation_20240715_002_cleaned.txt",
+    "output_file": "eggspectation_20240715_002_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\eggspectation_20240715_002_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.300729",
+    "composite_score": {
+      "composite_quality_score": 0.631,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.218,
+      "score_breakdown": {
+        "readability": 0.747,
+        "coherence": 0.218,
+        "information_density": 0.797,
+        "completeness": 0.67,
+        "linguistic_quality": 0.852
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.747,
+        "flesch_reading_ease": 67.15,
+        "flesch_kincaid_grade": 5.95,
+        "avg_sentence_length": 8.29,
+        "flesch_normalized": 0.871,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.218,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.037,
+        "length_variance": 0.733,
+        "transition_score": 0.0,
+        "cohesion_score": 0.183
+      },
+      "information_density": {
+        "information_density": 0.797,
+        "lexical_diversity": 0.859,
+        "content_word_ratio": 0.394,
+        "avg_word_length": 5.18,
+        "number_ratio": 0.31,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.67,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 71,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.852,
+        "capitalization_ratio": 0.667,
+        "words_per_sentence": 11.33,
+        "alpha_ratio": 0.589,
+        "capitalization_score": 0.667
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "eggspectation_20240715_010_cleaned.txt",
+    "output_file": "eggspectation_20240715_010_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\eggspectation_20240715_010_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.324275",
+    "composite_score": {
+      "composite_quality_score": 0.677,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.273,
+      "score_breakdown": {
+        "readability": 0.918,
+        "coherence": 0.273,
+        "information_density": 0.813,
+        "completeness": 0.67,
+        "linguistic_quality": 0.81
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.918,
+        "flesch_reading_ease": 64.42,
+        "flesch_kincaid_grade": 6.59,
+        "avg_sentence_length": 9.33,
+        "flesch_normalized": 0.844,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.273,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.053,
+        "length_variance": 0.584,
+        "transition_score": 0.0,
+        "cohesion_score": 0.263
+      },
+      "information_density": {
+        "information_density": 0.813,
+        "lexical_diversity": 0.787,
+        "content_word_ratio": 0.427,
+        "avg_word_length": 5.8,
+        "number_ratio": 0.267,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.67,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 75,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.81,
+        "capitalization_ratio": 0.5,
+        "words_per_sentence": 17.5,
+        "alpha_ratio": 0.607,
+        "capitalization_score": 0.5
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "eggspectation_20240918_007_cleaned.txt",
+    "output_file": "eggspectation_20240918_007_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\eggspectation_20240918_007_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.369521",
+    "composite_score": {
+      "composite_quality_score": 0.59,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.371,
+      "score_breakdown": {
+        "readability": 0.781,
+        "coherence": 0.371,
+        "information_density": 0.648,
+        "completeness": 0.73,
+        "linguistic_quality": 0.461
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.781,
+        "flesch_reading_ease": 92.47,
+        "flesch_kincaid_grade": 2.28,
+        "avg_sentence_length": 7.71,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.371,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.089,
+        "length_variance": 0.512,
+        "transition_score": 0.0,
+        "cohesion_score": 0.445
+      },
+      "information_density": {
+        "information_density": 0.648,
+        "lexical_diversity": 0.585,
+        "content_word_ratio": 0.174,
+        "avg_word_length": 3.38,
+        "number_ratio": 0.286,
+        "ttr_score": 0.975
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 241,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.461,
+        "capitalization_ratio": 0.125,
+        "words_per_sentence": 6.0,
+        "alpha_ratio": 0.429,
+        "capitalization_score": 0.125
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "fiveguys_20240918_016_cleaned.txt",
+    "output_file": "fiveguys_20240918_016_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\fiveguys_20240918_016_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.443304",
+    "composite_score": {
+      "composite_quality_score": 0.638,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.322,
+      "score_breakdown": {
+        "readability": 0.998,
+        "coherence": 0.322,
+        "information_density": 0.682,
+        "completeness": 0.73,
+        "linguistic_quality": 0.517
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.998,
+        "flesch_reading_ease": 89.31,
+        "flesch_kincaid_grade": 7.06,
+        "avg_sentence_length": 25.19,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.322,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.077,
+        "length_variance": 0.707,
+        "transition_score": 0.0,
+        "cohesion_score": 0.385
+      },
+      "information_density": {
+        "information_density": 0.682,
+        "lexical_diversity": 0.408,
+        "content_word_ratio": 0.415,
+        "avg_word_length": 1.57,
+        "number_ratio": 0.156,
+        "ttr_score": 0.68
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 711,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.517,
+        "capitalization_ratio": 0.182,
+        "words_per_sentence": 32.27,
+        "alpha_ratio": 0.418,
+        "capitalization_score": 0.182
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "hoteltoronto_20240715_008_cleaned.txt",
+    "output_file": "hoteltoronto_20240715_008_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\hoteltoronto_20240715_008_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.463017",
+    "composite_score": {
+      "composite_quality_score": 0.626,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.119,
+      "score_breakdown": {
+        "readability": 0.924,
+        "coherence": 0.119,
+        "information_density": 0.761,
+        "completeness": 0.67,
+        "linguistic_quality": 0.803
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.924,
+        "flesch_reading_ease": 61.1,
+        "flesch_kincaid_grade": 7.87,
+        "avg_sentence_length": 12.6,
+        "flesch_normalized": 0.811,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.119,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.0,
+        "length_variance": 0.814,
+        "transition_score": 0.0,
+        "cohesion_score": 0.0
+      },
+      "information_density": {
+        "information_density": 0.761,
+        "lexical_diversity": 0.905,
+        "content_word_ratio": 0.321,
+        "avg_word_length": 5.9,
+        "number_ratio": 0.393,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.67,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 84,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.803,
+        "capitalization_ratio": 0.5,
+        "words_per_sentence": 14.5,
+        "alpha_ratio": 0.589,
+        "capitalization_score": 0.5
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "l3b_20240918_014_cleaned.txt",
+    "output_file": "l3b_20240918_014_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\l3b_20240918_014_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.495137",
+    "composite_score": {
+      "composite_quality_score": 0.683,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.305,
+      "score_breakdown": {
+        "readability": 0.978,
+        "coherence": 0.305,
+        "information_density": 0.719,
+        "completeness": 0.73,
+        "linguistic_quality": 0.815
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.978,
+        "flesch_reading_ease": 74.58,
+        "flesch_kincaid_grade": 7.49,
+        "avg_sentence_length": 18.67,
+        "flesch_normalized": 0.946,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.305,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.054,
+        "length_variance": 0.309,
+        "transition_score": 0.0,
+        "cohesion_score": 0.272
+      },
+      "information_density": {
+        "information_density": 0.719,
+        "lexical_diversity": 0.796,
+        "content_word_ratio": 0.263,
+        "avg_word_length": 3.76,
+        "number_ratio": 0.395,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 152,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.815,
+        "capitalization_ratio": 0.667,
+        "words_per_sentence": 15.0,
+        "alpha_ratio": 0.501,
+        "capitalization_score": 0.667
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "lacocina_20240528_001_cleaned.txt",
+    "output_file": "lacocina_20240528_001_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\lacocina_20240528_001_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.523407",
+    "composite_score": {
+      "composite_quality_score": 0.518,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.272,
+      "score_breakdown": {
+        "readability": 0.352,
+        "coherence": 0.272,
+        "information_density": 0.683,
+        "completeness": 0.73,
+        "linguistic_quality": 0.665
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.352,
+        "flesch_reading_ease": 30.52,
+        "flesch_kincaid_grade": 30.37,
+        "avg_sentence_length": 86.0,
+        "flesch_normalized": 0.505,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.272,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.059,
+        "length_variance": 0.764,
+        "transition_score": 0.0,
+        "cohesion_score": 0.297
+      },
+      "information_density": {
+        "information_density": 0.683,
+        "lexical_diversity": 0.495,
+        "content_word_ratio": 0.468,
+        "avg_word_length": 1.4,
+        "number_ratio": 0.202,
+        "ttr_score": 0.826
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 218,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.665,
+        "capitalization_ratio": 1.0,
+        "words_per_sentence": 60.5,
+        "alpha_ratio": 0.386,
+        "capitalization_score": 1.0
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "oldnavy_20240918_012_cleaned.txt",
+    "output_file": "oldnavy_20240918_012_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\oldnavy_20240918_012_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.584332",
+    "composite_score": {
+      "composite_quality_score": 0.73,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.216,
+      "score_breakdown": {
+        "readability": 0.927,
+        "coherence": 0.216,
+        "information_density": 0.869,
+        "completeness": 0.94,
+        "linguistic_quality": 0.879
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.927,
+        "flesch_reading_ease": 64.13,
+        "flesch_kincaid_grade": 6.72,
+        "avg_sentence_length": 9.68,
+        "flesch_normalized": 0.841,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.216,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.034,
+        "length_variance": 0.688,
+        "transition_score": 0.0,
+        "cohesion_score": 0.169
+      },
+      "information_density": {
+        "information_density": 0.869,
+        "lexical_diversity": 0.836,
+        "content_word_ratio": 0.537,
+        "avg_word_length": 6.05,
+        "number_ratio": 0.271,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.94,
+        "ends_properly": true,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 218,
+        "ending_score": 1.0
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.879,
+        "capitalization_ratio": 0.667,
+        "words_per_sentence": 9.92,
+        "alpha_ratio": 0.659,
+        "capitalization_score": 0.667
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "oldnavy_20240918_013_cleaned.txt",
+    "output_file": "oldnavy_20240918_013_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\oldnavy_20240918_013_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.644118",
+    "composite_score": {
+      "composite_quality_score": 0.676,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.28,
+      "score_breakdown": {
+        "readability": 0.729,
+        "coherence": 0.28,
+        "information_density": 0.796,
+        "completeness": 0.94,
+        "linguistic_quality": 0.8
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.729,
+        "flesch_reading_ease": 72.2,
+        "flesch_kincaid_grade": 4.93,
+        "avg_sentence_length": 7.0,
+        "flesch_normalized": 0.922,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.28,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.07,
+        "length_variance": 0.945,
+        "transition_score": 0.0,
+        "cohesion_score": 0.349
+      },
+      "information_density": {
+        "information_density": 0.796,
+        "lexical_diversity": 0.778,
+        "content_word_ratio": 0.393,
+        "avg_word_length": 5.3,
+        "number_ratio": 0.349,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.94,
+        "ends_properly": true,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 252,
+        "ending_score": 1.0
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.8,
+        "capitalization_ratio": 0.5,
+        "words_per_sentence": 11.4,
+        "alpha_ratio": 0.582,
+        "capitalization_score": 0.5
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "patisserie_20240918_005_cleaned.txt",
+    "output_file": "patisserie_20240918_005_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\patisserie_20240918_005_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.664053",
+    "composite_score": {
+      "composite_quality_score": 0.725,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.5,
+      "score_breakdown": {
+        "readability": 0.954,
+        "coherence": 0.5,
+        "information_density": 0.737,
+        "completeness": 0.73,
+        "linguistic_quality": 0.77
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.954,
+        "flesch_reading_ease": 68.5,
+        "flesch_kincaid_grade": 6.37,
+        "avg_sentence_length": 10.71,
+        "flesch_normalized": 0.885,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.5,
+        "reason": "too_few_sentences"
+      },
+      "information_density": {
+        "information_density": 0.737,
+        "lexical_diversity": 0.658,
+        "content_word_ratio": 0.274,
+        "avg_word_length": 6.47,
+        "number_ratio": 0.316,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 117,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.77,
+        "capitalization_ratio": 1.0,
+        "words_per_sentence": 32.0,
+        "alpha_ratio": 0.425,
+        "capitalization_score": 1.0
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "pizzeria_20240918_018_cleaned.txt",
+    "output_file": "pizzeria_20240918_018_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\pizzeria_20240918_018_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.697835",
+    "composite_score": {
+      "composite_quality_score": 0.628,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.145,
+      "score_breakdown": {
+        "readability": 0.85,
+        "coherence": 0.145,
+        "information_density": 0.699,
+        "completeness": 0.73,
+        "linguistic_quality": 0.914
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.85,
+        "flesch_reading_ease": 84.18,
+        "flesch_kincaid_grade": 5.12,
+        "avg_sentence_length": 14.5,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.145,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.007,
+        "length_variance": 0.725,
+        "transition_score": 0.0,
+        "cohesion_score": 0.035
+      },
+      "information_density": {
+        "information_density": 0.699,
+        "lexical_diversity": 0.726,
+        "content_word_ratio": 0.199,
+        "avg_word_length": 5.37,
+        "number_ratio": 0.397,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 146,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.914,
+        "capitalization_ratio": 1.0,
+        "words_per_sentence": 10.0,
+        "alpha_ratio": 0.5,
+        "capitalization_score": 1.0
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "tablerock_20240715_009_cleaned.txt",
+    "output_file": "tablerock_20240715_009_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\tablerock_20240715_009_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.716749",
+    "composite_score": {
+      "composite_quality_score": 0.598,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.109,
+      "score_breakdown": {
+        "readability": 0.747,
+        "coherence": 0.109,
+        "information_density": 0.803,
+        "completeness": 0.67,
+        "linguistic_quality": 0.801
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.747,
+        "flesch_reading_ease": 86.14,
+        "flesch_kincaid_grade": 2.88,
+        "avg_sentence_length": 6.57,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.109,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.0,
+        "length_variance": 0.912,
+        "transition_score": 0.0,
+        "cohesion_score": 0.0
+      },
+      "information_density": {
+        "information_density": 0.803,
+        "lexical_diversity": 0.881,
+        "content_word_ratio": 0.407,
+        "avg_word_length": 4.31,
+        "number_ratio": 0.305,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.67,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 59,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.801,
+        "capitalization_ratio": 0.667,
+        "words_per_sentence": 9.67,
+        "alpha_ratio": 0.5,
+        "capitalization_score": 0.667
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "thelodge_20240715_001_cleaned.txt",
+    "output_file": "thelodge_20240715_001_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\thelodge_20240715_001_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.733218",
+    "composite_score": {
+      "composite_quality_score": 0.694,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.5,
+      "score_breakdown": {
+        "readability": 0.752,
+        "coherence": 0.5,
+        "information_density": 0.796,
+        "completeness": 0.73,
+        "linguistic_quality": 0.737
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.752,
+        "flesch_reading_ease": 83.4,
+        "flesch_kincaid_grade": 3.3,
+        "avg_sentence_length": 6.73,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.5,
+        "reason": "too_few_sentences"
+      },
+      "information_density": {
+        "information_density": 0.796,
+        "lexical_diversity": 0.785,
+        "content_word_ratio": 0.393,
+        "avg_word_length": 5.02,
+        "number_ratio": 0.299,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 107,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.737,
+        "capitalization_ratio": 1.0,
+        "words_per_sentence": 47.0,
+        "alpha_ratio": 0.554,
+        "capitalization_score": 1.0
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "thelodge_20240715_006_cleaned.txt",
+    "output_file": "thelodge_20240715_006_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\thelodge_20240715_006_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.750149",
+    "composite_score": {
+      "composite_quality_score": 0.702,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.5,
+      "score_breakdown": {
+        "readability": 0.79,
+        "coherence": 0.5,
+        "information_density": 0.817,
+        "completeness": 0.67,
+        "linguistic_quality": 0.763
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.79,
+        "flesch_reading_ease": 89.94,
+        "flesch_kincaid_grade": 2.7,
+        "avg_sentence_length": 8.0,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.5,
+        "reason": "too_few_sentences"
+      },
+      "information_density": {
+        "information_density": 0.817,
+        "lexical_diversity": 0.776,
+        "content_word_ratio": 0.434,
+        "avg_word_length": 4.94,
+        "number_ratio": 0.276,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.67,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 76,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.763,
+        "capitalization_ratio": 1.0,
+        "words_per_sentence": 36.0,
+        "alpha_ratio": 0.557,
+        "capitalization_score": 1.0
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "timhorton_20240918_011_cleaned.txt",
+    "output_file": "timhorton_20240918_011_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\timhorton_20240918_011_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.781698",
+    "composite_score": {
+      "composite_quality_score": 0.639,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.106,
+      "score_breakdown": {
+        "readability": 0.91,
+        "coherence": 0.106,
+        "information_density": 0.829,
+        "completeness": 0.73,
+        "linguistic_quality": 0.756
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.91,
+        "flesch_reading_ease": 57.59,
+        "flesch_kincaid_grade": 9.1,
+        "avg_sentence_length": 15.6,
+        "flesch_normalized": 0.776,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.106,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.006,
+        "length_variance": 1.102,
+        "transition_score": 0.0,
+        "cohesion_score": 0.032
+      },
+      "information_density": {
+        "information_density": 0.829,
+        "lexical_diversity": 0.848,
+        "content_word_ratio": 0.457,
+        "avg_word_length": 6.25,
+        "number_ratio": 0.267,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 105,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.756,
+        "capitalization_ratio": 0.333,
+        "words_per_sentence": 16.0,
+        "alpha_ratio": 0.598,
+        "capitalization_score": 0.333
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "timhorton_20240918_015_cleaned.txt",
+    "output_file": "timhorton_20240918_015_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\timhorton_20240918_015_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.815846",
+    "composite_score": {
+      "composite_quality_score": 0.656,
+      "quality_category": "good",
+      "passes_threshold": true,
+      "weakest_metric": "coherence",
+      "weakest_score": 0.127,
+      "score_breakdown": {
+        "readability": 0.926,
+        "coherence": 0.127,
+        "information_density": 0.836,
+        "completeness": 0.73,
+        "linguistic_quality": 0.802
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.926,
+        "flesch_reading_ease": 61.49,
+        "flesch_kincaid_grade": 7.66,
+        "avg_sentence_length": 12.0,
+        "flesch_normalized": 0.815,
+        "grade_normalized": 1.0
+      },
+      "coherence": {
+        "coherence_score": 0.127,
+        "transition_ratio": 0.0,
+        "lexical_cohesion": 0.008,
+        "length_variance": 0.932,
+        "transition_score": 0.0,
+        "cohesion_score": 0.041
+      },
+      "information_density": {
+        "information_density": 0.836,
+        "lexical_diversity": 0.829,
+        "content_word_ratio": 0.473,
+        "avg_word_length": 5.4,
+        "number_ratio": 0.247,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 146,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.802,
+        "capitalization_ratio": 0.5,
+        "words_per_sentence": 17.5,
+        "alpha_ratio": 0.588,
+        "capitalization_score": 0.5
+      }
+    },
+    "status": "success"
+  },
+  {
+    "source_file": "uniqlo_20240715_cleaned.txt",
+    "output_file": "uniqlo_20240715_assessed.txt",
+    "output_path": "data\\quality_assessed\\high_quality\\uniqlo_20240715_assessed.txt",
+    "assessment_timestamp": "2025-10-07T20:47:33.836922",
+    "composite_score": {
+      "composite_quality_score": 0.627,
+      "quality_category": "acceptable",
+      "passes_threshold": true,
+      "weakest_metric": "linguistic_quality",
+      "weakest_score": 0.375,
+      "score_breakdown": {
+        "readability": 0.85,
+        "coherence": 0.5,
+        "information_density": 0.665,
+        "completeness": 0.73,
+        "linguistic_quality": 0.375
+      }
+    },
+    "detailed_metrics": {
+      "readability": {
+        "readability_score": 0.85,
+        "flesch_reading_ease": 93.25,
+        "flesch_kincaid_grade": 5.54,
+        "avg_sentence_length": 21.29,
+        "flesch_normalized": 1.0,
+        "grade_normalized": 0.5
+      },
+      "coherence": {
+        "coherence_score": 0.5,
+        "reason": "too_few_sentences"
+      },
+      "information_density": {
+        "information_density": 0.665,
+        "lexical_diversity": 0.742,
+        "content_word_ratio": 0.3,
+        "avg_word_length": 2.3,
+        "number_ratio": 0.342,
+        "ttr_score": 1.0
+      },
+      "completeness": {
+        "completeness_score": 0.73,
+        "ends_properly": false,
+        "has_truncation_indicators": false,
+        "has_conclusion": false,
+        "word_count": 190,
+        "ending_score": 0.3
+      },
+      "linguistic_quality": {
+        "linguistic_quality": 0.375,
+        "capitalization_ratio": 0.0,
+        "words_per_sentence": 70.0,
+        "alpha_ratio": 0.408,
+        "capitalization_score": 0.0
+      }
+    },
+    "status": "success"
+  }
+]
