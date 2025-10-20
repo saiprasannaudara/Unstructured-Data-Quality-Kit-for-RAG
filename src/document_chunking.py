@@ -548,4 +548,3 @@ if __name__ == "__main__":
     print(f"Chunked files: data/chunked/")
     print(f"Chunking report: logs/chunking_report.csv")
     print(f"Metadata: data/chunked/chunks_metadata.json")
-    print(f"Metadata: data/chunked/chunks_metadata.json")
