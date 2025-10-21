@@ -49,3 +49,358 @@
 2025-10-06 14:14:26,189 - INFO - Success rate: 100.0%
 2025-10-06 14:14:26,195 - INFO - ============================================================
 
+2025-10-21 11:35:09,663 - INFO - 
+======================================================================
+2025-10-21 11:35:09,667 - INFO - STARTING MASTER RAG DATA QUALITY PIPELINE
+2025-10-21 11:35:09,668 - INFO - ======================================================================
+2025-10-21 11:35:09,670 - INFO - Configuration: {
+  "ingestion": {
+    "raw_data_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "failed_dir": "data/failed"
+  },
+  "cleaning": {
+    "processed_dir": "data/processed",
+    "cleaned_dir": "data/cleaned",
+    "keep_urls": false,
+    "keep_emails": false
+  },
+  "quality_assessment": {
+    "cleaned_dir": "data/cleaned",
+    "quality_dir": "data/quality_assessed",
+    "quality_threshold": 0.5
+  },
+  "deduplication": {
+    "input_dir": "data/quality_assessed/high_quality",
+    "output_dir": "data/deduplicated",
+    "exact_match": true,
+    "fuzzy_match": true,
+    "semantic_match": true,
+    "semantic_threshold": 0.95,
+    "fuzzy_threshold": 0.85
+  },
+  "chunking": {
+    "input_dir": "data/deduplicated",
+    "output_dir": "data/chunked",
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "chunking_strategy": "recursive",
+    "min_chunk_size": 100,
+    "max_chunk_size": 1000
+  },
+  "enrichment": {
+    "input_dir": "data/chunked",
+    "output_dir": "data/enriched",
+    "enable_keywords": true,
+    "enable_entities": true,
+    "enable_summaries": true,
+    "enable_questions": true,
+    "enable_topics": true,
+    "max_keywords": 5
+  }
+}
+2025-10-21 11:35:09,679 - ERROR - 
+======================================================================
+2025-10-21 11:35:09,680 - ERROR - [ERROR] PIPELINE FAILED: name 'SemanticDeduplicator' is not defined
+2025-10-21 11:35:09,682 - ERROR - ======================================================================
+2025-10-21 11:39:49,597 - INFO - 
+======================================================================
+2025-10-21 11:39:49,598 - INFO - STARTING MASTER RAG DATA QUALITY PIPELINE
+2025-10-21 11:39:49,599 - INFO - ======================================================================
+2025-10-21 11:39:49,601 - INFO - Configuration: {
+  "ingestion": {
+    "raw_data_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "failed_dir": "data/failed"
+  },
+  "cleaning": {
+    "processed_dir": "data/processed",
+    "cleaned_dir": "data/cleaned",
+    "keep_urls": false,
+    "keep_emails": false
+  },
+  "quality_assessment": {
+    "cleaned_dir": "data/cleaned",
+    "quality_dir": "data/quality_assessed",
+    "quality_threshold": 0.5
+  },
+  "deduplication": {
+    "input_dir": "data/quality_assessed/high_quality",
+    "output_dir": "data/deduplicated",
+    "exact_match": true,
+    "fuzzy_match": true,
+    "semantic_match": true,
+    "semantic_threshold": 0.95,
+    "fuzzy_threshold": 0.85
+  },
+  "chunking": {
+    "input_dir": "data/deduplicated",
+    "output_dir": "data/chunked",
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "chunking_strategy": "recursive",
+    "min_chunk_size": 100,
+    "max_chunk_size": 1000
+  },
+  "enrichment": {
+    "input_dir": "data/chunked",
+    "output_dir": "data/enriched",
+    "enable_keywords": true,
+    "enable_entities": true,
+    "enable_summaries": true,
+    "enable_questions": true,
+    "enable_topics": true,
+    "max_keywords": 5
+  }
+}
+2025-10-21 11:39:49,612 - INFO - 
+======================================================================
+2025-10-21 11:39:49,614 - INFO - STEP: DEDUPLICATION
+2025-10-21 11:39:49,615 - INFO - ======================================================================
+2025-10-21 11:39:49,616 - INFO - 
+============================================================
+2025-10-21 11:39:49,618 - INFO - STARTING DEDUPLICATION PIPELINE
+2025-10-21 11:39:49,619 - INFO - ============================================================
+2025-10-21 11:39:49,620 - INFO - Loading files from data\quality_assessed\high_quality
+2025-10-21 11:39:49,921 - INFO - Finding exact duplicates...
+2025-10-21 11:39:49,953 - INFO - Finding fuzzy duplicates with MinHash LSH...
+2025-10-21 11:39:50,974 - INFO - Finding semantic duplicates with embeddings...
+2025-10-21 11:39:50,975 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-10-21 11:39:50,985 - INFO - Use pytorch device_name: cpu
+2025-10-21 11:39:50,986 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 11:39:55,462 - INFO - Generating embeddings for 22 documents...
+2025-10-21 11:39:59,654 - INFO - Calculating pairwise similarities...
+2025-10-21 11:39:59,684 - INFO - Merging duplicate groups and selecting best versions...
+2025-10-21 11:39:59,749 - INFO - Saving deduplicated files...
+2025-10-21 11:39:59,829 - INFO - Generating deduplication report...
+2025-10-21 11:39:59,832 - INFO - 
+============================================================
+2025-10-21 11:39:59,833 - INFO - DEDUPLICATION SUMMARY
+2025-10-21 11:39:59,835 - INFO - ============================================================
+2025-10-21 11:39:59,835 - INFO - Total files processed: 22
+2025-10-21 11:39:59,836 - INFO - Unique files kept: 22
+2025-10-21 11:39:59,837 - INFO - Total duplicates removed: 0
+2025-10-21 11:39:59,838 - INFO -   - Exact duplicates: 0
+2025-10-21 11:39:59,839 - INFO -   - Fuzzy duplicates: 0
+2025-10-21 11:39:59,842 - INFO -   - Semantic duplicates: 0
+2025-10-21 11:39:59,844 - INFO - Deduplication rate: 0.0%
+2025-10-21 11:39:59,845 - INFO - ============================================================
+
+2025-10-21 11:39:59,847 - INFO - [SUCCESS] deduplication completed in 10.23s
+2025-10-21 11:40:03,779 - INFO - Using Recursive Character Splitter
+2025-10-21 11:40:03,780 - INFO - 
+======================================================================
+2025-10-21 11:40:03,781 - INFO - STEP: CHUNKING
+2025-10-21 11:40:03,782 - INFO - ======================================================================
+2025-10-21 11:40:03,783 - INFO - Starting document chunking from data\deduplicated
+2025-10-21 11:40:03,784 - INFO - Strategy: recursive | Chunk size: 512 tokens | Overlap: 50 tokens
+2025-10-21 11:40:03,786 - INFO - Found 22 files to process
+2025-10-21 11:40:03,788 - INFO - Processing file: 20240909_Hilton_deduplicated.txt
+2025-10-21 11:40:03,817 - INFO - [SUCCESS] Created 2 chunks from 20240909_Hilton_deduplicated.txt
+2025-10-21 11:40:03,821 - INFO - Processing file: allomoncoco_20240918_009_deduplicated.txt
+2025-10-21 11:40:03,836 - INFO - [SUCCESS] Created 1 chunks from allomoncoco_20240918_009_deduplicated.txt
+2025-10-21 11:40:03,840 - INFO - Processing file: ben_20240918_008_deduplicated.txt
+2025-10-21 11:40:03,848 - INFO - [SUCCESS] Created 1 chunks from ben_20240918_008_deduplicated.txt
+2025-10-21 11:40:03,851 - INFO - Processing file: cora_20240918_010_deduplicated.txt
+2025-10-21 11:40:03,860 - INFO - [SUCCESS] Created 1 chunks from cora_20240918_010_deduplicated.txt
+2025-10-21 11:40:03,864 - INFO - Processing file: eggsmart_20240715_004_deduplicated.txt
+2025-10-21 11:40:03,871 - INFO - [SUCCESS] Created 1 chunks from eggsmart_20240715_004_deduplicated.txt
+2025-10-21 11:40:03,876 - INFO - Processing file: eggspectation_20240715_002_deduplicated.txt
+2025-10-21 11:40:03,885 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_002_deduplicated.txt
+2025-10-21 11:40:03,890 - INFO - Processing file: eggspectation_20240715_010_deduplicated.txt
+2025-10-21 11:40:03,899 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_010_deduplicated.txt
+2025-10-21 11:40:03,906 - INFO - Processing file: eggspectation_20240918_007_deduplicated.txt
+2025-10-21 11:40:03,921 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240918_007_deduplicated.txt
+2025-10-21 11:40:03,925 - INFO - Processing file: fiveguys_20240918_016_deduplicated.txt
+2025-10-21 11:40:03,944 - INFO - [SUCCESS] Created 1 chunks from fiveguys_20240918_016_deduplicated.txt
+2025-10-21 11:40:03,948 - INFO - Processing file: hoteltoronto_20240715_008_deduplicated.txt
+2025-10-21 11:40:03,956 - INFO - [SUCCESS] Created 1 chunks from hoteltoronto_20240715_008_deduplicated.txt
+2025-10-21 11:40:03,960 - INFO - Processing file: l3b_20240918_014_deduplicated.txt
+2025-10-21 11:40:03,972 - INFO - [SUCCESS] Created 1 chunks from l3b_20240918_014_deduplicated.txt
+2025-10-21 11:40:03,975 - INFO - Processing file: lacocina_20240528_001_deduplicated.txt
+2025-10-21 11:40:03,985 - INFO - [SUCCESS] Created 1 chunks from lacocina_20240528_001_deduplicated.txt
+2025-10-21 11:40:03,988 - INFO - Processing file: oldnavy_20240918_012_deduplicated.txt
+2025-10-21 11:40:04,000 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_012_deduplicated.txt
+2025-10-21 11:40:04,004 - INFO - Processing file: oldnavy_20240918_013_deduplicated.txt
+2025-10-21 11:40:04,020 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_013_deduplicated.txt
+2025-10-21 11:40:04,025 - INFO - Processing file: patisserie_20240918_005_deduplicated.txt
+2025-10-21 11:40:04,034 - INFO - [SUCCESS] Created 1 chunks from patisserie_20240918_005_deduplicated.txt
+2025-10-21 11:40:04,037 - INFO - Processing file: pizzeria_20240918_018_deduplicated.txt
+2025-10-21 11:40:04,048 - INFO - [SUCCESS] Created 1 chunks from pizzeria_20240918_018_deduplicated.txt
+2025-10-21 11:40:04,052 - INFO - Processing file: tablerock_20240715_009_deduplicated.txt
+2025-10-21 11:40:04,059 - INFO - [SUCCESS] Created 1 chunks from tablerock_20240715_009_deduplicated.txt
+2025-10-21 11:40:04,063 - INFO - Processing file: thelodge_20240715_001_deduplicated.txt
+2025-10-21 11:40:04,070 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_001_deduplicated.txt
+2025-10-21 11:40:04,074 - INFO - Processing file: thelodge_20240715_006_deduplicated.txt
+2025-10-21 11:40:04,083 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_006_deduplicated.txt
+2025-10-21 11:40:04,087 - INFO - Processing file: timhorton_20240918_011_deduplicated.txt
+2025-10-21 11:40:04,097 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_011_deduplicated.txt
+2025-10-21 11:40:04,101 - INFO - Processing file: timhorton_20240918_015_deduplicated.txt
+2025-10-21 11:40:04,110 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_015_deduplicated.txt
+2025-10-21 11:40:04,116 - INFO - Processing file: uniqlo_20240715_deduplicated.txt
+2025-10-21 11:40:04,126 - INFO - [SUCCESS] Created 1 chunks from uniqlo_20240715_deduplicated.txt
+2025-10-21 11:40:04,202 - INFO - Chunking report saved to: logs/chunking_report.csv
+2025-10-21 11:40:04,212 - INFO - 
+============================================================
+2025-10-21 11:40:04,228 - INFO - CHUNKING SUMMARY
+2025-10-21 11:40:04,244 - INFO - ============================================================
+2025-10-21 11:40:04,265 - INFO - Strategy: recursive
+2025-10-21 11:40:04,282 - INFO - Total documents processed: 22
+2025-10-21 11:40:04,283 - INFO - Total chunks created: 23
+2025-10-21 11:40:04,284 - INFO - Average chunks per document: 1.0
+2025-10-21 11:40:04,285 - INFO - 
+Chunk Size Statistics:
+2025-10-21 11:40:04,286 - INFO -   Mean: 472 tokens
+2025-10-21 11:40:04,287 - INFO -   Median: 433 tokens
+2025-10-21 11:40:04,288 - INFO -   Std Dev: 294 tokens
+2025-10-21 11:40:04,289 - INFO - 
+Quality Issues:
+2025-10-21 11:40:04,290 - INFO -   Chunks too small (<100): 0
+2025-10-21 11:40:04,291 - INFO -   Chunks too large (>1000): 1
+2025-10-21 11:40:04,293 - INFO - ============================================================
+
+2025-10-21 11:40:04,294 - INFO - [SUCCESS] chunking completed in 0.51s
+2025-10-21 11:40:04,295 - INFO - 
+======================================================================
+2025-10-21 11:40:04,297 - INFO - STEP: ENRICHMENT
+2025-10-21 11:40:04,297 - INFO - ======================================================================
+2025-10-21 11:40:04,299 - INFO - 
+============================================================
+2025-10-21 11:40:04,300 - INFO - STARTING METADATA ENRICHMENT
+2025-10-21 11:40:04,301 - INFO - ============================================================
+2025-10-21 11:40:04,302 - INFO - Loading spaCy model for NER...
+2025-10-21 11:40:07,293 - INFO - [SUCCESS] spaCy model loaded
+2025-10-21 11:40:07,294 - INFO - Loading KeyBERT model...
+2025-10-21 11:40:07,301 - INFO - Use pytorch device_name: cpu
+2025-10-21 11:40:07,302 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-21 11:40:09,203 - INFO - [SUCCESS] KeyBERT model loaded
+2025-10-21 11:40:09,252 - INFO - Found 22 chunk files to enrich
+2025-10-21 11:40:09,253 - INFO - Processing: 20240909_Hilton_chunks.jsonl
+2025-10-21 11:40:17,620 - INFO - [SUCCESS] Enriched 2 chunks from 20240909_Hilton_chunks.jsonl
+2025-10-21 11:40:17,626 - INFO - Processing: allomoncoco_20240918_009_chunks.jsonl
+2025-10-21 11:40:20,450 - INFO - [SUCCESS] Enriched 1 chunks from allomoncoco_20240918_009_chunks.jsonl
+2025-10-21 11:40:20,454 - INFO - Processing: ben_20240918_008_chunks.jsonl
+2025-10-21 11:40:21,395 - INFO - [SUCCESS] Enriched 1 chunks from ben_20240918_008_chunks.jsonl
+2025-10-21 11:40:21,399 - INFO - Processing: cora_20240918_010_chunks.jsonl
+2025-10-21 11:40:22,921 - INFO - [SUCCESS] Enriched 1 chunks from cora_20240918_010_chunks.jsonl
+2025-10-21 11:40:22,926 - INFO - Processing: eggsmart_20240715_004_chunks.jsonl
+2025-10-21 11:40:24,179 - INFO - [SUCCESS] Enriched 1 chunks from eggsmart_20240715_004_chunks.jsonl
+2025-10-21 11:40:24,184 - INFO - Processing: eggspectation_20240715_002_chunks.jsonl
+2025-10-21 11:40:25,677 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_002_chunks.jsonl
+2025-10-21 11:40:25,681 - INFO - Processing: eggspectation_20240715_010_chunks.jsonl
+2025-10-21 11:40:26,965 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_010_chunks.jsonl
+2025-10-21 11:40:26,969 - INFO - Processing: eggspectation_20240918_007_chunks.jsonl
+2025-10-21 11:40:29,357 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240918_007_chunks.jsonl
+2025-10-21 11:40:29,362 - INFO - Processing: fiveguys_20240918_016_chunks.jsonl
+2025-10-21 11:40:33,037 - INFO - [SUCCESS] Enriched 1 chunks from fiveguys_20240918_016_chunks.jsonl
+2025-10-21 11:40:33,040 - INFO - Processing: hoteltoronto_20240715_008_chunks.jsonl
+2025-10-21 11:40:34,267 - INFO - [SUCCESS] Enriched 1 chunks from hoteltoronto_20240715_008_chunks.jsonl
+2025-10-21 11:40:34,271 - INFO - Processing: l3b_20240918_014_chunks.jsonl
+2025-10-21 11:40:37,324 - INFO - [SUCCESS] Enriched 1 chunks from l3b_20240918_014_chunks.jsonl
+2025-10-21 11:40:37,329 - INFO - Processing: lacocina_20240528_001_chunks.jsonl
+2025-10-21 11:40:38,413 - INFO - [SUCCESS] Enriched 1 chunks from lacocina_20240528_001_chunks.jsonl
+2025-10-21 11:40:38,416 - INFO - Processing: oldnavy_20240918_012_chunks.jsonl
+2025-10-21 11:40:42,603 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_012_chunks.jsonl
+2025-10-21 11:40:42,608 - INFO - Processing: oldnavy_20240918_013_chunks.jsonl
+2025-10-21 11:40:46,816 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_013_chunks.jsonl
+2025-10-21 11:40:46,823 - INFO - Processing: patisserie_20240918_005_chunks.jsonl
+2025-10-21 11:40:48,986 - INFO - [SUCCESS] Enriched 1 chunks from patisserie_20240918_005_chunks.jsonl
+2025-10-21 11:40:48,990 - INFO - Processing: pizzeria_20240918_018_chunks.jsonl
+2025-10-21 11:40:51,230 - INFO - [SUCCESS] Enriched 1 chunks from pizzeria_20240918_018_chunks.jsonl
+2025-10-21 11:40:51,234 - INFO - Processing: tablerock_20240715_009_chunks.jsonl
+2025-10-21 11:40:52,153 - INFO - [SUCCESS] Enriched 1 chunks from tablerock_20240715_009_chunks.jsonl
+2025-10-21 11:40:52,157 - INFO - Processing: thelodge_20240715_001_chunks.jsonl
+2025-10-21 11:40:53,767 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_001_chunks.jsonl
+2025-10-21 11:40:53,772 - INFO - Processing: thelodge_20240715_006_chunks.jsonl
+2025-10-21 11:40:54,975 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_006_chunks.jsonl
+2025-10-21 11:40:54,979 - INFO - Processing: timhorton_20240918_011_chunks.jsonl
+2025-10-21 11:40:57,081 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_011_chunks.jsonl
+2025-10-21 11:40:57,085 - INFO - Processing: timhorton_20240918_015_chunks.jsonl
+2025-10-21 11:41:00,137 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_015_chunks.jsonl
+2025-10-21 11:41:00,140 - INFO - Processing: uniqlo_20240715_chunks.jsonl
+2025-10-21 11:41:02,034 - INFO - [SUCCESS] Enriched 1 chunks from uniqlo_20240715_chunks.jsonl
+2025-10-21 11:41:02,037 - INFO - 
+============================================================
+2025-10-21 11:41:02,038 - INFO - ENRICHMENT SUMMARY
+2025-10-21 11:41:02,039 - INFO - ============================================================
+2025-10-21 11:41:02,040 - INFO - Total chunks processed: 23
+2025-10-21 11:41:02,041 - INFO - Successfully enriched: 23
+2025-10-21 11:41:02,042 - INFO - Failed: 0
+2025-10-21 11:41:02,043 - INFO - 
+Keyword Statistics:
+2025-10-21 11:41:02,044 - INFO -   Chunks with keywords: 23
+2025-10-21 11:41:02,046 - INFO -   Average keywords per chunk: 5.0
+2025-10-21 11:41:02,047 - INFO - 
+Entity Statistics:
+2025-10-21 11:41:02,048 - INFO -   Chunks with entities: 23
+2025-10-21 11:41:02,049 - INFO -   Average entities per chunk: 28.3
+2025-10-21 11:41:02,049 - INFO - ============================================================
+
+2025-10-21 11:41:02,051 - INFO - [SUCCESS] enrichment completed in 57.75s
+2025-10-21 11:41:02,051 - INFO - 
+======================================================================
+2025-10-21 11:41:02,053 - INFO - PIPELINE SUMMARY
+2025-10-21 11:41:02,053 - INFO - ======================================================================
+2025-10-21 11:41:02,054 - INFO - 
+Total Pipeline Time: 72.46s
+2025-10-21 11:41:02,056 - INFO - Status: success
+2025-10-21 11:41:02,058 - INFO - 
+Step-by-Step Results:
+2025-10-21 11:41:02,060 - INFO -   [SUCCESS] deduplication: 10.23s
+2025-10-21 11:41:02,062 - INFO -   [SUCCESS] chunking: 0.51s
+2025-10-21 11:41:02,063 - INFO -   [SUCCESS] enrichment: 57.75s
+2025-10-21 11:41:02,064 - INFO - 
+Key Metrics:
+2025-10-21 11:41:02,065 - INFO -   Deduplication:
+2025-10-21 11:41:02,066 - INFO -     Total files: 22
+2025-10-21 11:41:02,066 - INFO -     Unique files: 22
+2025-10-21 11:41:02,067 - INFO -     Duplicates removed: 0
+2025-10-21 11:41:02,068 - INFO -   Chunking:
+2025-10-21 11:41:02,069 - INFO -     Total chunks: 23
+2025-10-21 11:41:02,070 - INFO -     Avg chunks per doc: 1.0
+2025-10-21 11:41:02,070 - INFO -   Enrichment:
+2025-10-21 11:41:02,072 - INFO -     Chunks enriched: 23
+2025-10-21 11:41:02,073 - INFO - ======================================================================
+2025-10-21 11:41:02,081 - INFO - 
+Detailed report saved to: logs/pipeline_report.json
+2025-10-21 11:41:02,083 - INFO - 
+======================================================================
+2025-10-21 11:41:02,084 - INFO - [SUCCESS] PIPELINE COMPLETED SUCCESSFULLY
+2025-10-21 11:41:02,085 - INFO - ======================================================================
+2025-10-21 12:01:18,751 - INFO - Starting batch processing from data\raw
+2025-10-21 12:01:18,765 - INFO - Found 22 files to process
+2025-10-21 12:01:18,766 - INFO - Processing file: 20240909_Hilton.pdf
+2025-10-21 12:01:19,107 - INFO - Processing file: allomoncoco_20240918_009.pdf
+2025-10-21 12:01:19,247 - INFO - Processing file: ben_20240918_008.pdf
+2025-10-21 12:01:19,358 - INFO - Processing file: cora_20240918_010.pdf
+2025-10-21 12:01:19,439 - INFO - Processing file: eggsmart_20240715_004.pdf
+2025-10-21 12:01:19,526 - INFO - Processing file: eggspectation_20240715_002.pdf
+2025-10-21 12:01:19,606 - INFO - Processing file: eggspectation_20240715_010.pdf
+2025-10-21 12:01:19,688 - INFO - Processing file: eggspectation_20240918_007.pdf
+2025-10-21 12:01:19,787 - INFO - Processing file: fiveguys_20240918_016.pdf
+2025-10-21 12:01:20,139 - INFO - Processing file: hoteltoronto_20240715_008.pdf
+2025-10-21 12:01:20,227 - INFO - Processing file: l3b_20240918_014.pdf
+2025-10-21 12:01:20,347 - INFO - Processing file: lacocina_20240528_001.pdf
+2025-10-21 12:01:20,491 - INFO - Processing file: oldnavy_20240918_012.pdf
+2025-10-21 12:01:20,634 - INFO - Processing file: oldnavy_20240918_013.pdf
+2025-10-21 12:01:20,789 - INFO - Processing file: patisserie_20240918_005.pdf
+2025-10-21 12:01:20,880 - INFO - Processing file: pizzeria_20240918_018.pdf
+2025-10-21 12:01:20,979 - INFO - Processing file: tablerock_20240715_009.pdf
+2025-10-21 12:01:21,051 - INFO - Processing file: thelodge_20240715_001.pdf
+2025-10-21 12:01:21,137 - INFO - Processing file: thelodge_20240715_006.pdf
+2025-10-21 12:01:21,214 - INFO - Processing file: timhorton_20240918_011.pdf
+2025-10-21 12:01:21,313 - INFO - Processing file: timhorton_20240918_015.pdf
+2025-10-21 12:01:21,431 - INFO - Processing file: uniqlo_20240715.pdf
+2025-10-21 12:01:21,633 - INFO - 
+============================================================
+2025-10-21 12:01:21,634 - INFO - PROCESSING SUMMARY
+2025-10-21 12:01:21,635 - INFO - ============================================================
+2025-10-21 12:01:21,637 - INFO - Total files: 22
+2025-10-21 12:01:21,638 - INFO - Successfully processed: 22
+2025-10-21 12:01:21,639 - INFO - Failed: 0
+2025-10-21 12:01:21,640 - INFO -   - Empty files: 0
+2025-10-21 12:01:21,641 - INFO -   - Corrupted: 0
+2025-10-21 12:01:21,642 - INFO -   - Unsupported format: 0
+2025-10-21 12:01:21,643 - INFO - Success rate: 100.0%
+2025-10-21 12:01:21,644 - INFO - ============================================================
+

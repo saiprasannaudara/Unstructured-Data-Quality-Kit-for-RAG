@@ -696,25 +696,6 @@ class ContentQualityAssessor:
 
 
 # Example usage
-if __name__ == "__main__":
-    # Initialize the quality assessor
-    assessor = ContentQualityAssessor(
-        cleaned_dir="data/cleaned",
-        quality_dir="data/quality_assessed",
-        quality_threshold=0.5  # Adjust this threshold based on your needs
-    )
-    
-    # Assess all files
-    results = assessor.assess_all_files()
-    
-    # Save detailed results to JSON
-    with open('logs/quality_assessment_results.json', 'w', encoding='utf-8') as f:
-        json.dump(convert_to_serializable(results), f, indent=2)
-    
-    print("\nQuality assessment complete!")
-    print(f"High quality files: data/quality_assessed/high_quality/")
-    print(f"Low quality files: data/quality_assessed/low_quality/")
-    print(f"Detailed report: logs/quality_assessment_report.csv")
 
 def create_quality_dashboard(results: List[Dict]):
     """Create visualizations of quality metrics."""
@@ -797,6 +778,26 @@ def create_quality_dashboard(results: List[Dict]):
     plt.savefig('logs/quality_dashboard.png', dpi=300, bbox_inches='tight')
     print("Dashboard saved to: logs/quality_dashboard.png")
     plt.close()
+
+if __name__ == "__main__":
+    # Initialize the quality assessor
+    assessor = ContentQualityAssessor(
+        cleaned_dir="data/cleaned",
+        quality_dir="data/quality_assessed",
+        quality_threshold=0.5  # Adjust this threshold based on your needs
+    )
     
-# Create dashboard
-create_quality_dashboard(results)
+    # Assess all files
+    results = assessor.assess_all_files()
+    
+    # Save detailed results to JSON
+    with open('logs/quality_assessment_results.json', 'w', encoding='utf-8') as f:
+        json.dump(convert_to_serializable(results), f, indent=2)
+    
+    print("\nQuality assessment complete!")
+    print(f"High quality files: data/quality_assessed/high_quality/")
+    print(f"Low quality files: data/quality_assessed/low_quality/")
+    print(f"Detailed report: logs/quality_assessment_report.csv")
+  
+    # Create dashboard
+    create_quality_dashboard(results)

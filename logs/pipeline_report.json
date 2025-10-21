@@ -1,0 +1,133 @@
+{
+  "pipeline_start": "2025-10-21T11:39:49.593441",
+  "steps": {
+    "deduplication": {
+      "status": "success",
+      "elapsed_time": 10.23,
+      "result": {
+        "status": "success",
+        "statistics": {
+          "total_files": 22,
+          "unique_files": 22,
+          "exact_duplicates": 0,
+          "fuzzy_duplicates": 0,
+          "semantic_duplicates": 0,
+          "total_duplicates_removed": 0
+        },
+        "duplicate_groups": 0,
+        "resolution": []
+      }
+    },
+    "chunking": {
+      "status": "success",
+      "elapsed_time": 0.51,
+      "result": {
+        "status": "success",
+        "statistics": {
+          "total_documents": 22,
+          "total_chunks": 23,
+          "avg_chunks_per_doc": 1.0454545454545454,
+          "avg_chunk_size": [
+            866,
+            756,
+            710,
+            202,
+            244,
+            229,
+            189,
+            183,
+            536,
+            1366,
+            220,
+            515,
+            433,
+            723,
+            840,
+            375,
+            496,
+            137,
+            248,
+            172,
+            372,
+            457,
+            591
+          ],
+          "chunks_too_small": 0,
+          "chunks_too_large": 1,
+          "chunk_size_distribution": [],
+          "mean_chunk_size": 472,
+          "median_chunk_size": 433,
+          "std_chunk_size": 294
+        },
+        "total_chunks": 23
+      }
+    },
+    "enrichment": {
+      "status": "success",
+      "elapsed_time": 57.75,
+      "result": {
+        "status": "success",
+        "statistics": {
+          "total_chunks": 23,
+          "enriched_chunks": 23,
+          "failed_chunks": 0,
+          "avg_keywords_per_chunk": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "avg_entities_per_chunk": [
+            59,
+            38,
+            33,
+            14,
+            26,
+            17,
+            17,
+            18,
+            34,
+            48,
+            19,
+            34,
+            29,
+            42,
+            37,
+            29,
+            25,
+            15,
+            24,
+            16,
+            21,
+            23,
+            32
+          ],
+          "chunks_with_entities": 23,
+          "chunks_with_keywords": 23
+        }
+      }
+    }
+  },
+  "overall_status": "success",
+  "pipeline_end": "2025-10-21T11:41:02.051816",
+  "total_time": 72.458375
+}
