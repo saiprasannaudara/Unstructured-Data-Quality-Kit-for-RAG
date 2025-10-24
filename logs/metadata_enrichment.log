@@ -70,3 +70,75 @@ Entity Statistics:
 2025-10-20 13:13:40,224 - INFO -   Average entities per chunk: 28.3
 2025-10-20 13:13:40,225 - INFO - ============================================================
 
+2025-10-23 19:00:03,052 - INFO - 
+============================================================
+2025-10-23 19:00:03,054 - INFO - STARTING METADATA ENRICHMENT
+2025-10-23 19:00:03,054 - INFO - ============================================================
+2025-10-23 19:00:03,055 - INFO - Loading spaCy model for NER...
+2025-10-23 19:00:06,282 - INFO - [SUCCESS] spaCy model loaded
+2025-10-23 19:00:06,283 - INFO - Loading KeyBERT model...
+2025-10-23 19:00:06,290 - INFO - Use pytorch device_name: cpu
+2025-10-23 19:00:06,291 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-23 19:00:10,361 - INFO - [SUCCESS] KeyBERT model loaded
+2025-10-23 19:00:10,405 - INFO - Found 22 chunk files to enrich
+2025-10-23 19:00:10,406 - INFO - Processing: 20240909_Hilton_chunks.jsonl
+2025-10-23 19:00:18,668 - INFO - [SUCCESS] Enriched 2 chunks from 20240909_Hilton_chunks.jsonl
+2025-10-23 19:00:18,675 - INFO - Processing: allomoncoco_20240918_009_chunks.jsonl
+2025-10-23 19:00:21,319 - INFO - [SUCCESS] Enriched 1 chunks from allomoncoco_20240918_009_chunks.jsonl
+2025-10-23 19:00:21,325 - INFO - Processing: ben_20240918_008_chunks.jsonl
+2025-10-23 19:00:22,290 - INFO - [SUCCESS] Enriched 1 chunks from ben_20240918_008_chunks.jsonl
+2025-10-23 19:00:22,294 - INFO - Processing: cora_20240918_010_chunks.jsonl
+2025-10-23 19:00:23,856 - INFO - [SUCCESS] Enriched 1 chunks from cora_20240918_010_chunks.jsonl
+2025-10-23 19:00:23,860 - INFO - Processing: eggsmart_20240715_004_chunks.jsonl
+2025-10-23 19:00:25,137 - INFO - [SUCCESS] Enriched 1 chunks from eggsmart_20240715_004_chunks.jsonl
+2025-10-23 19:00:25,141 - INFO - Processing: eggspectation_20240715_002_chunks.jsonl
+2025-10-23 19:00:26,614 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_002_chunks.jsonl
+2025-10-23 19:00:26,621 - INFO - Processing: eggspectation_20240715_010_chunks.jsonl
+2025-10-23 19:00:27,927 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_010_chunks.jsonl
+2025-10-23 19:00:27,930 - INFO - Processing: eggspectation_20240918_007_chunks.jsonl
+2025-10-23 19:00:30,153 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240918_007_chunks.jsonl
+2025-10-23 19:00:30,160 - INFO - Processing: fiveguys_20240918_016_chunks.jsonl
+2025-10-23 19:00:33,779 - INFO - [SUCCESS] Enriched 1 chunks from fiveguys_20240918_016_chunks.jsonl
+2025-10-23 19:00:33,782 - INFO - Processing: hoteltoronto_20240715_008_chunks.jsonl
+2025-10-23 19:00:34,999 - INFO - [SUCCESS] Enriched 1 chunks from hoteltoronto_20240715_008_chunks.jsonl
+2025-10-23 19:00:35,006 - INFO - Processing: l3b_20240918_014_chunks.jsonl
+2025-10-23 19:00:39,225 - INFO - [SUCCESS] Enriched 1 chunks from l3b_20240918_014_chunks.jsonl
+2025-10-23 19:00:39,229 - INFO - Processing: lacocina_20240528_001_chunks.jsonl
+2025-10-23 19:00:40,925 - INFO - [SUCCESS] Enriched 1 chunks from lacocina_20240528_001_chunks.jsonl
+2025-10-23 19:00:40,928 - INFO - Processing: oldnavy_20240918_012_chunks.jsonl
+2025-10-23 19:00:45,364 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_012_chunks.jsonl
+2025-10-23 19:00:45,367 - INFO - Processing: oldnavy_20240918_013_chunks.jsonl
+2025-10-23 19:00:53,368 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_013_chunks.jsonl
+2025-10-23 19:00:53,373 - INFO - Processing: patisserie_20240918_005_chunks.jsonl
+2025-10-23 19:00:56,556 - INFO - [SUCCESS] Enriched 1 chunks from patisserie_20240918_005_chunks.jsonl
+2025-10-23 19:00:56,560 - INFO - Processing: pizzeria_20240918_018_chunks.jsonl
+2025-10-23 19:00:59,860 - INFO - [SUCCESS] Enriched 1 chunks from pizzeria_20240918_018_chunks.jsonl
+2025-10-23 19:00:59,864 - INFO - Processing: tablerock_20240715_009_chunks.jsonl
+2025-10-23 19:01:01,518 - INFO - [SUCCESS] Enriched 1 chunks from tablerock_20240715_009_chunks.jsonl
+2025-10-23 19:01:01,524 - INFO - Processing: thelodge_20240715_001_chunks.jsonl
+2025-10-23 19:01:03,655 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_001_chunks.jsonl
+2025-10-23 19:01:03,660 - INFO - Processing: thelodge_20240715_006_chunks.jsonl
+2025-10-23 19:01:05,131 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_006_chunks.jsonl
+2025-10-23 19:01:05,135 - INFO - Processing: timhorton_20240918_011_chunks.jsonl
+2025-10-23 19:01:08,056 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_011_chunks.jsonl
+2025-10-23 19:01:08,060 - INFO - Processing: timhorton_20240918_015_chunks.jsonl
+2025-10-23 19:01:11,311 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_015_chunks.jsonl
+2025-10-23 19:01:11,317 - INFO - Processing: uniqlo_20240715_chunks.jsonl
+2025-10-23 19:01:13,586 - INFO - [SUCCESS] Enriched 1 chunks from uniqlo_20240715_chunks.jsonl
+2025-10-23 19:01:13,589 - INFO - 
+============================================================
+2025-10-23 19:01:13,591 - INFO - ENRICHMENT SUMMARY
+2025-10-23 19:01:13,592 - INFO - ============================================================
+2025-10-23 19:01:13,593 - INFO - Total chunks processed: 23
+2025-10-23 19:01:13,594 - INFO - Successfully enriched: 23
+2025-10-23 19:01:13,595 - INFO - Failed: 0
+2025-10-23 19:01:13,596 - INFO - 
+Keyword Statistics:
+2025-10-23 19:01:13,597 - INFO -   Chunks with keywords: 23
+2025-10-23 19:01:13,598 - INFO -   Average keywords per chunk: 5.0
+2025-10-23 19:01:13,599 - INFO - 
+Entity Statistics:
+2025-10-23 19:01:13,601 - INFO -   Chunks with entities: 23
+2025-10-23 19:01:13,602 - INFO -   Average entities per chunk: 28.3
+2025-10-23 19:01:13,603 - INFO - ============================================================
+

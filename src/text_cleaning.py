@@ -11,14 +11,24 @@ import ftfy  # Fix text encoding
 from bs4 import BeautifulSoup
 from langdetect import detect, LangDetectException
 
+import sys
+
+# Reconfigure console streams to UTF-8 (Python 3.7+)
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('logs/text_cleaning.log'),
-        logging.StreamHandler()
-    ]
+        logging.FileHandler('logs/text_cleaning.log', encoding="utf-8", errors="replace"),
+        logging.StreamHandler(sys.stdout)
+    ],
+    force=True,
 )
 logger = logging.getLogger(__name__)
 
@@ -475,7 +485,7 @@ if __name__ == "__main__":
     )
     
     # Save results to JSON
-    with open('logs/cleaning_results.json', 'w') as f:
+    with open('logs/cleaning_results.json', 'w', encoding = 'utf-8') as f:
         json.dump(results, f, indent=2)
     
     print("\nCleaning complete! Check logs/text_cleaning.log for details.")

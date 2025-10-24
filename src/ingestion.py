@@ -10,14 +10,24 @@ import PyPDF2
 from docx import Document
 import chardet
 
+import sys
+
+# Reconfigure console streams to UTF-8 (Python 3.7+)
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('logs/ingestion.log'),
-        logging.StreamHandler()
-    ]
+        logging.FileHandler('logs/ingestion.log', encoding="utf-8", errors="replace"),
+        logging.StreamHandler(sys.stdout)
+    ],
+    force=True,
 )
 logger = logging.getLogger(__name__)
 
@@ -345,7 +355,7 @@ if __name__ == "__main__":
     
     # Optionally, save results to a CSV for further analysis
     import json
-    with open('logs/processing_results.json', 'w') as f:
+    with open('logs/processing_results.json', 'w', encoding='utf-8') as f:
         json.dump(results, f, indent=2)
     
     print("\nProcessing complete! Check logs/ingestion.log for details.")

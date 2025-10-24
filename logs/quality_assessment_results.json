@@ -3,7 +3,7 @@
     "source_file": "20240909_Hilton_cleaned.txt",
     "output_file": "20240909_Hilton_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\20240909_Hilton_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:34.704336",
+    "assessment_timestamp": "2025-10-23T18:13:48.696745",
     "composite_score": {
       "composite_quality_score": 0.654,
       "quality_category": "good",
@@ -65,7 +65,7 @@
     "source_file": "allomoncoco_20240918_009_cleaned.txt",
     "output_file": "allomoncoco_20240918_009_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\allomoncoco_20240918_009_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:34.784609",
+    "assessment_timestamp": "2025-10-23T18:13:48.782459",
     "composite_score": {
       "composite_quality_score": 0.671,
       "quality_category": "good",
@@ -127,7 +127,7 @@
     "source_file": "ben_20240918_008_cleaned.txt",
     "output_file": "ben_20240918_008_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\ben_20240918_008_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:34.828759",
+    "assessment_timestamp": "2025-10-23T18:13:48.822296",
     "composite_score": {
       "composite_quality_score": 0.677,
       "quality_category": "good",
@@ -185,7 +185,7 @@
     "source_file": "cora_20240918_010_cleaned.txt",
     "output_file": "cora_20240918_010_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\cora_20240918_010_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:34.876970",
+    "assessment_timestamp": "2025-10-23T18:13:48.870623",
     "composite_score": {
       "composite_quality_score": 0.687,
       "quality_category": "good",
@@ -247,7 +247,7 @@
     "source_file": "eggsmart_20240715_004_cleaned.txt",
     "output_file": "eggsmart_20240715_004_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\eggsmart_20240715_004_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:34.928402",
+    "assessment_timestamp": "2025-10-23T18:13:48.922569",
     "composite_score": {
       "composite_quality_score": 0.662,
       "quality_category": "good",
@@ -309,7 +309,7 @@
     "source_file": "eggspectation_20240715_002_cleaned.txt",
     "output_file": "eggspectation_20240715_002_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\eggspectation_20240715_002_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:34.989001",
+    "assessment_timestamp": "2025-10-23T18:13:48.985535",
     "composite_score": {
       "composite_quality_score": 0.631,
       "quality_category": "acceptable",
@@ -371,7 +371,7 @@
     "source_file": "eggspectation_20240715_010_cleaned.txt",
     "output_file": "eggspectation_20240715_010_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\eggspectation_20240715_010_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.043106",
+    "assessment_timestamp": "2025-10-23T18:13:49.038037",
     "composite_score": {
       "composite_quality_score": 0.677,
       "quality_category": "good",
@@ -433,7 +433,7 @@
     "source_file": "eggspectation_20240918_007_cleaned.txt",
     "output_file": "eggspectation_20240918_007_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\eggspectation_20240918_007_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.119775",
+    "assessment_timestamp": "2025-10-23T18:13:49.109767",
     "composite_score": {
       "composite_quality_score": 0.59,
       "quality_category": "acceptable",
@@ -495,7 +495,7 @@
     "source_file": "fiveguys_20240918_016_cleaned.txt",
     "output_file": "fiveguys_20240918_016_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\fiveguys_20240918_016_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.223117",
+    "assessment_timestamp": "2025-10-23T18:13:49.212423",
     "composite_score": {
       "composite_quality_score": 0.638,
       "quality_category": "acceptable",
@@ -557,7 +557,7 @@
     "source_file": "hoteltoronto_20240715_008_cleaned.txt",
     "output_file": "hoteltoronto_20240715_008_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\hoteltoronto_20240715_008_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.271396",
+    "assessment_timestamp": "2025-10-23T18:13:49.260076",
     "composite_score": {
       "composite_quality_score": 0.626,
       "quality_category": "acceptable",
@@ -619,7 +619,7 @@
     "source_file": "l3b_20240918_014_cleaned.txt",
     "output_file": "l3b_20240918_014_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\l3b_20240918_014_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.336803",
+    "assessment_timestamp": "2025-10-23T18:13:49.322866",
     "composite_score": {
       "composite_quality_score": 0.683,
       "quality_category": "good",
@@ -681,7 +681,7 @@
     "source_file": "lacocina_20240528_001_cleaned.txt",
     "output_file": "lacocina_20240528_001_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\lacocina_20240528_001_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.391273",
+    "assessment_timestamp": "2025-10-23T18:13:49.372219",
     "composite_score": {
       "composite_quality_score": 0.518,
       "quality_category": "acceptable",
@@ -743,7 +743,7 @@
     "source_file": "oldnavy_20240918_012_cleaned.txt",
     "output_file": "oldnavy_20240918_012_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\oldnavy_20240918_012_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.491300",
+    "assessment_timestamp": "2025-10-23T18:13:49.464227",
     "composite_score": {
       "composite_quality_score": 0.73,
       "quality_category": "good",
@@ -805,7 +805,7 @@
     "source_file": "oldnavy_20240918_013_cleaned.txt",
     "output_file": "oldnavy_20240918_013_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\oldnavy_20240918_013_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.579983",
+    "assessment_timestamp": "2025-10-23T18:13:49.546683",
     "composite_score": {
       "composite_quality_score": 0.676,
       "quality_category": "good",
@@ -867,7 +867,7 @@
     "source_file": "patisserie_20240918_005_cleaned.txt",
     "output_file": "patisserie_20240918_005_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\patisserie_20240918_005_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.630934",
+    "assessment_timestamp": "2025-10-23T18:13:49.596185",
     "composite_score": {
       "composite_quality_score": 0.725,
       "quality_category": "good",
@@ -925,7 +925,7 @@
     "source_file": "pizzeria_20240918_018_cleaned.txt",
     "output_file": "pizzeria_20240918_018_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\pizzeria_20240918_018_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.692001",
+    "assessment_timestamp": "2025-10-23T18:13:49.656086",
     "composite_score": {
       "composite_quality_score": 0.628,
       "quality_category": "acceptable",
@@ -987,7 +987,7 @@
     "source_file": "tablerock_20240715_009_cleaned.txt",
     "output_file": "tablerock_20240715_009_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\tablerock_20240715_009_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.738475",
+    "assessment_timestamp": "2025-10-23T18:13:49.699457",
     "composite_score": {
       "composite_quality_score": 0.598,
       "quality_category": "acceptable",
@@ -1049,7 +1049,7 @@
     "source_file": "thelodge_20240715_001_cleaned.txt",
     "output_file": "thelodge_20240715_001_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\thelodge_20240715_001_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.782884",
+    "assessment_timestamp": "2025-10-23T18:13:49.742932",
     "composite_score": {
       "composite_quality_score": 0.694,
       "quality_category": "good",
@@ -1107,7 +1107,7 @@
     "source_file": "thelodge_20240715_006_cleaned.txt",
     "output_file": "thelodge_20240715_006_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\thelodge_20240715_006_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.823446",
+    "assessment_timestamp": "2025-10-23T18:13:49.784574",
     "composite_score": {
       "composite_quality_score": 0.702,
       "quality_category": "good",
@@ -1165,7 +1165,7 @@
     "source_file": "timhorton_20240918_011_cleaned.txt",
     "output_file": "timhorton_20240918_011_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\timhorton_20240918_011_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.880007",
+    "assessment_timestamp": "2025-10-23T18:13:49.838500",
     "composite_score": {
       "composite_quality_score": 0.639,
       "quality_category": "acceptable",
@@ -1227,7 +1227,7 @@
     "source_file": "timhorton_20240918_015_cleaned.txt",
     "output_file": "timhorton_20240918_015_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\timhorton_20240918_015_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.943641",
+    "assessment_timestamp": "2025-10-23T18:13:49.905337",
     "composite_score": {
       "composite_quality_score": 0.656,
       "quality_category": "good",
@@ -1289,7 +1289,7 @@
     "source_file": "uniqlo_20240715_cleaned.txt",
     "output_file": "uniqlo_20240715_assessed.txt",
     "output_path": "data\\quality_assessed\\high_quality\\uniqlo_20240715_assessed.txt",
-    "assessment_timestamp": "2025-10-21T11:34:35.990765",
+    "assessment_timestamp": "2025-10-23T18:13:49.952897",
     "composite_score": {
       "composite_quality_score": 0.627,
       "quality_category": "acceptable",

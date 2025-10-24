@@ -13,13 +13,13 @@
     "source_file": "20240909_Hilton_processed.txt",
     "output_file": "20240909_Hilton_cleaned.txt",
     "output_path": "data\\cleaned\\20240909_Hilton_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:40.759121",
+    "processed_timestamp": "2025-10-23T18:12:06.437954",
     "status": "success"
   },
   {
     "extracted_urls": [],
     "extracted_emails": [],
-    "detected_language": "ca",
+    "detected_language": "en",
     "original_length": 1107,
     "cleaned_length": 1109,
     "chars_removed": -2,
@@ -30,7 +30,7 @@
     "source_file": "allomoncoco_20240918_009_processed.txt",
     "output_file": "allomoncoco_20240918_009_cleaned.txt",
     "output_path": "data\\cleaned\\allomoncoco_20240918_009_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:41.114725",
+    "processed_timestamp": "2025-10-23T18:12:06.728401",
     "status": "success"
   },
   {
@@ -47,7 +47,7 @@
     "source_file": "ben_20240918_008_processed.txt",
     "output_file": "ben_20240918_008_cleaned.txt",
     "output_path": "data\\cleaned\\ben_20240918_008_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:41.466740",
+    "processed_timestamp": "2025-10-23T18:12:06.814711",
     "status": "success"
   },
   {
@@ -64,7 +64,7 @@
     "source_file": "cora_20240918_010_processed.txt",
     "output_file": "cora_20240918_010_cleaned.txt",
     "output_path": "data\\cleaned\\cora_20240918_010_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:41.658314",
+    "processed_timestamp": "2025-10-23T18:12:06.877912",
     "status": "success"
   },
   {
@@ -81,7 +81,7 @@
     "source_file": "eggsmart_20240715_004_processed.txt",
     "output_file": "eggsmart_20240715_004_cleaned.txt",
     "output_path": "data\\cleaned\\eggsmart_20240715_004_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:41.811553",
+    "processed_timestamp": "2025-10-23T18:12:06.923858",
     "status": "success"
   },
   {
@@ -98,7 +98,7 @@
     "source_file": "eggspectation_20240715_002_processed.txt",
     "output_file": "eggspectation_20240715_002_cleaned.txt",
     "output_path": "data\\cleaned\\eggspectation_20240715_002_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:41.958231",
+    "processed_timestamp": "2025-10-23T18:12:06.970326",
     "status": "success"
   },
   {
@@ -115,7 +115,7 @@
     "source_file": "eggspectation_20240715_010_processed.txt",
     "output_file": "eggspectation_20240715_010_cleaned.txt",
     "output_path": "data\\cleaned\\eggspectation_20240715_010_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:42.091410",
+    "processed_timestamp": "2025-10-23T18:12:07.001776",
     "status": "success"
   },
   {
@@ -132,13 +132,13 @@
     "source_file": "eggspectation_20240918_007_processed.txt",
     "output_file": "eggspectation_20240918_007_cleaned.txt",
     "output_path": "data\\cleaned\\eggspectation_20240918_007_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:42.488107",
+    "processed_timestamp": "2025-10-23T18:12:07.077361",
     "status": "success"
   },
   {
     "extracted_urls": [],
     "extracted_emails": [],
-    "detected_language": "ca",
+    "detected_language": "fr",
     "original_length": 1970,
     "cleaned_length": 1967,
     "chars_removed": 3,
@@ -149,7 +149,7 @@
     "source_file": "fiveguys_20240918_016_processed.txt",
     "output_file": "fiveguys_20240918_016_cleaned.txt",
     "output_path": "data\\cleaned\\fiveguys_20240918_016_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:42.879223",
+    "processed_timestamp": "2025-10-23T18:12:07.205056",
     "status": "success"
   },
   {
@@ -166,13 +166,13 @@
     "source_file": "hoteltoronto_20240715_008_processed.txt",
     "output_file": "hoteltoronto_20240715_008_cleaned.txt",
     "output_path": "data\\cleaned\\hoteltoronto_20240715_008_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:43.016805",
+    "processed_timestamp": "2025-10-23T18:12:07.236558",
     "status": "success"
   },
   {
     "extracted_urls": [],
     "extracted_emails": [],
-    "detected_language": "fr",
+    "detected_language": "en",
     "original_length": 791,
     "cleaned_length": 818,
     "chars_removed": -27,
@@ -183,7 +183,7 @@
     "source_file": "l3b_20240918_014_processed.txt",
     "output_file": "l3b_20240918_014_cleaned.txt",
     "output_path": "data\\cleaned\\l3b_20240918_014_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:43.257496",
+    "processed_timestamp": "2025-10-23T18:12:07.338972",
     "status": "success"
   },
   {
@@ -200,7 +200,7 @@
     "source_file": "lacocina_20240528_001_processed.txt",
     "output_file": "lacocina_20240528_001_cleaned.txt",
     "output_path": "data\\cleaned\\lacocina_20240528_001_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:43.651380",
+    "processed_timestamp": "2025-10-23T18:12:07.400045",
     "status": "success"
   },
   {
@@ -217,7 +217,7 @@
     "source_file": "oldnavy_20240918_012_processed.txt",
     "output_file": "oldnavy_20240918_012_cleaned.txt",
     "output_path": "data\\cleaned\\oldnavy_20240918_012_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:43.845294",
+    "processed_timestamp": "2025-10-23T18:12:07.480005",
     "status": "success"
   },
   {
@@ -234,7 +234,7 @@
     "source_file": "oldnavy_20240918_013_processed.txt",
     "output_file": "oldnavy_20240918_013_cleaned.txt",
     "output_path": "data\\cleaned\\oldnavy_20240918_013_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:44.017908",
+    "processed_timestamp": "2025-10-23T18:12:07.544115",
     "status": "success"
   },
   {
@@ -251,7 +251,7 @@
     "source_file": "patisserie_20240918_005_processed.txt",
     "output_file": "patisserie_20240918_005_cleaned.txt",
     "output_path": "data\\cleaned\\patisserie_20240918_005_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:44.271459",
+    "processed_timestamp": "2025-10-23T18:12:07.607065",
     "status": "success"
   },
   {
@@ -268,7 +268,7 @@
     "source_file": "pizzeria_20240918_018_processed.txt",
     "output_file": "pizzeria_20240918_018_cleaned.txt",
     "output_path": "data\\cleaned\\pizzeria_20240918_018_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:44.485357",
+    "processed_timestamp": "2025-10-23T18:12:07.680867",
     "status": "success"
   },
   {
@@ -285,7 +285,7 @@
     "source_file": "tablerock_20240715_009_processed.txt",
     "output_file": "tablerock_20240715_009_cleaned.txt",
     "output_path": "data\\cleaned\\tablerock_20240715_009_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:44.728820",
+    "processed_timestamp": "2025-10-23T18:12:07.726867",
     "status": "success"
   },
   {
@@ -302,7 +302,7 @@
     "source_file": "thelodge_20240715_001_processed.txt",
     "output_file": "thelodge_20240715_001_cleaned.txt",
     "output_path": "data\\cleaned\\thelodge_20240715_001_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:44.854135",
+    "processed_timestamp": "2025-10-23T18:12:07.762464",
     "status": "success"
   },
   {
@@ -319,7 +319,7 @@
     "source_file": "thelodge_20240715_006_processed.txt",
     "output_file": "thelodge_20240715_006_cleaned.txt",
     "output_path": "data\\cleaned\\thelodge_20240715_006_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:44.988774",
+    "processed_timestamp": "2025-10-23T18:12:07.790623",
     "status": "success"
   },
   {
@@ -336,7 +336,7 @@
     "source_file": "timhorton_20240918_011_processed.txt",
     "output_file": "timhorton_20240918_011_cleaned.txt",
     "output_path": "data\\cleaned\\timhorton_20240918_011_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:45.136163",
+    "processed_timestamp": "2025-10-23T18:12:07.863755",
     "status": "success"
   },
   {
@@ -353,13 +353,13 @@
     "source_file": "timhorton_20240918_015_processed.txt",
     "output_file": "timhorton_20240918_015_cleaned.txt",
     "output_path": "data\\cleaned\\timhorton_20240918_015_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:45.332150",
+    "processed_timestamp": "2025-10-23T18:12:07.998110",
     "status": "success"
   },
   {
     "extracted_urls": [],
     "extracted_emails": [],
-    "detected_language": "en",
+    "detected_language": "ca",
     "original_length": 2272,
     "cleaned_length": 731,
     "chars_removed": 1541,
@@ -370,7 +370,7 @@
     "source_file": "uniqlo_20240715_processed.txt",
     "output_file": "uniqlo_20240715_cleaned.txt",
     "output_path": "data\\cleaned\\uniqlo_20240715_cleaned.txt",
-    "processed_timestamp": "2025-10-06T14:27:45.534884",
+    "processed_timestamp": "2025-10-23T18:12:08.156784",
     "status": "success"
   }
 ]

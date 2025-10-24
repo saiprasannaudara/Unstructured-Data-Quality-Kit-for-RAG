@@ -78,3 +78,456 @@
 2025-10-06 14:27:45,566 - INFO - Success rate: 100.0%
 2025-10-06 14:27:45,567 - INFO - ============================================================
 
+2025-10-23 18:05:06,551 - INFO - Starting batch cleaning from data\processed
+2025-10-23 18:05:06,554 - INFO - Found 22 files to clean
+2025-10-23 18:05:06,555 - INFO - Processing file: 20240909_Hilton_processed.txt
+2025-10-23 18:05:06,589 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:09,393 - INFO - Cleaning complete. Removed 290 characters (7.17%)
+2025-10-23 18:05:09,416 - INFO - Processing file: allomoncoco_20240918_009_processed.txt
+2025-10-23 18:05:09,451 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:09,568 - INFO - Cleaning complete. Removed -2 characters (-0.18%)
+2025-10-23 18:05:09,585 - INFO - Processing file: ben_20240918_008_processed.txt
+2025-10-23 18:05:09,632 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:09,752 - INFO - Cleaning complete. Removed 360 characters (56.69%)
+2025-10-23 18:05:09,765 - INFO - Processing file: cora_20240918_010_processed.txt
+2025-10-23 18:05:09,795 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:09,828 - INFO - Cleaning complete. Removed -4 characters (-0.84%)
+2025-10-23 18:05:09,842 - INFO - Processing file: eggsmart_20240715_004_processed.txt
+2025-10-23 18:05:09,872 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:09,896 - INFO - Cleaning complete. Removed -7 characters (-1.65%)
+2025-10-23 18:05:09,914 - INFO - Processing file: eggspectation_20240715_002_processed.txt
+2025-10-23 18:05:09,959 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:09,993 - INFO - Cleaning complete. Removed -4 characters (-0.95%)
+2025-10-23 18:05:10,008 - INFO - Processing file: eggspectation_20240715_010_processed.txt
+2025-10-23 18:05:10,045 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:10,072 - INFO - Cleaning complete. Removed 5 characters (1.19%)
+2025-10-23 18:05:10,086 - INFO - Processing file: eggspectation_20240918_007_processed.txt
+2025-10-23 18:05:10,116 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:10,204 - INFO - Cleaning complete. Removed -20 characters (-2.5%)
+2025-10-23 18:05:10,220 - INFO - Processing file: fiveguys_20240918_016_processed.txt
+2025-10-23 18:05:10,247 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:10,390 - INFO - Cleaning complete. Removed 3 characters (0.15%)
+2025-10-23 18:05:10,408 - INFO - Processing file: hoteltoronto_20240715_008_processed.txt
+2025-10-23 18:05:10,436 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:10,468 - INFO - Cleaning complete. Removed -7 characters (-1.59%)
+2025-10-23 18:05:10,485 - INFO - Processing file: l3b_20240918_014_processed.txt
+2025-10-23 18:05:10,532 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:10,671 - INFO - Cleaning complete. Removed -27 characters (-3.41%)
+2025-10-23 18:05:10,685 - INFO - Processing file: lacocina_20240528_001_processed.txt
+2025-10-23 18:05:10,831 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:10,927 - INFO - Cleaning complete. Removed 36 characters (6.04%)
+2025-10-23 18:05:10,942 - INFO - Processing file: oldnavy_20240918_012_processed.txt
+2025-10-23 18:05:10,975 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,027 - INFO - Cleaning complete. Removed -5 characters (-0.34%)
+2025-10-23 18:05:11,045 - INFO - Processing file: oldnavy_20240918_013_processed.txt
+2025-10-23 18:05:11,105 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,236 - INFO - Cleaning complete. Removed 0 characters (0.0%)
+2025-10-23 18:05:11,250 - INFO - Processing file: patisserie_20240918_005_processed.txt
+2025-10-23 18:05:11,280 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,327 - INFO - Cleaning complete. Removed -1 characters (-0.13%)
+2025-10-23 18:05:11,344 - INFO - Processing file: pizzeria_20240918_018_processed.txt
+2025-10-23 18:05:11,376 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,440 - INFO - Cleaning complete. Removed -19 characters (-2.67%)
+2025-10-23 18:05:11,455 - INFO - Processing file: tablerock_20240715_009_processed.txt
+2025-10-23 18:05:11,484 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,555 - INFO - Cleaning complete. Removed 7 characters (2.41%)
+2025-10-23 18:05:11,570 - INFO - Processing file: thelodge_20240715_001_processed.txt
+2025-10-23 18:05:11,599 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,641 - INFO - Cleaning complete. Removed 1 characters (0.19%)
+2025-10-23 18:05:11,658 - INFO - Processing file: thelodge_20240715_006_processed.txt
+2025-10-23 18:05:11,689 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,710 - INFO - Cleaning complete. Removed -4 characters (-1.02%)
+2025-10-23 18:05:11,726 - INFO - Processing file: timhorton_20240918_011_processed.txt
+2025-10-23 18:05:11,755 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,827 - INFO - Cleaning complete. Removed -5 characters (-0.76%)
+2025-10-23 18:05:11,842 - INFO - Processing file: timhorton_20240918_015_processed.txt
+2025-10-23 18:05:11,875 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:11,949 - INFO - Cleaning complete. Removed 17 characters (1.9%)
+2025-10-23 18:05:11,963 - INFO - Processing file: uniqlo_20240715_processed.txt
+2025-10-23 18:05:11,993 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:05:12,095 - INFO - Cleaning complete. Removed 1541 characters (67.83%)
+2025-10-23 18:05:12,113 - INFO - 
+============================================================
+2025-10-23 18:05:12,114 - INFO - CLEANING SUMMARY
+2025-10-23 18:05:12,115 - INFO - ============================================================
+2025-10-23 18:05:12,116 - INFO - Total files: 22
+2025-10-23 18:05:12,117 - INFO - Successfully cleaned: 22
+2025-10-23 18:05:12,118 - INFO - Failed: 0
+2025-10-23 18:05:12,119 - INFO - Total characters removed: 2,155
+2025-10-23 18:05:12,120 - INFO - Average cleanup ratio: 5.80%
+2025-10-23 18:05:12,122 - INFO - Success rate: 100.0%
+2025-10-23 18:05:12,123 - INFO - ============================================================
+
+2025-10-23 18:12:05,416 - INFO - Starting batch cleaning from data\processed
+2025-10-23 18:12:05,418 - INFO - Found 22 files to clean
+2025-10-23 18:12:05,419 - INFO - Processing file: 20240909_Hilton_processed.txt
+2025-10-23 18:12:05,421 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:06,434 - INFO - Cleaning complete. Removed 290 characters (7.17%)
+2025-10-23 18:12:06,438 - INFO - ✓ Successfully cleaned: 20240909_Hilton_processed.txt
+2025-10-23 18:12:06,439 - INFO - Processing file: allomoncoco_20240918_009_processed.txt
+2025-10-23 18:12:06,440 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:06,725 - INFO - Cleaning complete. Removed -2 characters (-0.18%)
+2025-10-23 18:12:06,728 - INFO - ✓ Successfully cleaned: allomoncoco_20240918_009_processed.txt
+2025-10-23 18:12:06,729 - INFO - Processing file: ben_20240918_008_processed.txt
+2025-10-23 18:12:06,730 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:06,811 - INFO - Cleaning complete. Removed 360 characters (56.69%)
+2025-10-23 18:12:06,814 - INFO - ✓ Successfully cleaned: ben_20240918_008_processed.txt
+2025-10-23 18:12:06,815 - INFO - Processing file: cora_20240918_010_processed.txt
+2025-10-23 18:12:06,817 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:06,874 - INFO - Cleaning complete. Removed -4 characters (-0.84%)
+2025-10-23 18:12:06,878 - INFO - ✓ Successfully cleaned: cora_20240918_010_processed.txt
+2025-10-23 18:12:06,879 - INFO - Processing file: eggsmart_20240715_004_processed.txt
+2025-10-23 18:12:06,880 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:06,921 - INFO - Cleaning complete. Removed -7 characters (-1.65%)
+2025-10-23 18:12:06,923 - INFO - ✓ Successfully cleaned: eggsmart_20240715_004_processed.txt
+2025-10-23 18:12:06,924 - INFO - Processing file: eggspectation_20240715_002_processed.txt
+2025-10-23 18:12:06,926 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:06,967 - INFO - Cleaning complete. Removed -4 characters (-0.95%)
+2025-10-23 18:12:06,970 - INFO - ✓ Successfully cleaned: eggspectation_20240715_002_processed.txt
+2025-10-23 18:12:06,971 - INFO - Processing file: eggspectation_20240715_010_processed.txt
+2025-10-23 18:12:06,973 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:06,999 - INFO - Cleaning complete. Removed 5 characters (1.19%)
+2025-10-23 18:12:07,001 - INFO - ✓ Successfully cleaned: eggspectation_20240715_010_processed.txt
+2025-10-23 18:12:07,002 - INFO - Processing file: eggspectation_20240918_007_processed.txt
+2025-10-23 18:12:07,004 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,074 - INFO - Cleaning complete. Removed -20 characters (-2.5%)
+2025-10-23 18:12:07,077 - INFO - ✓ Successfully cleaned: eggspectation_20240918_007_processed.txt
+2025-10-23 18:12:07,079 - INFO - Processing file: fiveguys_20240918_016_processed.txt
+2025-10-23 18:12:07,080 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,202 - INFO - Cleaning complete. Removed 3 characters (0.15%)
+2025-10-23 18:12:07,205 - INFO - ✓ Successfully cleaned: fiveguys_20240918_016_processed.txt
+2025-10-23 18:12:07,206 - INFO - Processing file: hoteltoronto_20240715_008_processed.txt
+2025-10-23 18:12:07,207 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,234 - INFO - Cleaning complete. Removed -7 characters (-1.59%)
+2025-10-23 18:12:07,236 - INFO - ✓ Successfully cleaned: hoteltoronto_20240715_008_processed.txt
+2025-10-23 18:12:07,237 - INFO - Processing file: l3b_20240918_014_processed.txt
+2025-10-23 18:12:07,239 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,336 - INFO - Cleaning complete. Removed -27 characters (-3.41%)
+2025-10-23 18:12:07,339 - INFO - ✓ Successfully cleaned: l3b_20240918_014_processed.txt
+2025-10-23 18:12:07,340 - INFO - Processing file: lacocina_20240528_001_processed.txt
+2025-10-23 18:12:07,341 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,397 - INFO - Cleaning complete. Removed 36 characters (6.04%)
+2025-10-23 18:12:07,400 - INFO - ✓ Successfully cleaned: lacocina_20240528_001_processed.txt
+2025-10-23 18:12:07,401 - INFO - Processing file: oldnavy_20240918_012_processed.txt
+2025-10-23 18:12:07,402 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,477 - INFO - Cleaning complete. Removed -5 characters (-0.34%)
+2025-10-23 18:12:07,480 - INFO - ✓ Successfully cleaned: oldnavy_20240918_012_processed.txt
+2025-10-23 18:12:07,481 - INFO - Processing file: oldnavy_20240918_013_processed.txt
+2025-10-23 18:12:07,482 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,541 - INFO - Cleaning complete. Removed 0 characters (0.0%)
+2025-10-23 18:12:07,544 - INFO - ✓ Successfully cleaned: oldnavy_20240918_013_processed.txt
+2025-10-23 18:12:07,545 - INFO - Processing file: patisserie_20240918_005_processed.txt
+2025-10-23 18:12:07,547 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,604 - INFO - Cleaning complete. Removed -1 characters (-0.13%)
+2025-10-23 18:12:07,607 - INFO - ✓ Successfully cleaned: patisserie_20240918_005_processed.txt
+2025-10-23 18:12:07,608 - INFO - Processing file: pizzeria_20240918_018_processed.txt
+2025-10-23 18:12:07,609 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,677 - INFO - Cleaning complete. Removed -19 characters (-2.67%)
+2025-10-23 18:12:07,681 - INFO - ✓ Successfully cleaned: pizzeria_20240918_018_processed.txt
+2025-10-23 18:12:07,682 - INFO - Processing file: tablerock_20240715_009_processed.txt
+2025-10-23 18:12:07,683 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,723 - INFO - Cleaning complete. Removed 7 characters (2.41%)
+2025-10-23 18:12:07,727 - INFO - ✓ Successfully cleaned: tablerock_20240715_009_processed.txt
+2025-10-23 18:12:07,728 - INFO - Processing file: thelodge_20240715_001_processed.txt
+2025-10-23 18:12:07,730 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,758 - INFO - Cleaning complete. Removed 1 characters (0.19%)
+2025-10-23 18:12:07,762 - INFO - ✓ Successfully cleaned: thelodge_20240715_001_processed.txt
+2025-10-23 18:12:07,763 - INFO - Processing file: thelodge_20240715_006_processed.txt
+2025-10-23 18:12:07,766 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,788 - INFO - Cleaning complete. Removed -4 characters (-1.02%)
+2025-10-23 18:12:07,790 - INFO - ✓ Successfully cleaned: thelodge_20240715_006_processed.txt
+2025-10-23 18:12:07,791 - INFO - Processing file: timhorton_20240918_011_processed.txt
+2025-10-23 18:12:07,793 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,860 - INFO - Cleaning complete. Removed -5 characters (-0.76%)
+2025-10-23 18:12:07,863 - INFO - ✓ Successfully cleaned: timhorton_20240918_011_processed.txt
+2025-10-23 18:12:07,864 - INFO - Processing file: timhorton_20240918_015_processed.txt
+2025-10-23 18:12:07,866 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:07,995 - INFO - Cleaning complete. Removed 17 characters (1.9%)
+2025-10-23 18:12:07,998 - INFO - ✓ Successfully cleaned: timhorton_20240918_015_processed.txt
+2025-10-23 18:12:07,999 - INFO - Processing file: uniqlo_20240715_processed.txt
+2025-10-23 18:12:08,000 - INFO - Starting text cleaning pipeline...
+2025-10-23 18:12:08,154 - INFO - Cleaning complete. Removed 1541 characters (67.83%)
+2025-10-23 18:12:08,156 - INFO - ✓ Successfully cleaned: uniqlo_20240715_processed.txt
+2025-10-23 18:12:08,157 - INFO - 
+============================================================
+2025-10-23 18:12:08,158 - INFO - CLEANING SUMMARY
+2025-10-23 18:12:08,159 - INFO - ============================================================
+2025-10-23 18:12:08,160 - INFO - Total files: 22
+2025-10-23 18:12:08,161 - INFO - Successfully cleaned: 22
+2025-10-23 18:12:08,162 - INFO - Failed: 0
+2025-10-23 18:12:08,163 - INFO - Total characters removed: 2,155
+2025-10-23 18:12:08,164 - INFO - Average cleanup ratio: 5.80%
+2025-10-23 18:12:08,165 - INFO - Success rate: 100.0%
+2025-10-23 18:12:08,166 - INFO - ============================================================
+
+2025-10-23 20:12:47,006 - INFO - 
+======================================================================
+2025-10-23 20:12:47,010 - INFO - STARTING MASTER RAG DATA QUALITY PIPELINE
+2025-10-23 20:12:47,011 - INFO - ======================================================================
+2025-10-23 20:12:47,012 - INFO - Configuration: {
+  "ingestion": {
+    "raw_data_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "failed_dir": "data/failed"
+  },
+  "cleaning": {
+    "processed_dir": "data/processed",
+    "cleaned_dir": "data/cleaned",
+    "keep_urls": false,
+    "keep_emails": false
+  },
+  "quality_assessment": {
+    "cleaned_dir": "data/cleaned",
+    "quality_dir": "data/quality_assessed",
+    "quality_threshold": 0.5
+  },
+  "deduplication": {
+    "input_dir": "data/quality_assessed/high_quality",
+    "output_dir": "data/deduplicated",
+    "exact_match": true,
+    "fuzzy_match": true,
+    "semantic_match": true,
+    "semantic_threshold": 0.95,
+    "fuzzy_threshold": 0.85
+  },
+  "chunking": {
+    "input_dir": "data/deduplicated",
+    "output_dir": "data/chunked",
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "chunking_strategy": "recursive",
+    "min_chunk_size": 100,
+    "max_chunk_size": 1000
+  },
+  "enrichment": {
+    "input_dir": "data/chunked",
+    "output_dir": "data/enriched",
+    "enable_keywords": true,
+    "enable_entities": true,
+    "enable_summaries": true,
+    "enable_questions": true,
+    "enable_topics": true,
+    "max_keywords": 5
+  }
+}
+2025-10-23 20:12:47,022 - INFO - 
+======================================================================
+2025-10-23 20:12:47,023 - INFO - STEP: DEDUPLICATION
+2025-10-23 20:12:47,024 - INFO - ======================================================================
+2025-10-23 20:12:47,025 - INFO - 
+============================================================
+2025-10-23 20:12:47,026 - INFO - STARTING DEDUPLICATION PIPELINE
+2025-10-23 20:12:47,027 - INFO - ============================================================
+2025-10-23 20:12:47,028 - INFO - Loading files from data\quality_assessed\high_quality
+2025-10-23 20:12:47,254 - INFO - ✓ Loaded 22 files
+2025-10-23 20:12:47,255 - INFO - Finding exact duplicates...
+2025-10-23 20:12:47,275 - INFO - ✓ Found 0 exact duplicate groups (0 duplicate files)
+2025-10-23 20:12:47,276 - INFO - Finding fuzzy duplicates with MinHash LSH...
+2025-10-23 20:12:48,311 - INFO - ✓ Found 0 fuzzy duplicate groups (0 duplicate files)
+2025-10-23 20:12:48,312 - INFO - Finding semantic duplicates with embeddings...
+2025-10-23 20:12:48,313 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-10-23 20:12:48,324 - INFO - Use pytorch device_name: cpu
+2025-10-23 20:12:48,325 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-23 20:12:52,770 - INFO - ✓ Model loaded successfully
+2025-10-23 20:12:52,771 - INFO - Generating embeddings for 22 documents...
+2025-10-23 20:12:56,706 - INFO - Calculating pairwise similarities...
+2025-10-23 20:12:56,716 - INFO - ✓ Found 0 semantic duplicate groups (0 duplicate files)
+2025-10-23 20:12:56,717 - INFO - Merging duplicate groups and selecting best versions...
+2025-10-23 20:12:56,768 - INFO - ✓ Resolved 0 duplicate groups
+2025-10-23 20:12:56,770 - INFO - Saving deduplicated files...
+2025-10-23 20:12:56,820 - INFO - ✓ Saved 22 unique files to data\deduplicated
+2025-10-23 20:12:56,821 - INFO - Generating deduplication report...
+2025-10-23 20:12:56,825 - INFO - 
+============================================================
+2025-10-23 20:12:56,828 - INFO - DEDUPLICATION SUMMARY
+2025-10-23 20:12:56,829 - INFO - ============================================================
+2025-10-23 20:12:56,830 - INFO - Total files processed: 22
+2025-10-23 20:12:56,831 - INFO - Unique files kept: 22
+2025-10-23 20:12:56,832 - INFO - Total duplicates removed: 0
+2025-10-23 20:12:56,833 - INFO -   - Exact duplicates: 0
+2025-10-23 20:12:56,835 - INFO -   - Fuzzy duplicates: 0
+2025-10-23 20:12:56,836 - INFO -   - Semantic duplicates: 0
+2025-10-23 20:12:56,837 - INFO - Deduplication rate: 0.0%
+2025-10-23 20:12:56,838 - INFO - ============================================================
+
+2025-10-23 20:12:56,841 - INFO - [SUCCESS] deduplication completed in 9.82s
+2025-10-23 20:12:57,607 - INFO - Using Recursive Character Splitter
+2025-10-23 20:12:57,608 - INFO - 
+======================================================================
+2025-10-23 20:12:57,609 - INFO - STEP: CHUNKING
+2025-10-23 20:12:57,610 - INFO - ======================================================================
+2025-10-23 20:12:57,611 - INFO - Starting document chunking from data\deduplicated
+2025-10-23 20:12:57,612 - INFO - Strategy: recursive | Chunk size: 512 tokens | Overlap: 50 tokens
+2025-10-23 20:12:57,613 - INFO - Found 22 files to process
+2025-10-23 20:12:57,615 - INFO - Processing file: 20240909_Hilton_deduplicated.txt
+2025-10-23 20:12:57,644 - INFO - [SUCCESS] Created 2 chunks from 20240909_Hilton_deduplicated.txt
+2025-10-23 20:12:57,648 - INFO - Processing file: allomoncoco_20240918_009_deduplicated.txt
+2025-10-23 20:12:57,665 - INFO - [SUCCESS] Created 1 chunks from allomoncoco_20240918_009_deduplicated.txt
+2025-10-23 20:12:57,669 - INFO - Processing file: ben_20240918_008_deduplicated.txt
+2025-10-23 20:12:57,679 - INFO - [SUCCESS] Created 1 chunks from ben_20240918_008_deduplicated.txt
+2025-10-23 20:12:57,681 - INFO - Processing file: cora_20240918_010_deduplicated.txt
+2025-10-23 20:12:57,691 - INFO - [SUCCESS] Created 1 chunks from cora_20240918_010_deduplicated.txt
+2025-10-23 20:12:57,695 - INFO - Processing file: eggsmart_20240715_004_deduplicated.txt
+2025-10-23 20:12:57,703 - INFO - [SUCCESS] Created 1 chunks from eggsmart_20240715_004_deduplicated.txt
+2025-10-23 20:12:57,707 - INFO - Processing file: eggspectation_20240715_002_deduplicated.txt
+2025-10-23 20:12:57,715 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_002_deduplicated.txt
+2025-10-23 20:12:57,719 - INFO - Processing file: eggspectation_20240715_010_deduplicated.txt
+2025-10-23 20:12:57,728 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_010_deduplicated.txt
+2025-10-23 20:12:57,731 - INFO - Processing file: eggspectation_20240918_007_deduplicated.txt
+2025-10-23 20:12:57,745 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240918_007_deduplicated.txt
+2025-10-23 20:12:57,748 - INFO - Processing file: fiveguys_20240918_016_deduplicated.txt
+2025-10-23 20:12:57,767 - INFO - [SUCCESS] Created 1 chunks from fiveguys_20240918_016_deduplicated.txt
+2025-10-23 20:12:57,770 - INFO - Processing file: hoteltoronto_20240715_008_deduplicated.txt
+2025-10-23 20:12:57,779 - INFO - [SUCCESS] Created 1 chunks from hoteltoronto_20240715_008_deduplicated.txt
+2025-10-23 20:12:57,783 - INFO - Processing file: l3b_20240918_014_deduplicated.txt
+2025-10-23 20:12:57,795 - INFO - [SUCCESS] Created 1 chunks from l3b_20240918_014_deduplicated.txt
+2025-10-23 20:12:57,798 - INFO - Processing file: lacocina_20240528_001_deduplicated.txt
+2025-10-23 20:12:57,808 - INFO - [SUCCESS] Created 1 chunks from lacocina_20240528_001_deduplicated.txt
+2025-10-23 20:12:57,812 - INFO - Processing file: oldnavy_20240918_012_deduplicated.txt
+2025-10-23 20:12:57,823 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_012_deduplicated.txt
+2025-10-23 20:12:57,828 - INFO - Processing file: oldnavy_20240918_013_deduplicated.txt
+2025-10-23 20:12:57,841 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_013_deduplicated.txt
+2025-10-23 20:12:57,846 - INFO - Processing file: patisserie_20240918_005_deduplicated.txt
+2025-10-23 20:12:57,855 - INFO - [SUCCESS] Created 1 chunks from patisserie_20240918_005_deduplicated.txt
+2025-10-23 20:12:57,860 - INFO - Processing file: pizzeria_20240918_018_deduplicated.txt
+2025-10-23 20:12:57,870 - INFO - [SUCCESS] Created 1 chunks from pizzeria_20240918_018_deduplicated.txt
+2025-10-23 20:12:57,874 - INFO - Processing file: tablerock_20240715_009_deduplicated.txt
+2025-10-23 20:12:57,881 - INFO - [SUCCESS] Created 1 chunks from tablerock_20240715_009_deduplicated.txt
+2025-10-23 20:12:57,884 - INFO - Processing file: thelodge_20240715_001_deduplicated.txt
+2025-10-23 20:12:57,892 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_001_deduplicated.txt
+2025-10-23 20:12:57,896 - INFO - Processing file: thelodge_20240715_006_deduplicated.txt
+2025-10-23 20:12:57,903 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_006_deduplicated.txt
+2025-10-23 20:12:57,907 - INFO - Processing file: timhorton_20240918_011_deduplicated.txt
+2025-10-23 20:12:57,916 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_011_deduplicated.txt
+2025-10-23 20:12:57,919 - INFO - Processing file: timhorton_20240918_015_deduplicated.txt
+2025-10-23 20:12:57,929 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_015_deduplicated.txt
+2025-10-23 20:12:57,933 - INFO - Processing file: uniqlo_20240715_deduplicated.txt
+2025-10-23 20:12:57,945 - INFO - [SUCCESS] Created 1 chunks from uniqlo_20240715_deduplicated.txt
+2025-10-23 20:12:58,009 - INFO - Chunking report saved to: logs/chunking_report.csv
+2025-10-23 20:12:58,012 - INFO - 
+============================================================
+2025-10-23 20:12:58,013 - INFO - CHUNKING SUMMARY
+2025-10-23 20:12:58,014 - INFO - ============================================================
+2025-10-23 20:12:58,015 - INFO - Strategy: recursive
+2025-10-23 20:12:58,016 - INFO - Total documents processed: 22
+2025-10-23 20:12:58,017 - INFO - Total chunks created: 23
+2025-10-23 20:12:58,017 - INFO - Average chunks per document: 1.0
+2025-10-23 20:12:58,019 - INFO - 
+Chunk Size Statistics:
+2025-10-23 20:12:58,020 - INFO -   Mean: 472 tokens
+2025-10-23 20:12:58,021 - INFO -   Median: 433 tokens
+2025-10-23 20:12:58,021 - INFO -   Std Dev: 294 tokens
+2025-10-23 20:12:58,022 - INFO - 
+Quality Issues:
+2025-10-23 20:12:58,023 - INFO -   Chunks too small (<100): 0
+2025-10-23 20:12:58,024 - INFO -   Chunks too large (>1000): 1
+2025-10-23 20:12:58,025 - INFO - ============================================================
+
+2025-10-23 20:12:58,026 - INFO - [SUCCESS] chunking completed in 0.42s
+2025-10-23 20:12:58,028 - INFO - 
+======================================================================
+2025-10-23 20:12:58,030 - INFO - STEP: ENRICHMENT
+2025-10-23 20:12:58,031 - INFO - ======================================================================
+2025-10-23 20:12:58,033 - INFO - 
+============================================================
+2025-10-23 20:12:58,034 - INFO - STARTING METADATA ENRICHMENT
+2025-10-23 20:12:58,035 - INFO - ============================================================
+2025-10-23 20:12:58,036 - INFO - Loading spaCy model for NER...
+2025-10-23 20:13:00,986 - INFO - [SUCCESS] spaCy model loaded
+2025-10-23 20:13:00,987 - INFO - Loading KeyBERT model...
+2025-10-23 20:13:00,994 - INFO - Use pytorch device_name: cpu
+2025-10-23 20:13:00,995 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-23 20:13:02,898 - INFO - [SUCCESS] KeyBERT model loaded
+2025-10-23 20:13:02,924 - INFO - Found 22 chunk files to enrich
+2025-10-23 20:13:02,925 - INFO - Processing: 20240909_Hilton_chunks.jsonl
+2025-10-23 20:13:10,874 - INFO - [SUCCESS] Enriched 2 chunks from 20240909_Hilton_chunks.jsonl
+2025-10-23 20:13:10,879 - INFO - Processing: allomoncoco_20240918_009_chunks.jsonl
+2025-10-23 20:13:13,237 - INFO - [SUCCESS] Enriched 1 chunks from allomoncoco_20240918_009_chunks.jsonl
+2025-10-23 20:13:13,241 - INFO - Processing: ben_20240918_008_chunks.jsonl
+2025-10-23 20:13:14,183 - INFO - [SUCCESS] Enriched 1 chunks from ben_20240918_008_chunks.jsonl
+2025-10-23 20:13:14,186 - INFO - Processing: cora_20240918_010_chunks.jsonl
+2025-10-23 20:13:15,606 - INFO - [SUCCESS] Enriched 1 chunks from cora_20240918_010_chunks.jsonl
+2025-10-23 20:13:15,610 - INFO - Processing: eggsmart_20240715_004_chunks.jsonl
+2025-10-23 20:13:16,752 - INFO - [SUCCESS] Enriched 1 chunks from eggsmart_20240715_004_chunks.jsonl
+2025-10-23 20:13:16,756 - INFO - Processing: eggspectation_20240715_002_chunks.jsonl
+2025-10-23 20:13:18,022 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_002_chunks.jsonl
+2025-10-23 20:13:18,026 - INFO - Processing: eggspectation_20240715_010_chunks.jsonl
+2025-10-23 20:13:19,268 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_010_chunks.jsonl
+2025-10-23 20:13:19,272 - INFO - Processing: eggspectation_20240918_007_chunks.jsonl
+2025-10-23 20:13:21,443 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240918_007_chunks.jsonl
+2025-10-23 20:13:21,446 - INFO - Processing: fiveguys_20240918_016_chunks.jsonl
+2025-10-23 20:13:24,729 - INFO - [SUCCESS] Enriched 1 chunks from fiveguys_20240918_016_chunks.jsonl
+2025-10-23 20:13:24,732 - INFO - Processing: hoteltoronto_20240715_008_chunks.jsonl
+2025-10-23 20:13:25,870 - INFO - [SUCCESS] Enriched 1 chunks from hoteltoronto_20240715_008_chunks.jsonl
+2025-10-23 20:13:25,874 - INFO - Processing: l3b_20240918_014_chunks.jsonl
+2025-10-23 20:13:28,508 - INFO - [SUCCESS] Enriched 1 chunks from l3b_20240918_014_chunks.jsonl
+2025-10-23 20:13:28,511 - INFO - Processing: lacocina_20240528_001_chunks.jsonl
+2025-10-23 20:13:29,532 - INFO - [SUCCESS] Enriched 1 chunks from lacocina_20240528_001_chunks.jsonl
+2025-10-23 20:13:29,535 - INFO - Processing: oldnavy_20240918_012_chunks.jsonl
+2025-10-23 20:13:33,255 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_012_chunks.jsonl
+2025-10-23 20:13:33,259 - INFO - Processing: oldnavy_20240918_013_chunks.jsonl
+2025-10-23 20:13:37,038 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_013_chunks.jsonl
+2025-10-23 20:13:37,041 - INFO - Processing: patisserie_20240918_005_chunks.jsonl
+2025-10-23 20:13:38,791 - INFO - [SUCCESS] Enriched 1 chunks from patisserie_20240918_005_chunks.jsonl
+2025-10-23 20:13:38,795 - INFO - Processing: pizzeria_20240918_018_chunks.jsonl
+2025-10-23 20:13:41,107 - INFO - [SUCCESS] Enriched 1 chunks from pizzeria_20240918_018_chunks.jsonl
+2025-10-23 20:13:41,111 - INFO - Processing: tablerock_20240715_009_chunks.jsonl
+2025-10-23 20:13:42,198 - INFO - [SUCCESS] Enriched 1 chunks from tablerock_20240715_009_chunks.jsonl
+2025-10-23 20:13:42,203 - INFO - Processing: thelodge_20240715_001_chunks.jsonl
+2025-10-23 20:13:43,759 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_001_chunks.jsonl
+2025-10-23 20:13:43,763 - INFO - Processing: thelodge_20240715_006_chunks.jsonl
+2025-10-23 20:13:44,827 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_006_chunks.jsonl
+2025-10-23 20:13:44,831 - INFO - Processing: timhorton_20240918_011_chunks.jsonl
+2025-10-23 20:13:46,773 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_011_chunks.jsonl
+2025-10-23 20:13:46,777 - INFO - Processing: timhorton_20240918_015_chunks.jsonl
+2025-10-23 20:13:49,580 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_015_chunks.jsonl
+2025-10-23 20:13:49,583 - INFO - Processing: uniqlo_20240715_chunks.jsonl
+2025-10-23 20:13:51,500 - INFO - [SUCCESS] Enriched 1 chunks from uniqlo_20240715_chunks.jsonl
+2025-10-23 20:13:51,504 - INFO - 
+============================================================
+2025-10-23 20:13:51,505 - INFO - ENRICHMENT SUMMARY
+2025-10-23 20:13:51,506 - INFO - ============================================================
+2025-10-23 20:13:51,507 - INFO - Total chunks processed: 23
+2025-10-23 20:13:51,508 - INFO - Successfully enriched: 23
+2025-10-23 20:13:51,509 - INFO - Failed: 0
+2025-10-23 20:13:51,510 - INFO - 
+Keyword Statistics:
+2025-10-23 20:13:51,511 - INFO -   Chunks with keywords: 23
+2025-10-23 20:13:51,512 - INFO -   Average keywords per chunk: 5.0
+2025-10-23 20:13:51,513 - INFO - 
+Entity Statistics:
+2025-10-23 20:13:51,514 - INFO -   Chunks with entities: 23
+2025-10-23 20:13:51,515 - INFO -   Average entities per chunk: 28.3
+2025-10-23 20:13:51,516 - INFO - ============================================================
+
+2025-10-23 20:13:51,517 - INFO - [SUCCESS] enrichment completed in 53.48s
+2025-10-23 20:13:51,518 - INFO - 
+======================================================================
+2025-10-23 20:13:51,520 - INFO - PIPELINE SUMMARY
+2025-10-23 20:13:51,521 - INFO - ======================================================================
+2025-10-23 20:13:51,521 - INFO - 
+Total Pipeline Time: 64.52s
+2025-10-23 20:13:51,523 - INFO - Status: success
+2025-10-23 20:13:51,524 - INFO - 
+Step-by-Step Results:
+2025-10-23 20:13:51,525 - INFO -   [SUCCESS] deduplication: 9.82s
+2025-10-23 20:13:51,526 - INFO -   [SUCCESS] chunking: 0.42s
+2025-10-23 20:13:51,528 - INFO -   [SUCCESS] enrichment: 53.48s
+2025-10-23 20:13:51,529 - INFO - 
+Key Metrics:
+2025-10-23 20:13:51,531 - INFO -   Deduplication:
+2025-10-23 20:13:51,532 - INFO -     Total files: 22
+2025-10-23 20:13:51,533 - INFO -     Unique files: 22
+2025-10-23 20:13:51,534 - INFO -     Duplicates removed: 0
+2025-10-23 20:13:51,536 - INFO -   Chunking:
+2025-10-23 20:13:51,537 - INFO -     Total chunks: 23
+2025-10-23 20:13:51,538 - INFO -     Avg chunks per doc: 1.0
+2025-10-23 20:13:51,539 - INFO -   Enrichment:
+2025-10-23 20:13:51,540 - INFO -     Chunks enriched: 23
+2025-10-23 20:13:51,541 - INFO - ======================================================================
+2025-10-23 20:13:51,545 - INFO - 
+Detailed report saved to: logs/pipeline_report.json
+2025-10-23 20:13:51,547 - INFO - 
+======================================================================
+2025-10-23 20:13:51,548 - INFO - [SUCCESS] PIPELINE COMPLETED SUCCESSFULLY
+2025-10-23 20:13:51,549 - INFO - ======================================================================

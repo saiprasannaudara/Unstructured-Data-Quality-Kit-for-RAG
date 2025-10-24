@@ -93,3 +93,39 @@
 2025-10-07 21:12:27,807 - INFO - Deduplication rate: 0.0%
 2025-10-07 21:12:27,809 - INFO - ============================================================
 
+2025-10-23 18:16:24,807 - INFO - 
+============================================================
+2025-10-23 18:16:24,810 - INFO - STARTING DEDUPLICATION PIPELINE
+2025-10-23 18:16:24,811 - INFO - ============================================================
+2025-10-23 18:16:24,812 - INFO - Loading files from data\quality_assessed\high_quality
+2025-10-23 18:16:25,029 - INFO - ✓ Loaded 22 files
+2025-10-23 18:16:25,030 - INFO - Finding exact duplicates...
+2025-10-23 18:16:25,048 - INFO - ✓ Found 0 exact duplicate groups (0 duplicate files)
+2025-10-23 18:16:25,049 - INFO - Finding fuzzy duplicates with MinHash LSH...
+2025-10-23 18:16:26,153 - INFO - ✓ Found 0 fuzzy duplicate groups (0 duplicate files)
+2025-10-23 18:16:26,154 - INFO - Finding semantic duplicates with embeddings...
+2025-10-23 18:16:26,155 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-10-23 18:16:26,168 - INFO - Use pytorch device_name: cpu
+2025-10-23 18:16:26,169 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-23 18:16:31,205 - INFO - ✓ Model loaded successfully
+2025-10-23 18:16:31,206 - INFO - Generating embeddings for 22 documents...
+2025-10-23 18:16:36,013 - INFO - Calculating pairwise similarities...
+2025-10-23 18:16:36,025 - INFO - ✓ Found 0 semantic duplicate groups (0 duplicate files)
+2025-10-23 18:16:36,026 - INFO - Merging duplicate groups and selecting best versions...
+2025-10-23 18:16:36,073 - INFO - ✓ Resolved 0 duplicate groups
+2025-10-23 18:16:36,075 - INFO - Saving deduplicated files...
+2025-10-23 18:16:36,130 - INFO - ✓ Saved 22 unique files to data\deduplicated
+2025-10-23 18:16:36,132 - INFO - Generating deduplication report...
+2025-10-23 18:16:36,135 - INFO - 
+============================================================
+2025-10-23 18:16:36,136 - INFO - DEDUPLICATION SUMMARY
+2025-10-23 18:16:36,137 - INFO - ============================================================
+2025-10-23 18:16:36,139 - INFO - Total files processed: 22
+2025-10-23 18:16:36,141 - INFO - Unique files kept: 22
+2025-10-23 18:16:36,143 - INFO - Total duplicates removed: 0
+2025-10-23 18:16:36,144 - INFO -   - Exact duplicates: 0
+2025-10-23 18:16:36,145 - INFO -   - Fuzzy duplicates: 0
+2025-10-23 18:16:36,147 - INFO -   - Semantic duplicates: 0
+2025-10-23 18:16:36,148 - INFO - Deduplication rate: 0.0%
+2025-10-23 18:16:36,149 - INFO - ============================================================
+
