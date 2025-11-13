@@ -531,3 +531,519 @@ Detailed report saved to: logs/pipeline_report.json
 ======================================================================
 2025-10-23 20:13:51,548 - INFO - [SUCCESS] PIPELINE COMPLETED SUCCESSFULLY
 2025-10-23 20:13:51,549 - INFO - ======================================================================
+2025-11-11 17:22:43,961 - INFO - 
+======================================================================
+2025-11-11 17:22:43,963 - INFO - STARTING MASTER RAG DATA QUALITY PIPELINE
+2025-11-11 17:22:43,964 - INFO - ======================================================================
+2025-11-11 17:22:43,965 - INFO - Configuration: {
+  "ingestion": {
+    "raw_data_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "failed_dir": "data/failed"
+  },
+  "cleaning": {
+    "processed_dir": "data/processed",
+    "cleaned_dir": "data/cleaned",
+    "keep_urls": false,
+    "keep_emails": false
+  },
+  "quality_assessment": {
+    "cleaned_dir": "data/cleaned",
+    "quality_dir": "data/quality_assessed",
+    "quality_threshold": 0.5
+  },
+  "deduplication": {
+    "input_dir": "data/quality_assessed/high_quality",
+    "output_dir": "data/deduplicated",
+    "exact_match": true,
+    "fuzzy_match": true,
+    "semantic_match": true,
+    "semantic_threshold": 0.95,
+    "fuzzy_threshold": 0.85
+  },
+  "chunking": {
+    "input_dir": "data/deduplicated",
+    "output_dir": "data/chunked",
+    "chunk_size": 512,
+    "chunk_overlap": 50,
+    "chunking_strategy": "recursive",
+    "min_chunk_size": 100,
+    "max_chunk_size": 1000
+  },
+  "enrichment": {
+    "input_dir": "data/chunked",
+    "output_dir": "data/enriched",
+    "enable_keywords": true,
+    "enable_entities": true,
+    "enable_summaries": true,
+    "enable_questions": true,
+    "enable_topics": true,
+    "max_keywords": 5
+  }
+}
+2025-11-11 17:22:43,980 - INFO - 
+======================================================================
+2025-11-11 17:22:43,982 - INFO - STEP: INGESTION
+2025-11-11 17:22:43,983 - INFO - ======================================================================
+2025-11-11 17:22:43,985 - INFO - Starting batch processing from data\raw
+2025-11-11 17:22:44,001 - INFO - Found 22 files to process
+2025-11-11 17:22:44,002 - INFO - Processing file: 20240909_Hilton.pdf
+2025-11-11 17:22:44,314 - INFO - ✓ Successfully processed: 20240909_Hilton.pdf
+2025-11-11 17:22:44,317 - INFO - Processing file: allomoncoco_20240918_009.pdf
+2025-11-11 17:22:44,450 - INFO - ✓ Successfully processed: allomoncoco_20240918_009.pdf
+2025-11-11 17:22:44,452 - INFO - Processing file: ben_20240918_008.pdf
+2025-11-11 17:22:44,544 - INFO - ✓ Successfully processed: ben_20240918_008.pdf
+2025-11-11 17:22:44,545 - INFO - Processing file: cora_20240918_010.pdf
+2025-11-11 17:22:44,627 - INFO - ✓ Successfully processed: cora_20240918_010.pdf
+2025-11-11 17:22:44,628 - INFO - Processing file: eggsmart_20240715_004.pdf
+2025-11-11 17:22:44,712 - INFO - ✓ Successfully processed: eggsmart_20240715_004.pdf
+2025-11-11 17:22:44,714 - INFO - Processing file: eggspectation_20240715_002.pdf
+2025-11-11 17:22:44,783 - INFO - ✓ Successfully processed: eggspectation_20240715_002.pdf
+2025-11-11 17:22:44,784 - INFO - Processing file: eggspectation_20240715_010.pdf
+2025-11-11 17:22:44,852 - INFO - ✓ Successfully processed: eggspectation_20240715_010.pdf
+2025-11-11 17:22:44,854 - INFO - Processing file: eggspectation_20240918_007.pdf
+2025-11-11 17:22:44,971 - INFO - ✓ Successfully processed: eggspectation_20240918_007.pdf
+2025-11-11 17:22:44,972 - INFO - Processing file: fiveguys_20240918_016.pdf
+2025-11-11 17:22:45,270 - INFO - ✓ Successfully processed: fiveguys_20240918_016.pdf
+2025-11-11 17:22:45,272 - INFO - Processing file: hoteltoronto_20240715_008.pdf
+2025-11-11 17:22:45,363 - INFO - ✓ Successfully processed: hoteltoronto_20240715_008.pdf
+2025-11-11 17:22:45,364 - INFO - Processing file: l3b_20240918_014.pdf
+2025-11-11 17:22:45,487 - INFO - ✓ Successfully processed: l3b_20240918_014.pdf
+2025-11-11 17:22:45,489 - INFO - Processing file: lacocina_20240528_001.pdf
+2025-11-11 17:22:45,648 - INFO - ✓ Successfully processed: lacocina_20240528_001.pdf
+2025-11-11 17:22:45,650 - INFO - Processing file: oldnavy_20240918_012.pdf
+2025-11-11 17:22:45,824 - INFO - ✓ Successfully processed: oldnavy_20240918_012.pdf
+2025-11-11 17:22:45,825 - INFO - Processing file: oldnavy_20240918_013.pdf
+2025-11-11 17:22:45,957 - INFO - ✓ Successfully processed: oldnavy_20240918_013.pdf
+2025-11-11 17:22:45,959 - INFO - Processing file: patisserie_20240918_005.pdf
+2025-11-11 17:22:46,038 - INFO - ✓ Successfully processed: patisserie_20240918_005.pdf
+2025-11-11 17:22:46,040 - INFO - Processing file: pizzeria_20240918_018.pdf
+2025-11-11 17:22:46,124 - INFO - ✓ Successfully processed: pizzeria_20240918_018.pdf
+2025-11-11 17:22:46,127 - INFO - Processing file: tablerock_20240715_009.pdf
+2025-11-11 17:22:46,214 - INFO - ✓ Successfully processed: tablerock_20240715_009.pdf
+2025-11-11 17:22:46,215 - INFO - Processing file: thelodge_20240715_001.pdf
+2025-11-11 17:22:46,300 - INFO - ✓ Successfully processed: thelodge_20240715_001.pdf
+2025-11-11 17:22:46,302 - INFO - Processing file: thelodge_20240715_006.pdf
+2025-11-11 17:22:46,368 - INFO - ✓ Successfully processed: thelodge_20240715_006.pdf
+2025-11-11 17:22:46,370 - INFO - Processing file: timhorton_20240918_011.pdf
+2025-11-11 17:22:46,461 - INFO - ✓ Successfully processed: timhorton_20240918_011.pdf
+2025-11-11 17:22:46,463 - INFO - Processing file: timhorton_20240918_015.pdf
+2025-11-11 17:22:46,559 - INFO - ✓ Successfully processed: timhorton_20240918_015.pdf
+2025-11-11 17:22:46,560 - INFO - Processing file: uniqlo_20240715.pdf
+2025-11-11 17:22:46,742 - INFO - ✓ Successfully processed: uniqlo_20240715.pdf
+2025-11-11 17:22:46,744 - INFO - 
+============================================================
+2025-11-11 17:22:46,745 - INFO - PROCESSING SUMMARY
+2025-11-11 17:22:46,746 - INFO - ============================================================
+2025-11-11 17:22:46,747 - INFO - Total files: 22
+2025-11-11 17:22:46,749 - INFO - Successfully processed: 22
+2025-11-11 17:22:46,750 - INFO - Failed: 0
+2025-11-11 17:22:46,752 - INFO -   - Empty files: 0
+2025-11-11 17:22:46,753 - INFO -   - Corrupted: 0
+2025-11-11 17:22:46,754 - INFO -   - Unsupported format: 0
+2025-11-11 17:22:46,756 - INFO - Success rate: 100.0%
+2025-11-11 17:22:46,757 - INFO - ============================================================
+
+2025-11-11 17:22:46,759 - INFO - [SUCCESS] ingestion completed in 2.77s
+2025-11-11 17:22:46,767 - INFO - 
+======================================================================
+2025-11-11 17:22:46,769 - INFO - STEP: CLEANING
+2025-11-11 17:22:46,771 - INFO - ======================================================================
+2025-11-11 17:22:46,773 - INFO - Starting batch cleaning from data\processed
+2025-11-11 17:22:46,776 - INFO - Found 22 files to clean
+2025-11-11 17:22:46,777 - INFO - Processing file: 20240909_Hilton_processed.txt
+2025-11-11 17:22:46,824 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:50,949 - INFO - Cleaning complete. Removed 290 characters (7.17%)
+2025-11-11 17:22:50,955 - INFO - ✓ Successfully cleaned: 20240909_Hilton_processed.txt
+2025-11-11 17:22:50,956 - INFO - Processing file: allomoncoco_20240918_009_processed.txt
+2025-11-11 17:22:50,997 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:51,160 - INFO - Cleaning complete. Removed -2 characters (-0.18%)
+2025-11-11 17:22:51,165 - INFO - ✓ Successfully cleaned: allomoncoco_20240918_009_processed.txt
+2025-11-11 17:22:51,167 - INFO - Processing file: ben_20240918_008_processed.txt
+2025-11-11 17:22:51,228 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:51,437 - INFO - Cleaning complete. Removed 360 characters (56.69%)
+2025-11-11 17:22:51,441 - INFO - ✓ Successfully cleaned: ben_20240918_008_processed.txt
+2025-11-11 17:22:51,443 - INFO - Processing file: cora_20240918_010_processed.txt
+2025-11-11 17:22:51,487 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:51,598 - INFO - Cleaning complete. Removed -4 characters (-0.84%)
+2025-11-11 17:22:51,602 - INFO - ✓ Successfully cleaned: cora_20240918_010_processed.txt
+2025-11-11 17:22:51,604 - INFO - Processing file: eggsmart_20240715_004_processed.txt
+2025-11-11 17:22:51,653 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:51,694 - INFO - Cleaning complete. Removed -7 characters (-1.65%)
+2025-11-11 17:22:51,700 - INFO - ✓ Successfully cleaned: eggsmart_20240715_004_processed.txt
+2025-11-11 17:22:51,701 - INFO - Processing file: eggspectation_20240715_002_processed.txt
+2025-11-11 17:22:51,769 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:51,804 - INFO - Cleaning complete. Removed -4 characters (-0.95%)
+2025-11-11 17:22:51,808 - INFO - ✓ Successfully cleaned: eggspectation_20240715_002_processed.txt
+2025-11-11 17:22:51,810 - INFO - Processing file: eggspectation_20240715_010_processed.txt
+2025-11-11 17:22:51,873 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:51,907 - INFO - Cleaning complete. Removed 5 characters (1.19%)
+2025-11-11 17:22:51,911 - INFO - ✓ Successfully cleaned: eggspectation_20240715_010_processed.txt
+2025-11-11 17:22:51,913 - INFO - Processing file: eggspectation_20240918_007_processed.txt
+2025-11-11 17:22:51,954 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,018 - INFO - Cleaning complete. Removed -20 characters (-2.5%)
+2025-11-11 17:22:52,023 - INFO - ✓ Successfully cleaned: eggspectation_20240918_007_processed.txt
+2025-11-11 17:22:52,024 - INFO - Processing file: fiveguys_20240918_016_processed.txt
+2025-11-11 17:22:52,054 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,254 - INFO - Cleaning complete. Removed 3 characters (0.15%)
+2025-11-11 17:22:52,259 - INFO - ✓ Successfully cleaned: fiveguys_20240918_016_processed.txt
+2025-11-11 17:22:52,260 - INFO - Processing file: hoteltoronto_20240715_008_processed.txt
+2025-11-11 17:22:52,298 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,334 - INFO - Cleaning complete. Removed -7 characters (-1.59%)
+2025-11-11 17:22:52,338 - INFO - ✓ Successfully cleaned: hoteltoronto_20240715_008_processed.txt
+2025-11-11 17:22:52,340 - INFO - Processing file: l3b_20240918_014_processed.txt
+2025-11-11 17:22:52,394 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,480 - INFO - Cleaning complete. Removed -27 characters (-3.41%)
+2025-11-11 17:22:52,484 - INFO - ✓ Successfully cleaned: l3b_20240918_014_processed.txt
+2025-11-11 17:22:52,485 - INFO - Processing file: lacocina_20240528_001_processed.txt
+2025-11-11 17:22:52,667 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,727 - INFO - Cleaning complete. Removed 36 characters (6.04%)
+2025-11-11 17:22:52,731 - INFO - ✓ Successfully cleaned: lacocina_20240528_001_processed.txt
+2025-11-11 17:22:52,732 - INFO - Processing file: oldnavy_20240918_012_processed.txt
+2025-11-11 17:22:52,765 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,805 - INFO - Cleaning complete. Removed -5 characters (-0.34%)
+2025-11-11 17:22:52,809 - INFO - ✓ Successfully cleaned: oldnavy_20240918_012_processed.txt
+2025-11-11 17:22:52,811 - INFO - Processing file: oldnavy_20240918_013_processed.txt
+2025-11-11 17:22:52,849 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,888 - INFO - Cleaning complete. Removed 0 characters (0.0%)
+2025-11-11 17:22:52,892 - INFO - ✓ Successfully cleaned: oldnavy_20240918_013_processed.txt
+2025-11-11 17:22:52,894 - INFO - Processing file: patisserie_20240918_005_processed.txt
+2025-11-11 17:22:52,931 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:52,971 - INFO - Cleaning complete. Removed -1 characters (-0.13%)
+2025-11-11 17:22:52,977 - INFO - ✓ Successfully cleaned: patisserie_20240918_005_processed.txt
+2025-11-11 17:22:52,979 - INFO - Processing file: pizzeria_20240918_018_processed.txt
+2025-11-11 17:22:53,013 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:53,053 - INFO - Cleaning complete. Removed -19 characters (-2.67%)
+2025-11-11 17:22:53,056 - INFO - ✓ Successfully cleaned: pizzeria_20240918_018_processed.txt
+2025-11-11 17:22:53,058 - INFO - Processing file: tablerock_20240715_009_processed.txt
+2025-11-11 17:22:53,097 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:53,141 - INFO - Cleaning complete. Removed 7 characters (2.41%)
+2025-11-11 17:22:53,144 - INFO - ✓ Successfully cleaned: tablerock_20240715_009_processed.txt
+2025-11-11 17:22:53,145 - INFO - Processing file: thelodge_20240715_001_processed.txt
+2025-11-11 17:22:53,175 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:53,205 - INFO - Cleaning complete. Removed 1 characters (0.19%)
+2025-11-11 17:22:53,210 - INFO - ✓ Successfully cleaned: thelodge_20240715_001_processed.txt
+2025-11-11 17:22:53,211 - INFO - Processing file: thelodge_20240715_006_processed.txt
+2025-11-11 17:22:53,243 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:53,260 - INFO - Cleaning complete. Removed -4 characters (-1.02%)
+2025-11-11 17:22:53,264 - INFO - ✓ Successfully cleaned: thelodge_20240715_006_processed.txt
+2025-11-11 17:22:53,266 - INFO - Processing file: timhorton_20240918_011_processed.txt
+2025-11-11 17:22:53,299 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:53,367 - INFO - Cleaning complete. Removed -5 characters (-0.76%)
+2025-11-11 17:22:53,371 - INFO - ✓ Successfully cleaned: timhorton_20240918_011_processed.txt
+2025-11-11 17:22:53,372 - INFO - Processing file: timhorton_20240918_015_processed.txt
+2025-11-11 17:22:53,414 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:53,483 - INFO - Cleaning complete. Removed 17 characters (1.9%)
+2025-11-11 17:22:53,489 - INFO - ✓ Successfully cleaned: timhorton_20240918_015_processed.txt
+2025-11-11 17:22:53,491 - INFO - Processing file: uniqlo_20240715_processed.txt
+2025-11-11 17:22:53,527 - INFO - Starting text cleaning pipeline...
+2025-11-11 17:22:53,638 - INFO - Cleaning complete. Removed 1541 characters (67.83%)
+2025-11-11 17:22:53,641 - INFO - ✓ Successfully cleaned: uniqlo_20240715_processed.txt
+2025-11-11 17:22:53,643 - INFO - 
+============================================================
+2025-11-11 17:22:53,645 - INFO - CLEANING SUMMARY
+2025-11-11 17:22:53,646 - INFO - ============================================================
+2025-11-11 17:22:53,647 - INFO - Total files: 22
+2025-11-11 17:22:53,648 - INFO - Successfully cleaned: 22
+2025-11-11 17:22:53,650 - INFO - Failed: 0
+2025-11-11 17:22:53,651 - INFO - Total characters removed: 2,155
+2025-11-11 17:22:53,652 - INFO - Average cleanup ratio: 5.80%
+2025-11-11 17:22:53,654 - INFO - Success rate: 100.0%
+2025-11-11 17:22:53,655 - INFO - ============================================================
+
+2025-11-11 17:22:53,657 - INFO - [SUCCESS] cleaning completed in 6.88s
+2025-11-11 17:22:53,703 - INFO - 
+======================================================================
+2025-11-11 17:22:53,704 - INFO - STEP: QUALITY_ASSESSMENT
+2025-11-11 17:22:53,706 - INFO - ======================================================================
+2025-11-11 17:22:53,708 - INFO - Starting quality assessment from data\cleaned
+2025-11-11 17:22:53,710 - INFO - Found 22 files to assess
+2025-11-11 17:22:53,711 - INFO - Assessing file: 20240909_Hilton_cleaned.txt
+2025-11-11 17:22:59,465 - INFO - ✓ Quality Score: 0.654 (good) - 20240909_Hilton_cleaned.txt
+2025-11-11 17:22:59,467 - INFO - Assessing file: allomoncoco_20240918_009_cleaned.txt
+2025-11-11 17:22:59,545 - INFO - ✓ Quality Score: 0.671 (good) - allomoncoco_20240918_009_cleaned.txt
+2025-11-11 17:22:59,547 - INFO - Assessing file: ben_20240918_008_cleaned.txt
+2025-11-11 17:22:59,591 - INFO - ✓ Quality Score: 0.677 (good) - ben_20240918_008_cleaned.txt
+2025-11-11 17:22:59,593 - INFO - Assessing file: cora_20240918_010_cleaned.txt
+2025-11-11 17:22:59,640 - INFO - ✓ Quality Score: 0.687 (good) - cora_20240918_010_cleaned.txt
+2025-11-11 17:22:59,641 - INFO - Assessing file: eggsmart_20240715_004_cleaned.txt
+2025-11-11 17:22:59,689 - INFO - ✓ Quality Score: 0.662 (good) - eggsmart_20240715_004_cleaned.txt
+2025-11-11 17:22:59,690 - INFO - Assessing file: eggspectation_20240715_002_cleaned.txt
+2025-11-11 17:22:59,765 - INFO - ✓ Quality Score: 0.631 (acceptable) - eggspectation_20240715_002_cleaned.txt
+2025-11-11 17:22:59,767 - INFO - Assessing file: eggspectation_20240715_010_cleaned.txt
+2025-11-11 17:22:59,820 - INFO - ✓ Quality Score: 0.677 (good) - eggspectation_20240715_010_cleaned.txt
+2025-11-11 17:22:59,822 - INFO - Assessing file: eggspectation_20240918_007_cleaned.txt
+2025-11-11 17:22:59,900 - INFO - ✓ Quality Score: 0.590 (acceptable) - eggspectation_20240918_007_cleaned.txt
+2025-11-11 17:22:59,901 - INFO - Assessing file: fiveguys_20240918_016_cleaned.txt
+2025-11-11 17:23:00,013 - INFO - ✓ Quality Score: 0.638 (acceptable) - fiveguys_20240918_016_cleaned.txt
+2025-11-11 17:23:00,016 - INFO - Assessing file: hoteltoronto_20240715_008_cleaned.txt
+2025-11-11 17:23:00,068 - INFO - ✓ Quality Score: 0.626 (acceptable) - hoteltoronto_20240715_008_cleaned.txt
+2025-11-11 17:23:00,069 - INFO - Assessing file: l3b_20240918_014_cleaned.txt
+2025-11-11 17:23:00,135 - INFO - ✓ Quality Score: 0.683 (good) - l3b_20240918_014_cleaned.txt
+2025-11-11 17:23:00,136 - INFO - Assessing file: lacocina_20240528_001_cleaned.txt
+2025-11-11 17:23:00,190 - INFO - ✓ Quality Score: 0.518 (acceptable) - lacocina_20240528_001_cleaned.txt
+2025-11-11 17:23:00,191 - INFO - Assessing file: oldnavy_20240918_012_cleaned.txt
+2025-11-11 17:23:00,281 - INFO - ✓ Quality Score: 0.730 (good) - oldnavy_20240918_012_cleaned.txt
+2025-11-11 17:23:00,282 - INFO - Assessing file: oldnavy_20240918_013_cleaned.txt
+2025-11-11 17:23:00,379 - INFO - ✓ Quality Score: 0.676 (good) - oldnavy_20240918_013_cleaned.txt
+2025-11-11 17:23:00,380 - INFO - Assessing file: patisserie_20240918_005_cleaned.txt
+2025-11-11 17:23:00,430 - INFO - ✓ Quality Score: 0.725 (good) - patisserie_20240918_005_cleaned.txt
+2025-11-11 17:23:00,431 - INFO - Assessing file: pizzeria_20240918_018_cleaned.txt
+2025-11-11 17:23:00,492 - INFO - ✓ Quality Score: 0.628 (acceptable) - pizzeria_20240918_018_cleaned.txt
+2025-11-11 17:23:00,493 - INFO - Assessing file: tablerock_20240715_009_cleaned.txt
+2025-11-11 17:23:00,543 - INFO - ✓ Quality Score: 0.598 (acceptable) - tablerock_20240715_009_cleaned.txt
+2025-11-11 17:23:00,544 - INFO - Assessing file: thelodge_20240715_001_cleaned.txt
+2025-11-11 17:23:00,589 - INFO - ✓ Quality Score: 0.694 (good) - thelodge_20240715_001_cleaned.txt
+2025-11-11 17:23:00,590 - INFO - Assessing file: thelodge_20240715_006_cleaned.txt
+2025-11-11 17:23:00,633 - INFO - ✓ Quality Score: 0.702 (good) - thelodge_20240715_006_cleaned.txt
+2025-11-11 17:23:00,634 - INFO - Assessing file: timhorton_20240918_011_cleaned.txt
+2025-11-11 17:23:00,690 - INFO - ✓ Quality Score: 0.639 (acceptable) - timhorton_20240918_011_cleaned.txt
+2025-11-11 17:23:00,692 - INFO - Assessing file: timhorton_20240918_015_cleaned.txt
+2025-11-11 17:23:00,761 - INFO - ✓ Quality Score: 0.656 (good) - timhorton_20240918_015_cleaned.txt
+2025-11-11 17:23:00,762 - INFO - Assessing file: uniqlo_20240715_cleaned.txt
+2025-11-11 17:23:00,812 - INFO - ✓ Quality Score: 0.627 (acceptable) - uniqlo_20240715_cleaned.txt
+2025-11-11 17:23:00,814 - INFO - 
+============================================================
+2025-11-11 17:23:00,815 - INFO - QUALITY ASSESSMENT SUMMARY
+2025-11-11 17:23:00,816 - INFO - ============================================================
+2025-11-11 17:23:00,817 - INFO - Total files assessed: 22
+2025-11-11 17:23:00,818 - INFO - High quality (≥0.5): 22
+2025-11-11 17:23:00,819 - INFO - Low quality (<0.5): 0
+2025-11-11 17:23:00,821 - INFO - Average quality score: 0.654
+2025-11-11 17:23:00,822 - INFO - Score range: 0.518 - 0.730
+2025-11-11 17:23:00,824 - INFO - 
+Category Distribution:
+2025-11-11 17:23:00,826 - INFO -   good: 13
+2025-11-11 17:23:00,827 - INFO -   acceptable: 9
+2025-11-11 17:23:00,828 - INFO - ============================================================
+
+2025-11-11 17:23:00,894 - INFO - Quality report saved to: logs/quality_assessment_report.csv
+2025-11-11 17:23:00,895 - INFO - [SUCCESS] quality_assessment completed in 7.19s
+2025-11-11 17:23:00,897 - INFO - 
+======================================================================
+2025-11-11 17:23:00,898 - INFO - STEP: DEDUPLICATION
+2025-11-11 17:23:00,900 - INFO - ======================================================================
+2025-11-11 17:23:00,901 - INFO - 
+============================================================
+2025-11-11 17:23:00,902 - INFO - STARTING DEDUPLICATION PIPELINE
+2025-11-11 17:23:00,904 - INFO - ============================================================
+2025-11-11 17:23:00,905 - INFO - Loading files from data\quality_assessed\high_quality
+2025-11-11 17:23:01,058 - INFO - ✓ Loaded 22 files
+2025-11-11 17:23:01,059 - INFO - Finding exact duplicates...
+2025-11-11 17:23:01,075 - INFO - ✓ Found 0 exact duplicate groups (0 duplicate files)
+2025-11-11 17:23:01,076 - INFO - Finding fuzzy duplicates with MinHash LSH...
+2025-11-11 17:23:02,311 - INFO - ✓ Found 0 fuzzy duplicate groups (0 duplicate files)
+2025-11-11 17:23:02,313 - INFO - Finding semantic duplicates with embeddings...
+2025-11-11 17:23:02,314 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-11 17:23:02,328 - INFO - Use pytorch device_name: cpu
+2025-11-11 17:23:02,329 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-11 17:23:07,469 - INFO - ✓ Model loaded successfully
+2025-11-11 17:23:07,471 - INFO - Generating embeddings for 22 documents...
+2025-11-11 17:23:13,772 - INFO - Calculating pairwise similarities...
+2025-11-11 17:23:13,784 - INFO - ✓ Found 0 semantic duplicate groups (0 duplicate files)
+2025-11-11 17:23:13,785 - INFO - Merging duplicate groups and selecting best versions...
+2025-11-11 17:23:13,835 - INFO - ✓ Resolved 0 duplicate groups
+2025-11-11 17:23:13,836 - INFO - Saving deduplicated files...
+2025-11-11 17:23:13,897 - INFO - ✓ Saved 22 unique files to data\deduplicated
+2025-11-11 17:23:13,899 - INFO - Generating deduplication report...
+2025-11-11 17:23:13,903 - INFO - 
+============================================================
+2025-11-11 17:23:13,904 - INFO - DEDUPLICATION SUMMARY
+2025-11-11 17:23:13,906 - INFO - ============================================================
+2025-11-11 17:23:13,907 - INFO - Total files processed: 22
+2025-11-11 17:23:13,908 - INFO - Unique files kept: 22
+2025-11-11 17:23:13,909 - INFO - Total duplicates removed: 0
+2025-11-11 17:23:13,911 - INFO -   - Exact duplicates: 0
+2025-11-11 17:23:13,912 - INFO -   - Fuzzy duplicates: 0
+2025-11-11 17:23:13,913 - INFO -   - Semantic duplicates: 0
+2025-11-11 17:23:13,914 - INFO - Deduplication rate: 0.0%
+2025-11-11 17:23:13,915 - INFO - ============================================================
+
+2025-11-11 17:23:13,917 - INFO - [SUCCESS] deduplication completed in 13.02s
+2025-11-11 17:23:18,687 - INFO - Using Recursive Character Splitter
+2025-11-11 17:23:18,689 - INFO - 
+======================================================================
+2025-11-11 17:23:18,691 - INFO - STEP: CHUNKING
+2025-11-11 17:23:18,692 - INFO - ======================================================================
+2025-11-11 17:23:18,693 - INFO - Starting document chunking from data\deduplicated
+2025-11-11 17:23:18,694 - INFO - Strategy: recursive | Chunk size: 512 tokens | Overlap: 50 tokens
+2025-11-11 17:23:18,697 - INFO - Found 22 files to process
+2025-11-11 17:23:18,700 - INFO - Processing file: 20240909_Hilton_deduplicated.txt
+2025-11-11 17:23:18,722 - INFO - [SUCCESS] Created 2 chunks from 20240909_Hilton_deduplicated.txt
+2025-11-11 17:23:18,728 - INFO - Processing file: allomoncoco_20240918_009_deduplicated.txt
+2025-11-11 17:23:18,738 - INFO - [SUCCESS] Created 1 chunks from allomoncoco_20240918_009_deduplicated.txt
+2025-11-11 17:23:18,742 - INFO - Processing file: ben_20240918_008_deduplicated.txt
+2025-11-11 17:23:18,751 - INFO - [SUCCESS] Created 1 chunks from ben_20240918_008_deduplicated.txt
+2025-11-11 17:23:18,755 - INFO - Processing file: cora_20240918_010_deduplicated.txt
+2025-11-11 17:23:18,764 - INFO - [SUCCESS] Created 1 chunks from cora_20240918_010_deduplicated.txt
+2025-11-11 17:23:18,768 - INFO - Processing file: eggsmart_20240715_004_deduplicated.txt
+2025-11-11 17:23:18,777 - INFO - [SUCCESS] Created 1 chunks from eggsmart_20240715_004_deduplicated.txt
+2025-11-11 17:23:18,780 - INFO - Processing file: eggspectation_20240715_002_deduplicated.txt
+2025-11-11 17:23:18,788 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_002_deduplicated.txt
+2025-11-11 17:23:18,792 - INFO - Processing file: eggspectation_20240715_010_deduplicated.txt
+2025-11-11 17:23:18,800 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240715_010_deduplicated.txt
+2025-11-11 17:23:18,805 - INFO - Processing file: eggspectation_20240918_007_deduplicated.txt
+2025-11-11 17:23:18,816 - INFO - [SUCCESS] Created 1 chunks from eggspectation_20240918_007_deduplicated.txt
+2025-11-11 17:23:18,820 - INFO - Processing file: fiveguys_20240918_016_deduplicated.txt
+2025-11-11 17:23:18,835 - INFO - [SUCCESS] Created 1 chunks from fiveguys_20240918_016_deduplicated.txt
+2025-11-11 17:23:18,838 - INFO - Processing file: hoteltoronto_20240715_008_deduplicated.txt
+2025-11-11 17:23:18,846 - INFO - [SUCCESS] Created 1 chunks from hoteltoronto_20240715_008_deduplicated.txt
+2025-11-11 17:23:18,851 - INFO - Processing file: l3b_20240918_014_deduplicated.txt
+2025-11-11 17:23:18,892 - INFO - [SUCCESS] Created 1 chunks from l3b_20240918_014_deduplicated.txt
+2025-11-11 17:23:18,895 - INFO - Processing file: lacocina_20240528_001_deduplicated.txt
+2025-11-11 17:23:18,905 - INFO - [SUCCESS] Created 1 chunks from lacocina_20240528_001_deduplicated.txt
+2025-11-11 17:23:18,910 - INFO - Processing file: oldnavy_20240918_012_deduplicated.txt
+2025-11-11 17:23:18,919 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_012_deduplicated.txt
+2025-11-11 17:23:18,923 - INFO - Processing file: oldnavy_20240918_013_deduplicated.txt
+2025-11-11 17:23:18,936 - INFO - [SUCCESS] Created 1 chunks from oldnavy_20240918_013_deduplicated.txt
+2025-11-11 17:23:18,941 - INFO - Processing file: patisserie_20240918_005_deduplicated.txt
+2025-11-11 17:23:18,950 - INFO - [SUCCESS] Created 1 chunks from patisserie_20240918_005_deduplicated.txt
+2025-11-11 17:23:18,955 - INFO - Processing file: pizzeria_20240918_018_deduplicated.txt
+2025-11-11 17:23:18,966 - INFO - [SUCCESS] Created 1 chunks from pizzeria_20240918_018_deduplicated.txt
+2025-11-11 17:23:18,970 - INFO - Processing file: tablerock_20240715_009_deduplicated.txt
+2025-11-11 17:23:18,977 - INFO - [SUCCESS] Created 1 chunks from tablerock_20240715_009_deduplicated.txt
+2025-11-11 17:23:18,981 - INFO - Processing file: thelodge_20240715_001_deduplicated.txt
+2025-11-11 17:23:18,990 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_001_deduplicated.txt
+2025-11-11 17:23:18,993 - INFO - Processing file: thelodge_20240715_006_deduplicated.txt
+2025-11-11 17:23:19,000 - INFO - [SUCCESS] Created 1 chunks from thelodge_20240715_006_deduplicated.txt
+2025-11-11 17:23:19,005 - INFO - Processing file: timhorton_20240918_011_deduplicated.txt
+2025-11-11 17:23:19,036 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_011_deduplicated.txt
+2025-11-11 17:23:19,041 - INFO - Processing file: timhorton_20240918_015_deduplicated.txt
+2025-11-11 17:23:19,053 - INFO - [SUCCESS] Created 1 chunks from timhorton_20240918_015_deduplicated.txt
+2025-11-11 17:23:19,056 - INFO - Processing file: uniqlo_20240715_deduplicated.txt
+2025-11-11 17:23:19,068 - INFO - [SUCCESS] Created 1 chunks from uniqlo_20240715_deduplicated.txt
+2025-11-11 17:23:19,096 - INFO - Chunking report saved to: logs/chunking_report.csv
+2025-11-11 17:23:19,101 - INFO - 
+============================================================
+2025-11-11 17:23:19,102 - INFO - CHUNKING SUMMARY
+2025-11-11 17:23:19,103 - INFO - ============================================================
+2025-11-11 17:23:19,104 - INFO - Strategy: recursive
+2025-11-11 17:23:19,106 - INFO - Total documents processed: 22
+2025-11-11 17:23:19,106 - INFO - Total chunks created: 23
+2025-11-11 17:23:19,107 - INFO - Average chunks per document: 1.0
+2025-11-11 17:23:19,108 - INFO - 
+Chunk Size Statistics:
+2025-11-11 17:23:19,110 - INFO -   Mean: 472 tokens
+2025-11-11 17:23:19,111 - INFO -   Median: 433 tokens
+2025-11-11 17:23:19,112 - INFO -   Std Dev: 294 tokens
+2025-11-11 17:23:19,113 - INFO - 
+Quality Issues:
+2025-11-11 17:23:19,114 - INFO -   Chunks too small (<100): 0
+2025-11-11 17:23:19,115 - INFO -   Chunks too large (>1000): 1
+2025-11-11 17:23:19,116 - INFO - ============================================================
+
+2025-11-11 17:23:19,118 - INFO - [SUCCESS] chunking completed in 0.42s
+2025-11-11 17:23:19,120 - INFO - 
+======================================================================
+2025-11-11 17:23:19,121 - INFO - STEP: ENRICHMENT
+2025-11-11 17:23:19,122 - INFO - ======================================================================
+2025-11-11 17:23:19,123 - INFO - 
+============================================================
+2025-11-11 17:23:19,125 - INFO - STARTING METADATA ENRICHMENT
+2025-11-11 17:23:19,126 - INFO - ============================================================
+2025-11-11 17:23:19,127 - INFO - Loading spaCy model for NER...
+2025-11-11 17:23:22,560 - INFO - [SUCCESS] spaCy model loaded
+2025-11-11 17:23:22,561 - INFO - Loading KeyBERT model...
+2025-11-11 17:23:22,569 - INFO - Use pytorch device_name: cpu
+2025-11-11 17:23:22,571 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-11 17:23:25,407 - INFO - [SUCCESS] KeyBERT model loaded
+2025-11-11 17:23:25,447 - INFO - Found 22 chunk files to enrich
+2025-11-11 17:23:25,448 - INFO - Processing: 20240909_Hilton_chunks.jsonl
+2025-11-11 17:23:35,693 - INFO - [SUCCESS] Enriched 2 chunks from 20240909_Hilton_chunks.jsonl
+2025-11-11 17:23:35,700 - INFO - Processing: allomoncoco_20240918_009_chunks.jsonl
+2025-11-11 17:23:39,000 - INFO - [SUCCESS] Enriched 1 chunks from allomoncoco_20240918_009_chunks.jsonl
+2025-11-11 17:23:39,007 - INFO - Processing: ben_20240918_008_chunks.jsonl
+2025-11-11 17:23:40,056 - INFO - [SUCCESS] Enriched 1 chunks from ben_20240918_008_chunks.jsonl
+2025-11-11 17:23:40,060 - INFO - Processing: cora_20240918_010_chunks.jsonl
+2025-11-11 17:23:41,901 - INFO - [SUCCESS] Enriched 1 chunks from cora_20240918_010_chunks.jsonl
+2025-11-11 17:23:41,904 - INFO - Processing: eggsmart_20240715_004_chunks.jsonl
+2025-11-11 17:23:43,401 - INFO - [SUCCESS] Enriched 1 chunks from eggsmart_20240715_004_chunks.jsonl
+2025-11-11 17:23:43,406 - INFO - Processing: eggspectation_20240715_002_chunks.jsonl
+2025-11-11 17:23:45,468 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_002_chunks.jsonl
+2025-11-11 17:23:45,473 - INFO - Processing: eggspectation_20240715_010_chunks.jsonl
+2025-11-11 17:23:47,678 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240715_010_chunks.jsonl
+2025-11-11 17:23:47,683 - INFO - Processing: eggspectation_20240918_007_chunks.jsonl
+2025-11-11 17:23:51,908 - INFO - [SUCCESS] Enriched 1 chunks from eggspectation_20240918_007_chunks.jsonl
+2025-11-11 17:23:51,914 - INFO - Processing: fiveguys_20240918_016_chunks.jsonl
+2025-11-11 17:23:56,656 - INFO - [SUCCESS] Enriched 1 chunks from fiveguys_20240918_016_chunks.jsonl
+2025-11-11 17:23:56,660 - INFO - Processing: hoteltoronto_20240715_008_chunks.jsonl
+2025-11-11 17:23:59,702 - INFO - [SUCCESS] Enriched 1 chunks from hoteltoronto_20240715_008_chunks.jsonl
+2025-11-11 17:23:59,708 - INFO - Processing: l3b_20240918_014_chunks.jsonl
+2025-11-11 17:24:04,918 - INFO - [SUCCESS] Enriched 1 chunks from l3b_20240918_014_chunks.jsonl
+2025-11-11 17:24:04,924 - INFO - Processing: lacocina_20240528_001_chunks.jsonl
+2025-11-11 17:24:06,864 - INFO - [SUCCESS] Enriched 1 chunks from lacocina_20240528_001_chunks.jsonl
+2025-11-11 17:24:06,869 - INFO - Processing: oldnavy_20240918_012_chunks.jsonl
+2025-11-11 17:24:13,007 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_012_chunks.jsonl
+2025-11-11 17:24:13,013 - INFO - Processing: oldnavy_20240918_013_chunks.jsonl
+2025-11-11 17:24:19,145 - INFO - [SUCCESS] Enriched 1 chunks from oldnavy_20240918_013_chunks.jsonl
+2025-11-11 17:24:19,151 - INFO - Processing: patisserie_20240918_005_chunks.jsonl
+2025-11-11 17:24:21,704 - INFO - [SUCCESS] Enriched 1 chunks from patisserie_20240918_005_chunks.jsonl
+2025-11-11 17:24:21,708 - INFO - Processing: pizzeria_20240918_018_chunks.jsonl
+2025-11-11 17:24:24,858 - INFO - [SUCCESS] Enriched 1 chunks from pizzeria_20240918_018_chunks.jsonl
+2025-11-11 17:24:24,864 - INFO - Processing: tablerock_20240715_009_chunks.jsonl
+2025-11-11 17:24:26,225 - INFO - [SUCCESS] Enriched 1 chunks from tablerock_20240715_009_chunks.jsonl
+2025-11-11 17:24:26,232 - INFO - Processing: thelodge_20240715_001_chunks.jsonl
+2025-11-11 17:24:28,073 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_001_chunks.jsonl
+2025-11-11 17:24:28,081 - INFO - Processing: thelodge_20240715_006_chunks.jsonl
+2025-11-11 17:24:29,900 - INFO - [SUCCESS] Enriched 1 chunks from thelodge_20240715_006_chunks.jsonl
+2025-11-11 17:24:29,905 - INFO - Processing: timhorton_20240918_011_chunks.jsonl
+2025-11-11 17:24:32,687 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_011_chunks.jsonl
+2025-11-11 17:24:32,691 - INFO - Processing: timhorton_20240918_015_chunks.jsonl
+2025-11-11 17:24:36,954 - INFO - [SUCCESS] Enriched 1 chunks from timhorton_20240918_015_chunks.jsonl
+2025-11-11 17:24:36,961 - INFO - Processing: uniqlo_20240715_chunks.jsonl
+2025-11-11 17:24:39,466 - INFO - [SUCCESS] Enriched 1 chunks from uniqlo_20240715_chunks.jsonl
+2025-11-11 17:24:39,470 - INFO - 
+============================================================
+2025-11-11 17:24:39,472 - INFO - ENRICHMENT SUMMARY
+2025-11-11 17:24:39,473 - INFO - ============================================================
+2025-11-11 17:24:39,474 - INFO - Total chunks processed: 23
+2025-11-11 17:24:39,476 - INFO - Successfully enriched: 23
+2025-11-11 17:24:39,477 - INFO - Failed: 0
+2025-11-11 17:24:39,478 - INFO - 
+Keyword Statistics:
+2025-11-11 17:24:39,479 - INFO -   Chunks with keywords: 23
+2025-11-11 17:24:39,481 - INFO -   Average keywords per chunk: 5.0
+2025-11-11 17:24:39,483 - INFO - 
+Entity Statistics:
+2025-11-11 17:24:39,485 - INFO -   Chunks with entities: 23
+2025-11-11 17:24:39,486 - INFO -   Average entities per chunk: 28.3
+2025-11-11 17:24:39,487 - INFO - ============================================================
+
+2025-11-11 17:24:39,489 - INFO - [SUCCESS] enrichment completed in 80.37s
+2025-11-11 17:24:39,490 - INFO - 
+======================================================================
+2025-11-11 17:24:39,492 - INFO - PIPELINE SUMMARY
+2025-11-11 17:24:39,493 - INFO - ======================================================================
+2025-11-11 17:24:39,494 - INFO - 
+Total Pipeline Time: 115.53s
+2025-11-11 17:24:39,495 - INFO - Status: success
+2025-11-11 17:24:39,497 - INFO - 
+Step-by-Step Results:
+2025-11-11 17:24:39,498 - INFO -   [SUCCESS] ingestion: 2.77s
+2025-11-11 17:24:39,500 - INFO -   [SUCCESS] cleaning: 6.88s
+2025-11-11 17:24:39,501 - INFO -   [SUCCESS] quality_assessment: 7.19s
+2025-11-11 17:24:39,502 - INFO -   [SUCCESS] deduplication: 13.02s
+2025-11-11 17:24:39,505 - INFO -   [SUCCESS] chunking: 0.42s
+2025-11-11 17:24:39,508 - INFO -   [SUCCESS] enrichment: 80.37s
+2025-11-11 17:24:39,509 - INFO - 
+Key Metrics:
+2025-11-11 17:24:39,510 - INFO -   Ingestion:
+2025-11-11 17:24:39,512 - INFO -     Files processed: [{'filename': '20240909_Hilton.pdf', 'format': 'pdf', 'page_count': 2, 'size_bytes': 199246, 'char_count': 4045, 'file_hash': '1ba8cd3473cffccffbc2ba68fafb97d5', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.311492', 'processed_file_path': 'data\\processed\\20240909_Hilton_processed.txt'}, {'filename': 'allomoncoco_20240918_009.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 59232, 'char_count': 1107, 'file_hash': 'f5ac181d393021866e832ab9e9a20f69', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.447889', 'processed_file_path': 'data\\processed\\allomoncoco_20240918_009_processed.txt'}, {'filename': 'ben_20240918_008.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 43469, 'char_count': 635, 'file_hash': '5202040f7fbbdfc7e58ce8e8f4b84a29', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.540075', 'processed_file_path': 'data\\processed\\ben_20240918_008_processed.txt'}, {'filename': 'cora_20240918_010.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 45754, 'char_count': 475, 'file_hash': '5d80e31012a63b4e1c686fc90c7538d1', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.625013', 'processed_file_path': 'data\\processed\\cora_20240918_010_processed.txt'}, {'filename': 'eggsmart_20240715_004.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 22323, 'char_count': 424, 'file_hash': '6aa3c730c6ae8ea03fb057c11fbf12b0', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.709319', 'processed_file_path': 'data\\processed\\eggsmart_20240715_004_processed.txt'}, {'filename': 'eggspectation_20240715_002.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 23922, 'char_count': 419, 'file_hash': 'cc284e2097d8973738f1f6ede43f2ffa', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.781887', 'processed_file_path': 'data\\processed\\eggspectation_20240715_002_processed.txt'}, {'filename': 'eggspectation_20240715_010.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 23578, 'char_count': 420, 'file_hash': '762eaa6bb2bcc7878ee6b08e37eaf928', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.850263', 'processed_file_path': 'data\\processed\\eggspectation_20240715_010_processed.txt'}, {'filename': 'eggspectation_20240918_007.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 47902, 'char_count': 799, 'file_hash': '16cf02278ddc3662349123b50b32c62a', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:44.968861', 'processed_file_path': 'data\\processed\\eggspectation_20240918_007_processed.txt'}, {'filename': 'fiveguys_20240918_016.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 75073, 'char_count': 1970, 'file_hash': 'b7a8b6e93838848b621e252e5bdb27b8', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:45.267601', 'processed_file_path': 'data\\processed\\fiveguys_20240918_016_processed.txt'}, {'filename': 'hoteltoronto_20240715_008.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 27898, 'char_count': 441, 'file_hash': '12974e6c6dee200e2610c3391b50919b', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:45.360539', 'processed_file_path': 'data\\processed\\hoteltoronto_20240715_008_processed.txt'}, {'filename': 'l3b_20240918_014.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 48202, 'char_count': 791, 'file_hash': '5f923035f7ac41b3e96a8562675620ac', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:45.485096', 'processed_file_path': 'data\\processed\\l3b_20240918_014_processed.txt'}, {'filename': 'lacocina_20240528_001.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 23172, 'char_count': 596, 'file_hash': 'f5ba428999d46ed35817e0a9907dd793', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:45.646340', 'processed_file_path': 'data\\processed\\lacocina_20240528_001_processed.txt'}, {'filename': 'oldnavy_20240918_012.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 61676, 'char_count': 1453, 'file_hash': '6a566de033c65015560ce17aa3ad71ee', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:45.821755', 'processed_file_path': 'data\\processed\\oldnavy_20240918_012_processed.txt'}, {'filename': 'oldnavy_20240918_013.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 60796, 'char_count': 1473, 'file_hash': 'ee50ff04e3c831df26993cbabc7f2628', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:45.955454', 'processed_file_path': 'data\\processed\\oldnavy_20240918_013_processed.txt'}, {'filename': 'patisserie_20240918_005.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 45570, 'char_count': 774, 'file_hash': 'd0d4a4955946dd6db3e850e7a108c632', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.036648', 'processed_file_path': 'data\\processed\\patisserie_20240918_005_processed.txt'}, {'filename': 'pizzeria_20240918_018.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 46528, 'char_count': 711, 'file_hash': 'dd974c44cfba28b4dbd217b013247064', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.122537', 'processed_file_path': 'data\\processed\\pizzeria_20240918_018_processed.txt'}, {'filename': 'tablerock_20240715_009.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 17791, 'char_count': 291, 'file_hash': 'ae1bf55169576a629f164396c9d4c8f2', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.209902', 'processed_file_path': 'data\\processed\\tablerock_20240715_009_processed.txt'}, {'filename': 'thelodge_20240715_001.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 33337, 'char_count': 530, 'file_hash': '0829c91b5f0e8bf33a53412c350f168f', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.298787', 'processed_file_path': 'data\\processed\\thelodge_20240715_001_processed.txt'}, {'filename': 'thelodge_20240715_006.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 26620, 'char_count': 393, 'file_hash': 'f40362c4eb44838709b1a66de8913893', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.367015', 'processed_file_path': 'data\\processed\\thelodge_20240715_006_processed.txt'}, {'filename': 'timhorton_20240918_011.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 154403, 'char_count': 654, 'file_hash': 'd373dffca6b73cb49f5263ab86073474', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.459990', 'processed_file_path': 'data\\processed\\timhorton_20240918_011_processed.txt'}, {'filename': 'timhorton_20240918_015.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 191988, 'char_count': 894, 'file_hash': '3e20d8b94d2bb56cc82afbb9b6a04990', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.557092', 'processed_file_path': 'data\\processed\\timhorton_20240918_015_processed.txt'}, {'filename': 'uniqlo_20240715.pdf', 'format': 'pdf', 'page_count': 1, 'size_bytes': 94133, 'char_count': 2272, 'file_hash': 'a4a07b021e7b12057d5c4204bbcb8c86', 'validation_status': 'valid', 'validation_issues': [], 'processed_timestamp': '2025-11-11T17:22:46.739880', 'processed_file_path': 'data\\processed\\uniqlo_20240715_processed.txt'}]
+2025-11-11 17:24:39,543 - INFO -   Quality Assessment:
+2025-11-11 17:24:39,548 - INFO -     Files assessed: [{'source_file': '20240909_Hilton_cleaned.txt', 'output_file': '20240909_Hilton_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\20240909_Hilton_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.465586', 'composite_score': {'composite_quality_score': np.float64(0.654), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.141), 'score_breakdown': {'readability': 0.867, 'coherence': np.float64(0.141), 'information_density': 0.817, 'completeness': 0.73, 'linguistic_quality': 0.876}}, 'detailed_metrics': {'readability': {'readability_score': 0.867, 'flesch_reading_ease': 46.76, 'flesch_kincaid_grade': 10.85, 'avg_sentence_length': 16.56, 'flesch_normalized': 0.668, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.141), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.032), 'length_variance': np.float64(1.394), 'transition_score': 0.0, 'cohesion_score': np.float64(0.162)}, 'information_density': {'information_density': 0.817, 'lexical_diversity': 0.565, 'content_word_ratio': 0.469, 'avg_word_length': np.float64(6.16), 'number_ratio': 0.281, 'ttr_score': 0.941}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 533, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.876, 'capitalization_ratio': 0.667, 'words_per_sentence': 17.4, 'alpha_ratio': 0.643, 'capitalization_score': 0.667}}, 'status': 'success'}, {'source_file': 'allomoncoco_20240918_009_cleaned.txt', 'output_file': 'allomoncoco_20240918_009_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\allomoncoco_20240918_009_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.544949', 'composite_score': {'composite_quality_score': np.float64(0.671), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.417), 'score_breakdown': {'readability': 0.977, 'coherence': np.float64(0.417), 'information_density': np.float64(0.706), 'completeness': 0.73, 'linguistic_quality': 0.566}}, 'detailed_metrics': {'readability': {'readability_score': 0.977, 'flesch_reading_ease': 74.32, 'flesch_kincaid_grade': 9.05, 'avg_sentence_length': 24.78, 'flesch_normalized': 0.943, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.417), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.088), 'length_variance': np.float64(0.033), 'transition_score': 0.0, 'cohesion_score': np.float64(0.44)}, 'information_density': {'information_density': np.float64(0.706), 'lexical_diversity': 0.627, 'content_word_ratio': 0.399, 'avg_word_length': np.float64(2.13), 'number_ratio': 0.229, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 271, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.566, 'capitalization_ratio': 0.5, 'words_per_sentence': 69.0, 'alpha_ratio': 0.505, 'capitalization_score': 0.5}}, 'status': 'success'}, {'source_file': 'ben_20240918_008_cleaned.txt', 'output_file': 'ben_20240918_008_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\ben_20240918_008_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.591702', 'composite_score': {'composite_quality_score': np.float64(0.677), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': 0.5, 'score_breakdown': {'readability': 0.982, 'coherence': 0.5, 'information_density': np.float64(0.663), 'completeness': 0.67, 'linguistic_quality': 0.595}}, 'detailed_metrics': {'readability': {'readability_score': 0.982, 'flesch_reading_ease': 85.76, 'flesch_kincaid_grade': 7.88, 'avg_sentence_length': 26.5, 'flesch_normalized': 1.0, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': 0.5, 'reason': 'too_few_sentences'}, 'information_density': {'information_density': np.float64(0.663), 'lexical_diversity': 0.87, 'content_word_ratio': 0.232, 'avg_word_length': np.float64(2.94), 'number_ratio': 0.435, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.67, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 69, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.595, 'capitalization_ratio': 0.0, 'words_per_sentence': 17.0, 'alpha_ratio': 0.455, 'capitalization_score': 0.0}}, 'status': 'success'}, {'source_file': 'cora_20240918_010_cleaned.txt', 'output_file': 'cora_20240918_010_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\cora_20240918_010_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.640030', 'composite_score': {'composite_quality_score': np.float64(0.687), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.205), 'score_breakdown': {'readability': 0.853, 'coherence': np.float64(0.205), 'information_density': 0.779, 'completeness': 0.88, 'linguistic_quality': 0.923}}, 'detailed_metrics': {'readability': {'readability_score': 0.853, 'flesch_reading_ease': 63.82, 'flesch_kincaid_grade': 6.16, 'avg_sentence_length': 7.25, 'flesch_normalized': 0.838, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.205), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.034), 'length_variance': np.float64(0.8), 'transition_score': 0.0, 'cohesion_score': np.float64(0.169)}, 'information_density': {'information_density': 0.779, 'lexical_diversity': 0.769, 'content_word_ratio': 0.359, 'avg_word_length': np.float64(5.21), 'number_ratio': 0.359, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.88, 'ends_properly': True, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 78, 'ending_score': 1.0}, 'linguistic_quality': {'linguistic_quality': 0.923, 'capitalization_ratio': 1.0, 'words_per_sentence': 14.5, 'alpha_ratio': 0.52, 'capitalization_score': 1.0}}, 'status': 'success'}, {'source_file': 'eggsmart_20240715_004_cleaned.txt', 'output_file': 'eggsmart_20240715_004_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\eggsmart_20240715_004_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.689404', 'composite_score': {'composite_quality_score': np.float64(0.662), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.227), 'score_breakdown': {'readability': 0.82, 'coherence': np.float64(0.227), 'information_density': 0.785, 'completeness': 0.88, 'linguistic_quality': 0.755}}, 'detailed_metrics': {'readability': {'readability_score': 0.82, 'flesch_reading_ease': 86.24, 'flesch_kincaid_grade': 3.47, 'avg_sentence_length': 9.0, 'flesch_normalized': 1.0, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': np.float64(0.227), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.066), 'length_variance': np.float64(1.372), 'transition_score': 0.0, 'cohesion_score': np.float64(0.329)}, 'information_density': {'information_density': 0.785, 'lexical_diversity': 0.804, 'content_word_ratio': 0.37, 'avg_word_length': np.float64(5.38), 'number_ratio': 0.315, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.88, 'ends_properly': True, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 92, 'ending_score': 1.0}, 'linguistic_quality': {'linguistic_quality': 0.755, 'capitalization_ratio': 0.5, 'words_per_sentence': 9.25, 'alpha_ratio': 0.548, 'capitalization_score': 0.5}}, 'status': 'success'}, {'source_file': 'eggspectation_20240715_002_cleaned.txt', 'output_file': 'eggspectation_20240715_002_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\eggspectation_20240715_002_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.765532', 'composite_score': {'composite_quality_score': np.float64(0.631), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.218), 'score_breakdown': {'readability': 0.747, 'coherence': np.float64(0.218), 'information_density': 0.797, 'completeness': 0.67, 'linguistic_quality': 0.852}}, 'detailed_metrics': {'readability': {'readability_score': 0.747, 'flesch_reading_ease': 67.15, 'flesch_kincaid_grade': 5.95, 'avg_sentence_length': 8.29, 'flesch_normalized': 0.871, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': np.float64(0.218), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.037), 'length_variance': np.float64(0.733), 'transition_score': 0.0, 'cohesion_score': np.float64(0.183)}, 'information_density': {'information_density': 0.797, 'lexical_diversity': 0.859, 'content_word_ratio': 0.394, 'avg_word_length': np.float64(5.18), 'number_ratio': 0.31, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.67, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 71, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.852, 'capitalization_ratio': 0.667, 'words_per_sentence': 11.33, 'alpha_ratio': 0.589, 'capitalization_score': 0.667}}, 'status': 'success'}, {'source_file': 'eggspectation_20240715_010_cleaned.txt', 'output_file': 'eggspectation_20240715_010_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\eggspectation_20240715_010_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.820424', 'composite_score': {'composite_quality_score': np.float64(0.677), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.273), 'score_breakdown': {'readability': 0.918, 'coherence': np.float64(0.273), 'information_density': 0.813, 'completeness': 0.67, 'linguistic_quality': 0.81}}, 'detailed_metrics': {'readability': {'readability_score': 0.918, 'flesch_reading_ease': 64.42, 'flesch_kincaid_grade': 6.59, 'avg_sentence_length': 9.33, 'flesch_normalized': 0.844, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.273), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.053), 'length_variance': np.float64(0.584), 'transition_score': 0.0, 'cohesion_score': np.float64(0.263)}, 'information_density': {'information_density': 0.813, 'lexical_diversity': 0.787, 'content_word_ratio': 0.427, 'avg_word_length': np.float64(5.8), 'number_ratio': 0.267, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.67, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 75, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.81, 'capitalization_ratio': 0.5, 'words_per_sentence': 17.5, 'alpha_ratio': 0.607, 'capitalization_score': 0.5}}, 'status': 'success'}, {'source_file': 'eggspectation_20240918_007_cleaned.txt', 'output_file': 'eggspectation_20240918_007_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\eggspectation_20240918_007_assessed.txt', 'assessment_timestamp': '2025-11-11T17:22:59.899933', 'composite_score': {'composite_quality_score': np.float64(0.59), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.371), 'score_breakdown': {'readability': 0.781, 'coherence': np.float64(0.371), 'information_density': np.float64(0.648), 'completeness': 0.73, 'linguistic_quality': 0.461}}, 'detailed_metrics': {'readability': {'readability_score': 0.781, 'flesch_reading_ease': 92.47, 'flesch_kincaid_grade': 2.28, 'avg_sentence_length': 7.71, 'flesch_normalized': 1.0, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': np.float64(0.371), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.089), 'length_variance': np.float64(0.512), 'transition_score': 0.0, 'cohesion_score': np.float64(0.445)}, 'information_density': {'information_density': np.float64(0.648), 'lexical_diversity': 0.585, 'content_word_ratio': 0.174, 'avg_word_length': np.float64(3.38), 'number_ratio': 0.286, 'ttr_score': 0.975}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 241, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.461, 'capitalization_ratio': 0.125, 'words_per_sentence': 6.0, 'alpha_ratio': 0.429, 'capitalization_score': 0.125}}, 'status': 'success'}, {'source_file': 'fiveguys_20240918_016_cleaned.txt', 'output_file': 'fiveguys_20240918_016_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\fiveguys_20240918_016_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.013467', 'composite_score': {'composite_quality_score': np.float64(0.638), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.322), 'score_breakdown': {'readability': 0.998, 'coherence': np.float64(0.322), 'information_density': np.float64(0.682), 'completeness': 0.73, 'linguistic_quality': 0.517}}, 'detailed_metrics': {'readability': {'readability_score': 0.998, 'flesch_reading_ease': 89.31, 'flesch_kincaid_grade': 7.06, 'avg_sentence_length': 25.19, 'flesch_normalized': 1.0, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.322), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.077), 'length_variance': np.float64(0.707), 'transition_score': 0.0, 'cohesion_score': np.float64(0.385)}, 'information_density': {'information_density': np.float64(0.682), 'lexical_diversity': 0.408, 'content_word_ratio': 0.415, 'avg_word_length': np.float64(1.57), 'number_ratio': 0.156, 'ttr_score': 0.68}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 711, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.517, 'capitalization_ratio': 0.182, 'words_per_sentence': 32.27, 'alpha_ratio': 0.418, 'capitalization_score': 0.182}}, 'status': 'success'}, {'source_file': 'hoteltoronto_20240715_008_cleaned.txt', 'output_file': 'hoteltoronto_20240715_008_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\hoteltoronto_20240715_008_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.068304', 'composite_score': {'composite_quality_score': np.float64(0.626), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.119), 'score_breakdown': {'readability': 0.924, 'coherence': np.float64(0.119), 'information_density': 0.761, 'completeness': 0.67, 'linguistic_quality': 0.803}}, 'detailed_metrics': {'readability': {'readability_score': 0.924, 'flesch_reading_ease': 61.1, 'flesch_kincaid_grade': 7.87, 'avg_sentence_length': 12.6, 'flesch_normalized': 0.811, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.119), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.0), 'length_variance': np.float64(0.814), 'transition_score': 0.0, 'cohesion_score': np.float64(0.0)}, 'information_density': {'information_density': 0.761, 'lexical_diversity': 0.905, 'content_word_ratio': 0.321, 'avg_word_length': np.float64(5.9), 'number_ratio': 0.393, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.67, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 84, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.803, 'capitalization_ratio': 0.5, 'words_per_sentence': 14.5, 'alpha_ratio': 0.589, 'capitalization_score': 0.5}}, 'status': 'success'}, {'source_file': 'l3b_20240918_014_cleaned.txt', 'output_file': 'l3b_20240918_014_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\l3b_20240918_014_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.135125', 'composite_score': {'composite_quality_score': np.float64(0.683), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.305), 'score_breakdown': {'readability': 0.978, 'coherence': np.float64(0.305), 'information_density': np.float64(0.719), 'completeness': 0.73, 'linguistic_quality': 0.815}}, 'detailed_metrics': {'readability': {'readability_score': 0.978, 'flesch_reading_ease': 74.58, 'flesch_kincaid_grade': 7.49, 'avg_sentence_length': 18.67, 'flesch_normalized': 0.946, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.305), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.054), 'length_variance': np.float64(0.309), 'transition_score': 0.0, 'cohesion_score': np.float64(0.272)}, 'information_density': {'information_density': np.float64(0.719), 'lexical_diversity': 0.796, 'content_word_ratio': 0.263, 'avg_word_length': np.float64(3.76), 'number_ratio': 0.395, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 152, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.815, 'capitalization_ratio': 0.667, 'words_per_sentence': 15.0, 'alpha_ratio': 0.501, 'capitalization_score': 0.667}}, 'status': 'success'}, {'source_file': 'lacocina_20240528_001_cleaned.txt', 'output_file': 'lacocina_20240528_001_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\lacocina_20240528_001_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.190162', 'composite_score': {'composite_quality_score': np.float64(0.518), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.272), 'score_breakdown': {'readability': 0.352, 'coherence': np.float64(0.272), 'information_density': np.float64(0.683), 'completeness': 0.73, 'linguistic_quality': 0.665}}, 'detailed_metrics': {'readability': {'readability_score': 0.352, 'flesch_reading_ease': 30.52, 'flesch_kincaid_grade': 30.37, 'avg_sentence_length': 86.0, 'flesch_normalized': 0.505, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': np.float64(0.272), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.059), 'length_variance': np.float64(0.764), 'transition_score': 0.0, 'cohesion_score': np.float64(0.297)}, 'information_density': {'information_density': np.float64(0.683), 'lexical_diversity': 0.495, 'content_word_ratio': 0.468, 'avg_word_length': np.float64(1.4), 'number_ratio': 0.202, 'ttr_score': 0.826}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 218, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.665, 'capitalization_ratio': 1.0, 'words_per_sentence': 60.5, 'alpha_ratio': 0.386, 'capitalization_score': 1.0}}, 'status': 'success'}, {'source_file': 'oldnavy_20240918_012_cleaned.txt', 'output_file': 'oldnavy_20240918_012_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\oldnavy_20240918_012_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.280860', 'composite_score': {'composite_quality_score': np.float64(0.73), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.216), 'score_breakdown': {'readability': 0.927, 'coherence': np.float64(0.216), 'information_density': 0.869, 'completeness': 0.94, 'linguistic_quality': 0.879}}, 'detailed_metrics': {'readability': {'readability_score': 0.927, 'flesch_reading_ease': 64.13, 'flesch_kincaid_grade': 6.72, 'avg_sentence_length': 9.68, 'flesch_normalized': 0.841, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.216), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.034), 'length_variance': np.float64(0.688), 'transition_score': 0.0, 'cohesion_score': np.float64(0.169)}, 'information_density': {'information_density': 0.869, 'lexical_diversity': 0.836, 'content_word_ratio': 0.537, 'avg_word_length': np.float64(6.05), 'number_ratio': 0.271, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.94, 'ends_properly': True, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 218, 'ending_score': 1.0}, 'linguistic_quality': {'linguistic_quality': 0.879, 'capitalization_ratio': 0.667, 'words_per_sentence': 9.92, 'alpha_ratio': 0.659, 'capitalization_score': 0.667}}, 'status': 'success'}, {'source_file': 'oldnavy_20240918_013_cleaned.txt', 'output_file': 'oldnavy_20240918_013_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\oldnavy_20240918_013_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.379154', 'composite_score': {'composite_quality_score': np.float64(0.676), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.28), 'score_breakdown': {'readability': 0.729, 'coherence': np.float64(0.28), 'information_density': 0.796, 'completeness': 0.94, 'linguistic_quality': 0.8}}, 'detailed_metrics': {'readability': {'readability_score': 0.729, 'flesch_reading_ease': 72.2, 'flesch_kincaid_grade': 4.93, 'avg_sentence_length': 7.0, 'flesch_normalized': 0.922, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': np.float64(0.28), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.07), 'length_variance': np.float64(0.945), 'transition_score': 0.0, 'cohesion_score': np.float64(0.349)}, 'information_density': {'information_density': 0.796, 'lexical_diversity': 0.778, 'content_word_ratio': 0.393, 'avg_word_length': np.float64(5.3), 'number_ratio': 0.349, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.94, 'ends_properly': True, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 252, 'ending_score': 1.0}, 'linguistic_quality': {'linguistic_quality': 0.8, 'capitalization_ratio': 0.5, 'words_per_sentence': 11.4, 'alpha_ratio': 0.582, 'capitalization_score': 0.5}}, 'status': 'success'}, {'source_file': 'patisserie_20240918_005_cleaned.txt', 'output_file': 'patisserie_20240918_005_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\patisserie_20240918_005_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.429918', 'composite_score': {'composite_quality_score': 0.725, 'quality_category': 'good', 'passes_threshold': True, 'weakest_metric': 'coherence', 'weakest_score': 0.5, 'score_breakdown': {'readability': 0.954, 'coherence': 0.5, 'information_density': 0.737, 'completeness': 0.73, 'linguistic_quality': 0.77}}, 'detailed_metrics': {'readability': {'readability_score': 0.954, 'flesch_reading_ease': 68.5, 'flesch_kincaid_grade': 6.37, 'avg_sentence_length': 10.71, 'flesch_normalized': 0.885, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': 0.5, 'reason': 'too_few_sentences'}, 'information_density': {'information_density': 0.737, 'lexical_diversity': 0.658, 'content_word_ratio': 0.274, 'avg_word_length': np.float64(6.47), 'number_ratio': 0.316, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 117, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.77, 'capitalization_ratio': 1.0, 'words_per_sentence': 32.0, 'alpha_ratio': 0.425, 'capitalization_score': 1.0}}, 'status': 'success'}, {'source_file': 'pizzeria_20240918_018_cleaned.txt', 'output_file': 'pizzeria_20240918_018_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\pizzeria_20240918_018_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.492313', 'composite_score': {'composite_quality_score': np.float64(0.628), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.145), 'score_breakdown': {'readability': 0.85, 'coherence': np.float64(0.145), 'information_density': 0.699, 'completeness': 0.73, 'linguistic_quality': 0.914}}, 'detailed_metrics': {'readability': {'readability_score': 0.85, 'flesch_reading_ease': 84.18, 'flesch_kincaid_grade': 5.12, 'avg_sentence_length': 14.5, 'flesch_normalized': 1.0, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': np.float64(0.145), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.007), 'length_variance': np.float64(0.725), 'transition_score': 0.0, 'cohesion_score': np.float64(0.035)}, 'information_density': {'information_density': 0.699, 'lexical_diversity': 0.726, 'content_word_ratio': 0.199, 'avg_word_length': np.float64(5.37), 'number_ratio': 0.397, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 146, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.914, 'capitalization_ratio': 1.0, 'words_per_sentence': 10.0, 'alpha_ratio': 0.5, 'capitalization_score': 1.0}}, 'status': 'success'}, {'source_file': 'tablerock_20240715_009_cleaned.txt', 'output_file': 'tablerock_20240715_009_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\tablerock_20240715_009_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.543330', 'composite_score': {'composite_quality_score': np.float64(0.598), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.109), 'score_breakdown': {'readability': 0.747, 'coherence': np.float64(0.109), 'information_density': 0.803, 'completeness': 0.67, 'linguistic_quality': 0.801}}, 'detailed_metrics': {'readability': {'readability_score': 0.747, 'flesch_reading_ease': 86.14, 'flesch_kincaid_grade': 2.88, 'avg_sentence_length': 6.57, 'flesch_normalized': 1.0, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': np.float64(0.109), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.0), 'length_variance': np.float64(0.912), 'transition_score': 0.0, 'cohesion_score': np.float64(0.0)}, 'information_density': {'information_density': 0.803, 'lexical_diversity': 0.881, 'content_word_ratio': 0.407, 'avg_word_length': np.float64(4.31), 'number_ratio': 0.305, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.67, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 59, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.801, 'capitalization_ratio': 0.667, 'words_per_sentence': 9.67, 'alpha_ratio': 0.5, 'capitalization_score': 0.667}}, 'status': 'success'}, {'source_file': 'thelodge_20240715_001_cleaned.txt', 'output_file': 'thelodge_20240715_001_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\thelodge_20240715_001_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.589535', 'composite_score': {'composite_quality_score': 0.694, 'quality_category': 'good', 'passes_threshold': True, 'weakest_metric': 'coherence', 'weakest_score': 0.5, 'score_breakdown': {'readability': 0.752, 'coherence': 0.5, 'information_density': 0.796, 'completeness': 0.73, 'linguistic_quality': 0.737}}, 'detailed_metrics': {'readability': {'readability_score': 0.752, 'flesch_reading_ease': 83.4, 'flesch_kincaid_grade': 3.3, 'avg_sentence_length': 6.73, 'flesch_normalized': 1.0, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': 0.5, 'reason': 'too_few_sentences'}, 'information_density': {'information_density': 0.796, 'lexical_diversity': 0.785, 'content_word_ratio': 0.393, 'avg_word_length': np.float64(5.02), 'number_ratio': 0.299, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 107, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.737, 'capitalization_ratio': 1.0, 'words_per_sentence': 47.0, 'alpha_ratio': 0.554, 'capitalization_score': 1.0}}, 'status': 'success'}, {'source_file': 'thelodge_20240715_006_cleaned.txt', 'output_file': 'thelodge_20240715_006_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\thelodge_20240715_006_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.632868', 'composite_score': {'composite_quality_score': 0.702, 'quality_category': 'good', 'passes_threshold': True, 'weakest_metric': 'coherence', 'weakest_score': 0.5, 'score_breakdown': {'readability': 0.79, 'coherence': 0.5, 'information_density': 0.817, 'completeness': 0.67, 'linguistic_quality': 0.763}}, 'detailed_metrics': {'readability': {'readability_score': 0.79, 'flesch_reading_ease': 89.94, 'flesch_kincaid_grade': 2.7, 'avg_sentence_length': 8.0, 'flesch_normalized': 1.0, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': 0.5, 'reason': 'too_few_sentences'}, 'information_density': {'information_density': 0.817, 'lexical_diversity': 0.776, 'content_word_ratio': 0.434, 'avg_word_length': np.float64(4.94), 'number_ratio': 0.276, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.67, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 76, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.763, 'capitalization_ratio': 1.0, 'words_per_sentence': 36.0, 'alpha_ratio': 0.557, 'capitalization_score': 1.0}}, 'status': 'success'}, {'source_file': 'timhorton_20240918_011_cleaned.txt', 'output_file': 'timhorton_20240918_011_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\timhorton_20240918_011_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.690428', 'composite_score': {'composite_quality_score': np.float64(0.639), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.106), 'score_breakdown': {'readability': 0.91, 'coherence': np.float64(0.106), 'information_density': 0.829, 'completeness': 0.73, 'linguistic_quality': 0.756}}, 'detailed_metrics': {'readability': {'readability_score': 0.91, 'flesch_reading_ease': 57.59, 'flesch_kincaid_grade': 9.1, 'avg_sentence_length': 15.6, 'flesch_normalized': 0.776, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.106), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.006), 'length_variance': np.float64(1.102), 'transition_score': 0.0, 'cohesion_score': np.float64(0.032)}, 'information_density': {'information_density': 0.829, 'lexical_diversity': 0.848, 'content_word_ratio': 0.457, 'avg_word_length': np.float64(6.25), 'number_ratio': 0.267, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 105, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.756, 'capitalization_ratio': 0.333, 'words_per_sentence': 16.0, 'alpha_ratio': 0.598, 'capitalization_score': 0.333}}, 'status': 'success'}, {'source_file': 'timhorton_20240918_015_cleaned.txt', 'output_file': 'timhorton_20240918_015_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\timhorton_20240918_015_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.761066', 'composite_score': {'composite_quality_score': np.float64(0.656), 'quality_category': 'good', 'passes_threshold': np.True_, 'weakest_metric': 'coherence', 'weakest_score': np.float64(0.127), 'score_breakdown': {'readability': 0.926, 'coherence': np.float64(0.127), 'information_density': 0.836, 'completeness': 0.73, 'linguistic_quality': 0.802}}, 'detailed_metrics': {'readability': {'readability_score': 0.926, 'flesch_reading_ease': 61.49, 'flesch_kincaid_grade': 7.66, 'avg_sentence_length': 12.0, 'flesch_normalized': 0.815, 'grade_normalized': 1.0}, 'coherence': {'coherence_score': np.float64(0.127), 'transition_ratio': 0.0, 'lexical_cohesion': np.float64(0.008), 'length_variance': np.float64(0.932), 'transition_score': 0.0, 'cohesion_score': np.float64(0.041)}, 'information_density': {'information_density': 0.836, 'lexical_diversity': 0.829, 'content_word_ratio': 0.473, 'avg_word_length': np.float64(5.4), 'number_ratio': 0.247, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 146, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.802, 'capitalization_ratio': 0.5, 'words_per_sentence': 17.5, 'alpha_ratio': 0.588, 'capitalization_score': 0.5}}, 'status': 'success'}, {'source_file': 'uniqlo_20240715_cleaned.txt', 'output_file': 'uniqlo_20240715_assessed.txt', 'output_path': 'data\\quality_assessed\\high_quality\\uniqlo_20240715_assessed.txt', 'assessment_timestamp': '2025-11-11T17:23:00.812764', 'composite_score': {'composite_quality_score': np.float64(0.627), 'quality_category': 'acceptable', 'passes_threshold': np.True_, 'weakest_metric': 'linguistic_quality', 'weakest_score': 0.375, 'score_breakdown': {'readability': 0.85, 'coherence': 0.5, 'information_density': np.float64(0.665), 'completeness': 0.73, 'linguistic_quality': 0.375}}, 'detailed_metrics': {'readability': {'readability_score': 0.85, 'flesch_reading_ease': 93.25, 'flesch_kincaid_grade': 5.54, 'avg_sentence_length': 21.29, 'flesch_normalized': 1.0, 'grade_normalized': 0.5}, 'coherence': {'coherence_score': 0.5, 'reason': 'too_few_sentences'}, 'information_density': {'information_density': np.float64(0.665), 'lexical_diversity': 0.742, 'content_word_ratio': 0.3, 'avg_word_length': np.float64(2.3), 'number_ratio': 0.342, 'ttr_score': 1.0}, 'completeness': {'completeness_score': 0.73, 'ends_properly': False, 'has_truncation_indicators': False, 'has_conclusion': False, 'word_count': 190, 'ending_score': 0.3}, 'linguistic_quality': {'linguistic_quality': 0.375, 'capitalization_ratio': 0.0, 'words_per_sentence': 70.0, 'alpha_ratio': 0.408, 'capitalization_score': 0.0}}, 'status': 'success'}]
+2025-11-11 17:24:39,712 - INFO -   Deduplication:
+2025-11-11 17:24:39,729 - INFO -     Total files: 22
+2025-11-11 17:24:39,765 - INFO -     Unique files: 22
+2025-11-11 17:24:39,786 - INFO -     Duplicates removed: 0
+2025-11-11 17:24:39,813 - INFO -   Chunking:
+2025-11-11 17:24:39,815 - INFO -     Total chunks: 23
+2025-11-11 17:24:39,816 - INFO -     Avg chunks per doc: 1.0
+2025-11-11 17:24:39,817 - INFO -   Enrichment:
+2025-11-11 17:24:39,819 - INFO -     Chunks enriched: 23
+2025-11-11 17:24:39,822 - INFO - ======================================================================
+2025-11-11 17:24:39,881 - INFO - 
+Detailed report saved to: logs/pipeline_report.json
+2025-11-11 17:24:39,883 - INFO - 
+======================================================================
+2025-11-11 17:24:39,884 - INFO - [SUCCESS] PIPELINE COMPLETED SUCCESSFULLY
+2025-11-11 17:24:39,885 - INFO - ======================================================================

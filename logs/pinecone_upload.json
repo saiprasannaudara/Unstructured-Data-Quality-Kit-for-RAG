@@ -1,0 +1,10 @@
+{
+  "database": "pinecone",
+  "index_name": "rag-chunks",
+  "statistics": {
+    "total_chunks": 23,
+    "uploaded": 23,
+    "failed": 0
+  },
+  "timestamp": "2025-11-13T21:03:36.349102"
+}

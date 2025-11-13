@@ -1,0 +1,131 @@
+2025-11-12 16:32:17,521 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-12 16:32:17,531 - INFO - Use pytorch device_name: cpu
+2025-11-12 16:32:17,532 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-12 16:32:22,528 - INFO - [SUCCESS] Embedding model loaded
+2025-11-12 16:36:48,933 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-12 16:36:48,943 - INFO - Use pytorch device_name: cpu
+2025-11-12 16:36:48,944 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-12 16:36:53,140 - INFO - [SUCCESS] Embedding model loaded
+2025-11-12 16:45:41,717 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-12 16:45:41,729 - INFO - Use pytorch device_name: cpu
+2025-11-12 16:45:41,730 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-12 16:45:46,027 - INFO - [SUCCESS] Embedding model loaded
+2025-11-12 16:45:46,028 - INFO - 
+======================================================================
+2025-11-12 16:45:46,030 - INFO - VECTOR DATABASE UPLOAD
+2025-11-12 16:45:46,031 - INFO - ======================================================================
+2025-11-12 16:45:46,032 - INFO - Database Type: pinecone
+2025-11-12 16:45:46,033 - INFO - Collection/Index: rag_chunks
+2025-11-12 16:45:46,034 - INFO - Loading chunks from data\enriched
+2025-11-12 16:45:47,604 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-12 16:45:48,019 - INFO - Initializing Pinecone...
+2025-11-13 19:36:00,791 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 19:36:00,802 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:36:00,804 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 19:36:05,745 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 19:40:21,963 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 19:40:21,973 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:40:21,974 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 19:40:26,370 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 19:40:26,371 - INFO - 
+======================================================================
+2025-11-13 19:40:26,373 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 19:40:26,374 - INFO - ======================================================================
+2025-11-13 19:40:26,375 - INFO - Database Type: pinecone
+2025-11-13 19:40:26,376 - INFO - Collection/Index: rag_chunks
+2025-11-13 19:40:26,377 - INFO - Loading chunks from data\enriched
+2025-11-13 19:40:27,800 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 19:46:42,980 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 19:46:42,990 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:46:42,992 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 19:46:47,064 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 19:46:47,065 - INFO - 
+======================================================================
+2025-11-13 19:46:47,066 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 19:46:47,067 - INFO - ======================================================================
+2025-11-13 19:46:47,068 - INFO - Database Type: pinecone
+2025-11-13 19:46:47,069 - INFO - Collection/Index: rag_chunks
+2025-11-13 19:46:47,070 - INFO - Loading chunks from data\enriched
+2025-11-13 19:46:47,108 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 19:46:47,113 - INFO - Initializing Pinecone...
+2025-11-13 19:52:56,440 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 19:52:56,450 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:52:56,451 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 19:53:00,841 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 19:53:00,842 - INFO - 
+======================================================================
+2025-11-13 19:53:00,844 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 19:53:00,845 - INFO - ======================================================================
+2025-11-13 19:53:00,846 - INFO - Database Type: pinecone
+2025-11-13 19:53:00,847 - INFO - Collection/Index: rag_chunks
+2025-11-13 19:53:00,848 - INFO - Loading chunks from data\enriched
+2025-11-13 19:53:00,885 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 19:55:32,272 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 19:55:32,282 - INFO - Use pytorch device_name: cpu
+2025-11-13 19:55:32,283 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 19:55:36,376 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 19:55:36,377 - INFO - 
+======================================================================
+2025-11-13 19:55:36,379 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 19:55:36,380 - INFO - ======================================================================
+2025-11-13 19:55:36,381 - INFO - Database Type: pinecone
+2025-11-13 19:55:36,382 - INFO - Collection/Index: rag_chunks
+2025-11-13 19:55:36,383 - INFO - Loading chunks from data\enriched
+2025-11-13 19:55:36,423 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 19:55:36,424 - INFO - {'api_key': 'pcsk_6FUzzK_DDJfJQ2JQ1F81gRxwPLxsAZ9JL5c4hVJBfTBecWHzvoMTGu9usW2hXbaRGRFhv6', 'environment': 'us-east-1-aws'}
+2025-11-13 19:55:36,431 - INFO - Initializing Pinecone...
+2025-11-13 20:01:31,484 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 20:01:31,494 - INFO - Use pytorch device_name: cpu
+2025-11-13 20:01:31,495 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 20:01:35,763 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 20:01:35,765 - INFO - 
+======================================================================
+2025-11-13 20:01:35,766 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 20:01:35,767 - INFO - ======================================================================
+2025-11-13 20:01:35,768 - INFO - Database Type: pinecone
+2025-11-13 20:01:35,769 - INFO - Collection/Index: rag_chunks
+2025-11-13 20:01:35,770 - INFO - Loading chunks from data\enriched
+2025-11-13 20:01:35,809 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 20:01:35,810 - INFO - {'api_key': 'pcsk_6FUzzK_DDJfJQ2JQ1F81gRxwPLxsAZ9JL5c4hVJBfTBecWHzvoMTGu9usW2hXbaRGRFhv6', 'environment': 'us-east-1-aws'}
+2025-11-13 20:01:35,820 - ERROR - Pinecone not installed. Install with: pip install pinecone-client
+2025-11-13 20:04:19,584 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 20:04:19,594 - INFO - Use pytorch device_name: cpu
+2025-11-13 20:04:19,595 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 20:04:23,886 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 20:04:23,887 - INFO - 
+======================================================================
+2025-11-13 20:04:23,889 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 20:04:23,890 - INFO - ======================================================================
+2025-11-13 20:04:23,890 - INFO - Database Type: pinecone
+2025-11-13 20:04:23,891 - INFO - Collection/Index: rag_chunks
+2025-11-13 20:04:23,892 - INFO - Loading chunks from data\enriched
+2025-11-13 20:04:23,931 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 20:04:23,932 - INFO - {'api_key': 'pcsk_6FUzzK_DDJfJQ2JQ1F81gRxwPLxsAZ9JL5c4hVJBfTBecWHzvoMTGu9usW2hXbaRGRFhv6', 'environment': 'us-east-1-aws'}
+2025-11-13 20:04:23,940 - ERROR - Pinecone not installed. Install with: pip install pinecone-client
+2025-11-13 20:07:06,995 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 20:07:07,007 - INFO - Use pytorch device_name: cpu
+2025-11-13 20:07:07,008 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 20:07:11,612 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 20:07:11,613 - INFO - 
+======================================================================
+2025-11-13 20:07:11,614 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 20:07:11,615 - INFO - ======================================================================
+2025-11-13 20:07:11,616 - INFO - Database Type: pinecone
+2025-11-13 20:07:11,617 - INFO - Collection/Index: rag_chunks
+2025-11-13 20:07:11,622 - INFO - Loading chunks from data\enriched
+2025-11-13 20:07:11,662 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 20:07:11,663 - INFO - {'api_key': 'pcsk_6FUzzK_DDJfJQ2JQ1F81gRxwPLxsAZ9JL5c4hVJBfTBecWHzvoMTGu9usW2hXbaRGRFhv6', 'environment': 'us-east-1-aws'}
+2025-11-13 20:07:11,670 - INFO - Initializing Pinecone...
+2025-11-13 20:12:19,470 - INFO - Loading embedding model: all-MiniLM-L6-v2
+2025-11-13 20:12:19,482 - INFO - Use pytorch device_name: cpu
+2025-11-13 20:12:19,483 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-13 20:12:23,679 - INFO - [SUCCESS] Embedding model loaded
+2025-11-13 20:12:23,680 - INFO - 
+======================================================================
+2025-11-13 20:12:23,681 - INFO - VECTOR DATABASE UPLOAD
+2025-11-13 20:12:23,682 - INFO - ======================================================================
+2025-11-13 20:12:23,683 - INFO - Database Type: pinecone
+2025-11-13 20:12:23,684 - INFO - Collection/Index: rag_chunks
+2025-11-13 20:12:23,686 - INFO - Loading chunks from data\enriched
+2025-11-13 20:12:23,730 - INFO - [SUCCESS] Loaded 23 chunks from 22 files
+2025-11-13 20:12:23,732 - INFO - {'api_key': 'pcsk_6FUzzK_DDJfJQ2JQ1F81gRxwPLxsAZ9JL5c4hVJBfTBecWHzvoMTGu9usW2hXbaRGRFhv6', 'environment': 'us-east-1-aws'}
